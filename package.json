@@ -25,7 +25,8 @@
         "wp-env:update": "wp-env start --update",
         "wp-env:clean": "wp-env clean all",
         "translate": "potomatic",
-        "translate:dry-run": "potomatic --dry-run"
+        "translate:dry-run": "potomatic --dry-run",
+        "make-mo": "wp i18n make-mo languages/"
     },
     "repository": {
         "type": "git",

@@ -53,3 +53,4 @@ artifacts
 .wp-env.override.json
 playwright-report
 tests/coverage
+/.env

@@ -1,0 +1,1405 @@
+# Copyright (C) 2025 Barn2 Plugins
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Document Library Lite - Manage & Display Downloads "
+"1.1.3\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/document-library-lite\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-04-20T12:36:23+00:00\n"
+"PO-Revision-Date: 2025-08-28 15:59+0000\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: document-library-lite\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh-CN\n"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Plugin Name of the plugin
+msgid "Document Library Lite - Manage & Display Downloads"
+msgstr "文档库 Lite - 管理和显示下载"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/document-library-lite/"
+msgstr "https://wordpress.org/plugins/document-library-lite/"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Description of the plugin
+msgid "Add documents and display them in a searchable document library."
+msgstr "添加文档并在可搜索的文档库中显示它们。"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Author of the plugin
+msgid "Barn2 Plugins"
+msgstr "Barn2 插件"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Author URI of the plugin
+msgid "https://barn2.com"
+msgstr "https://barn2.com"
+
+#: src/Admin/Admin_Controller.php:70
+#: src/Admin/Page/Settings.php:89
+msgid "Settings"
+msgstr "设置"
+
+#: src/Admin/Admin_Controller.php:88
+msgid "Pro Version"
+msgstr "专业版"
+
+#: src/Admin/Admin_Controller.php:123
+msgid "Select File"
+msgstr "选择文件"
+
+#: src/Admin/Admin_Controller.php:124
+#: src/Admin/Metabox/Document_Link.php:59
+msgid "Add File"
+msgstr "添加文件"
+
+#: src/Admin/Admin_Controller.php:125
+#: src/Admin/Metabox/Document_Link.php:59
+msgid "Replace File"
+msgstr "替换文件"
+
+#: src/Admin/Media_Library.php:41
+msgid "All types"
+msgstr "所有类型"
+
+#: src/Admin/Media_Library.php:42
+#: src/Admin/Menu.php:36
+#: src/Admin/Menu.php:37
+#: src/Post_Type.php:74
+msgid "Documents"
+msgstr "文档"
+
+#: src/Admin/Menu.php:48
+#: src/Admin/Menu.php:49
+#: src/Post_Type.php:53
+msgid "Add New"
+msgstr "添加新文档"
+
+#: src/Admin/Menu.php:59
+#: src/Admin/Menu.php:60
+#: src/Taxonomies.php:37
+#: src/Util/Options.php:246
+msgid "Categories"
+msgstr "分类"
+
+#: src/Admin/Metabox/Document_Link.php:43
+msgid "Document Link"
+msgstr "文档链接"
+
+#: src/Admin/Metabox/Document_Link.php:64
+msgid "Upload a file or select one from the media library:"
+msgstr "上传文件或从媒体库中选择一个："
+
+#: src/Admin/Metabox/Document_Link.php:68
+msgid "None"
+msgstr "无"
+
+#: src/Admin/Metabox/Document_Link.php:69
+msgid "File Upload"
+msgstr "文件上传"
+
+#: src/Admin/Metabox/Document_Link.php:81
+#. translators: %s: File name
+msgid "Remove file: %s"
+msgstr "移除文件：%s"
+
+#: src/Admin/Page/Import.php:51
+msgid "Document Library Importing"
+msgstr "文档库导入中"
+
+#: src/Admin/Page/Import.php:52
+msgid "Import"
+msgstr "导入"
+
+#: src/Admin/Page/Import.php:66
+msgid "Import documents"
+msgstr "导入文档"
+
+#: src/Admin/Page/Import.php:72
+#. translators: %1: Document Library Pro link start, %2: Document Library Pro link end
+msgid ""
+"Lots of documents? Upgrade to %1$sDocument Library Pro%2$s to add documents "
+"in bulk - either by using drag-and-drop to upload documents directly to "
+"WordPress, or by importing documents from a CSV file. It’s a fantastic "
+"time-saver for adding multiple documents at once."
+msgstr ""
+"有很多文档吗？升级到 %1$sDocument Library Pro%2$s 以批量添加文档 - 可以通过拖放直接将文档上传到 "
+"WordPress，或者从 CSV 文件导入文档。这是一次添加多个文档的绝佳节省时间的方法。"
+
+#: src/Admin/Page/Protect.php:48
+#: src/Admin/Page/Protect.php:49
+msgid "Protect"
+msgstr "保护"
+
+#: src/Admin/Page/Settings.php:88
+#: src/Admin/Page/Settings.php:110
+msgid "Document Library Lite Settings"
+msgstr "文档库 Lite 设置"
+
+#: src/Admin/Page/Settings.php:134
+msgid "Save Changes"
+msgstr "保存更改"
+
+#: src/Admin/Page_List.php:42
+msgid "Document Library Page"
+msgstr "文档库页面"
+
+#: src/Admin/Settings_Tab/Document_Grid.php:35
+msgid "Document Grid"
+msgstr "文档网格"
+
+#: src/Admin/Settings_Tab/Document_Grid.php:68
+#. translators: %1: Document Library Pro link start, %2: Document Library Pro link end
+msgid ""
+"Upgrade to %1$sDocument Library Pro%2$s to display documents in a beautiful "
+"grid layout:"
+msgstr "升级到 %1$sDocument Library Pro%2$s 以美观的网格布局显示文档："
+
+#: src/Admin/Settings_Tab/Document_Table.php:36
+msgid "Document Tables"
+msgstr "文档表格"
+
+#: src/Admin/Settings_Tab/Document_Table.php:55
+#: src/Admin/Settings_Tab/General.php:70
+msgid "Library content"
+msgstr "库内容"
+
+#: src/Admin/Settings_Tab/Document_Table.php:58
+#: src/Admin/Settings_Tab/General.php:64
+#: src/Admin/Wizard/Steps/Links.php:34
+msgid "Document links"
+msgstr "文档链接"
+
+#: src/Admin/Settings_Tab/Document_Table.php:61
+msgid "Loading & performance"
+msgstr "加载与性能"
+
+#: src/Admin/Settings_Tab/Document_Table.php:64
+#: src/Admin/Settings_Tab/General.php:73
+msgid "Document library controls"
+msgstr "文档库控件"
+
+#: src/Admin/Settings_Tab/Document_Table.php:67
+#: src/Admin/Settings_Tab/Document_Table.php:253
+msgid "Design"
+msgstr "设计"
+
+#: src/Admin/Settings_Tab/Document_Table.php:80
+#: src/Admin/Wizard/Steps/Layout.php:46
+msgid "Columns"
+msgstr "列"
+
+#: src/Admin/Settings_Tab/Document_Table.php:82
+#: src/Admin/Wizard/Steps/Layout.php:47
+msgid "Enter the fields to include in your document tables."
+msgstr "输入要包含在文档表格中的字段。"
+
+#: src/Admin/Settings_Tab/Document_Table.php:87
+msgid "Image size"
+msgstr "图像大小"
+
+#: src/Admin/Settings_Tab/Document_Table.php:89
+msgid "Enter WxH in pixels (e.g. 80x80)."
+msgstr "以像素输入 WxH（例如 80x80）。"
+
+#: src/Admin/Settings_Tab/Document_Table.php:105
+msgid "Accessing documents"
+msgstr "访问文档"
+
+#: src/Admin/Settings_Tab/Document_Table.php:108
+msgid "How a user accesses documents from the ‘link’ column."
+msgstr "用户如何通过“链接”列访问文档。"
+
+#: src/Admin/Settings_Tab/Document_Table.php:110
+#: src/Admin/Settings_Tab/General.php:198
+msgid "Link to document"
+msgstr "文档链接"
+
+#: src/Admin/Settings_Tab/Document_Table.php:111
+msgid "Multi-select checkboxes"
+msgstr "多选复选框"
+
+#: src/Admin/Settings_Tab/Document_Table.php:112
+#: src/Admin/Settings_Tab/Document_Table.php:124
+msgid "Both"
+msgstr "两者"
+
+#: src/Admin/Settings_Tab/Document_Table.php:117
+msgid "Multi-download button"
+msgstr "多下载按钮"
+
+#: src/Admin/Settings_Tab/Document_Table.php:120
+msgid "The position of the button to download all selected documents."
+msgstr "下载所有选定文档的按钮位置。"
+
+#: src/Admin/Settings_Tab/Document_Table.php:122
+msgid "Below document library"
+msgstr "在文档库下方"
+
+#: src/Admin/Settings_Tab/Document_Table.php:123
+msgid "Above document library"
+msgstr "在文档库上方"
+
+#: src/Admin/Settings_Tab/Document_Table.php:129
+msgid "Multi-download button text"
+msgstr "多下载按钮文本"
+
+#: src/Admin/Settings_Tab/Document_Table.php:132
+msgid "The text for the button to download all selected documents."
+msgstr "下载所有选定文档的按钮文本。"
+
+#: src/Admin/Settings_Tab/Document_Table.php:133
+msgid "Download Selected Documents"
+msgstr "下载选定文档"
+
+#: src/Admin/Settings_Tab/Document_Table.php:148
+#: src/Admin/Wizard/Steps/Behavior.php:126
+msgid "Lazy load"
+msgstr "懒加载"
+
+#: src/Admin/Settings_Tab/Document_Table.php:151
+#: src/Admin/Wizard/Steps/Behavior.php:128
+msgid "Load the document table one page at a time"
+msgstr "一次加载一页文档表"
+
+#: src/Admin/Settings_Tab/Document_Table.php:152
+msgid "Enable this if you have many documents or experience slow page load times."
+msgstr "如果您有很多文档或加载页面速度较慢，请启用此功能。"
+
+#: src/Admin/Settings_Tab/Document_Table.php:153
+msgid ""
+"Warning: Lazy load limits the searching and sorting features in the "
+"document library. Only use it if you definitely need it."
+msgstr "警告：懒加载限制了文档库中的搜索和排序功能。只有在您确实需要时才使用它。"
+
+#: src/Admin/Settings_Tab/Document_Table.php:174
+msgid "Caching"
+msgstr "缓存"
+
+#: src/Admin/Settings_Tab/Document_Table.php:177
+msgid "Cache document libraries to improve load time"
+msgstr "缓存文档库以提高加载时间"
+
+#: src/Admin/Settings_Tab/Document_Table.php:185
+msgid "Cache expires after"
+msgstr "缓存在以下时间后过期"
+
+#: src/Admin/Settings_Tab/Document_Table.php:188
+msgid "hours"
+msgstr "小时"
+
+#: src/Admin/Settings_Tab/Document_Table.php:189
+msgid "Your table data will be refreshed after this length of time."
+msgstr "在此时间长度后，您的表数据将被刷新。"
+
+#: src/Admin/Settings_Tab/Document_Table.php:210
+#: src/Admin/Wizard/Steps/Behavior.php:113
+msgid "Search filters"
+msgstr "搜索过滤器"
+
+#: src/Admin/Settings_Tab/Document_Table.php:214
+#: src/Admin/Wizard/Steps/Behavior.php:119
+msgid "Disabled"
+msgstr "禁用"
+
+#: src/Admin/Settings_Tab/Document_Table.php:215
+msgid "Show based on columns in table"
+msgstr "根据表格中的列显示"
+
+#: src/Admin/Settings_Tab/Document_Table.php:216
+#: src/Admin/Settings_Tab/Document_Table.php:257
+msgid "Custom"
+msgstr "自定义"
+
+#: src/Admin/Settings_Tab/Document_Table.php:218
+msgid ""
+"Show dropdown menus to filter by doc_categories, doc_tags, or custom "
+"taxonomy."
+msgstr "显示下拉菜单以按文档类别、文档标签或自定义分类过滤。"
+
+#: src/Admin/Settings_Tab/Document_Table.php:227
+msgid "Page length"
+msgstr "页长"
+
+#: src/Admin/Settings_Tab/Document_Table.php:231
+#: src/Admin/Settings_Tab/General.php:361
+#: src/Admin/Settings_Tab/General.php:415
+#: src/Admin/Settings_Tab/General.php:428
+msgid "Above library"
+msgstr "库上方"
+
+#: src/Admin/Settings_Tab/Document_Table.php:232
+#: src/Admin/Settings_Tab/General.php:362
+#: src/Admin/Settings_Tab/General.php:416
+#: src/Admin/Settings_Tab/General.php:429
+msgid "Below library"
+msgstr "库下方"
+
+#: src/Admin/Settings_Tab/Document_Table.php:233
+#: src/Admin/Settings_Tab/General.php:363
+#: src/Admin/Settings_Tab/General.php:417
+#: src/Admin/Settings_Tab/General.php:430
+msgid "Above and below library"
+msgstr "库的上下方"
+
+#: src/Admin/Settings_Tab/Document_Table.php:234
+#: src/Admin/Settings_Tab/General.php:364
+#: src/Admin/Settings_Tab/General.php:418
+#: src/Admin/Settings_Tab/General.php:431
+msgid "Hidden"
+msgstr "隐藏"
+
+#: src/Admin/Settings_Tab/Document_Table.php:236
+msgid "The position of the 'Show [x] entries' dropdown list."
+msgstr "“显示 [x] 条目”下拉列表的位置。"
+
+#: src/Admin/Settings_Tab/Document_Table.php:256
+msgid "Default"
+msgstr "默认"
+
+#: src/Admin/Settings_Tab/Document_Table.php:275
+msgid "Customize the design of the document tables."
+msgstr "自定义文档表的设计。"
+
+#: src/Admin/Settings_Tab/Document_Table.php:286
+#. translators: %1: knowledge base link start, %2: knowledge base link end
+msgid ""
+"The following options are used when documents are listed in a table layout. "
+"You can override them in the [doc_library] shortcode. See the %1$sknowledge "
+"base%2$s for details of how to configure your document tables even further."
+msgstr ""
+"以下选项在文档以表格布局列出时使用。您可以在 [doc_library] 短代码中覆盖它们。有关如何进一步配置文档表的详细信息，请参见 "
+"%1$sknowledge base%2$s。"
+
+#: src/Admin/Settings_Tab/General.php:37
+msgid "General"
+msgstr "常规"
+
+#: src/Admin/Settings_Tab/General.php:58
+msgid "Document data"
+msgstr "文档数据"
+
+#: src/Admin/Settings_Tab/General.php:61
+msgid "Document lists"
+msgstr "文档列表"
+
+#: src/Admin/Settings_Tab/General.php:67
+#: src/Admin/Settings_Tab/General.php:265
+#: src/Admin/Wizard/Steps/Links.php:83
+msgid "Document preview"
+msgstr "文档预览"
+
+#: src/Admin/Settings_Tab/General.php:76
+msgid "Number of documents"
+msgstr "文档数量"
+
+#: src/Admin/Settings_Tab/General.php:79
+msgid "Sorting"
+msgstr "排序"
+
+#: src/Admin/Settings_Tab/General.php:88
+msgid ""
+"Use the following options to manage the fields that are used to store "
+"information about your documents."
+msgstr "使用以下选项来管理存储有关您文档的信息的字段。"
+
+#: src/Admin/Settings_Tab/General.php:100
+#. translators: %1: knowledge base link start, %2: knowledge base link end
+msgid ""
+"These options set defaults for all your document libraries and are used for "
+"the table layout. You can override them in the shortcode for individual "
+"libraries. %1$sRead more%2$s."
+msgstr "这些选项为您所有的文档库设置默认值，并用于表格布局。您可以在单个库的短代码中覆盖它们。%1$s了解更多%2$s。"
+
+#: src/Admin/Settings_Tab/General.php:128
+msgid "Document fields"
+msgstr "文档字段"
+
+#: src/Admin/Settings_Tab/General.php:129
+#: src/Util/Options.php:150
+msgid "Pro version only"
+msgstr "仅限专业版"
+
+#: src/Admin/Settings_Tab/General.php:132
+#: src/Util/Options.php:258
+msgid "Content"
+msgstr "内容"
+
+#: src/Admin/Settings_Tab/General.php:133
+msgid "Excerpt"
+msgstr "摘要"
+
+#: src/Admin/Settings_Tab/General.php:134
+#: src/Post_Type.php:62
+msgid "Featured Image"
+msgstr "特色图像"
+
+#: src/Admin/Settings_Tab/General.php:135
+msgid "Comments"
+msgstr "评论"
+
+#: src/Admin/Settings_Tab/General.php:161
+msgid "Document library page"
+msgstr "文档库页面"
+
+#: src/Admin/Settings_Tab/General.php:163
+msgid "The page to display your documents."
+msgstr "显示您的文档的页面。"
+
+#: src/Admin/Settings_Tab/General.php:164
+msgid ""
+"You can also use the [doc_library] shortcode to list documents on other "
+"pages."
+msgstr "您还可以使用[doc_library]短代码在其他页面列出文档。"
+
+#: src/Admin/Settings_Tab/General.php:170
+#: src/Admin/Wizard/Steps/Layout.php:52
+msgid "Default layout"
+msgstr "默认布局"
+
+#: src/Admin/Settings_Tab/General.php:173
+#: src/Admin/Wizard/Steps/Layout.php:57
+msgid "Table"
+msgstr "表格"
+
+#: src/Admin/Settings_Tab/General.php:174
+#: src/Admin/Wizard/Steps/Layout.php:61
+msgid "Grid"
+msgstr "网格"
+
+#: src/Admin/Settings_Tab/General.php:179
+#: src/Admin/Wizard/Steps/Layout.php:68
+msgid "Folders"
+msgstr "文件夹"
+
+#: src/Admin/Settings_Tab/General.php:182
+#: src/Admin/Wizard/Steps/Layout.php:69
+msgid "Display the document library in folders"
+msgstr "以文件夹的形式显示文档库"
+
+#: src/Admin/Settings_Tab/General.php:201
+msgid "Include a link to the document."
+msgstr "包含指向文档的链接。"
+
+#: src/Admin/Settings_Tab/General.php:202
+msgid "Use the 'Link destination' option below to control the link behavior."
+msgstr "使用下面的“链接目标”选项来控制链接行为。"
+
+#: src/Admin/Settings_Tab/General.php:206
+#: src/Admin/Wizard/Steps/Links.php:52
+msgid "Link style"
+msgstr "链接样式"
+
+#: src/Admin/Settings_Tab/General.php:209
+msgid "Control the appearance of the link to the document."
+msgstr "控制链接到文档的外观。"
+
+#: src/Admin/Settings_Tab/General.php:211
+#: src/Admin/Settings_Tab/General.php:278
+#: src/Admin/Wizard/Steps/Links.php:57
+msgid "Button with text"
+msgstr "带文本的按钮"
+
+#: src/Admin/Settings_Tab/General.php:212
+#: src/Admin/Settings_Tab/General.php:279
+#: src/Admin/Wizard/Steps/Links.php:61
+msgid "Button with icon and text"
+msgstr "带图标和文本的按钮"
+
+#: src/Admin/Settings_Tab/General.php:213
+#: src/Admin/Settings_Tab/General.php:280
+#: src/Admin/Wizard/Steps/Links.php:65
+msgid "Button with icon"
+msgstr "带图标的按钮"
+
+#: src/Admin/Settings_Tab/General.php:214
+#: src/Admin/Wizard/Steps/Links.php:69
+msgid "Download icon only"
+msgstr "仅下载图标"
+
+#: src/Admin/Settings_Tab/General.php:215
+#: src/Admin/Wizard/Steps/Links.php:73
+msgid "File type icon"
+msgstr "文件类型图标"
+
+#: src/Admin/Settings_Tab/General.php:216
+#: src/Admin/Settings_Tab/General.php:282
+#: src/Admin/Wizard/Steps/Links.php:77
+msgid "Text link"
+msgstr "文本链接"
+
+#: src/Admin/Settings_Tab/General.php:222
+#: src/Admin/Wizard/Steps/Links.php:46
+msgid "Link text"
+msgstr "链接文本"
+
+#: src/Admin/Settings_Tab/General.php:224
+#: src/Admin/Wizard/Steps/Behavior.php:54
+#: src/Admin/Wizard/Steps/Links.php:48
+msgid "The text displayed on the button or link."
+msgstr "显示在按钮或链接上的文本。"
+
+#: src/Admin/Settings_Tab/General.php:228
+msgid "Link destination"
+msgstr "链接目标"
+
+#: src/Admin/Settings_Tab/General.php:231
+msgid "What happens when someone clicks on a link to a document."
+msgstr "当有人点击文档链接时会发生什么。"
+
+#: src/Admin/Settings_Tab/General.php:233
+msgid "Direct access"
+msgstr "直接访问"
+
+#: src/Admin/Settings_Tab/General.php:234
+msgid "Open single document page"
+msgstr "打开单个文档页面"
+
+#: src/Admin/Settings_Tab/General.php:239
+msgid "Link target"
+msgstr "链接目标"
+
+#: src/Admin/Settings_Tab/General.php:242
+msgid "Open links in a new tab"
+msgstr "在新标签页中打开链接"
+
+#: src/Admin/Settings_Tab/General.php:247
+msgid "Clickable fields"
+msgstr "可点击字段"
+
+#: src/Admin/Settings_Tab/General.php:249
+msgid "Control which fields are clickable, in addition to the 'link' field."
+msgstr "控制哪些字段是可点击的，除了'链接'字段之外。"
+
+#: src/Admin/Settings_Tab/General.php:268
+#: src/Admin/Wizard/Steps/Links.php:84
+msgid "Allow users to preview documents in a lightbox"
+msgstr "允许用户在灯箱中预览文档"
+
+#: src/Admin/Settings_Tab/General.php:269
+msgid "The preview option will appear for supported file types only."
+msgstr "预览选项仅在支持的文件类型中出现。"
+
+#: src/Admin/Settings_Tab/General.php:273
+msgid "Preview style"
+msgstr "预览样式"
+
+#: src/Admin/Settings_Tab/General.php:276
+msgid "Control the appearance of the preview option."
+msgstr "控制预览选项的外观。"
+
+#: src/Admin/Settings_Tab/General.php:281
+msgid "Icon only"
+msgstr "仅图标"
+
+#: src/Admin/Settings_Tab/General.php:287
+msgid "Preview text"
+msgstr "预览文本"
+
+#: src/Admin/Settings_Tab/General.php:290
+msgid "The text displayed on the preview button or link."
+msgstr "在预览按钮或链接上显示的文本。"
+
+#: src/Admin/Settings_Tab/General.php:291
+#: src/Util/SVG_Icon.php:79
+msgid "Preview"
+msgstr "预览"
+
+#: src/Admin/Settings_Tab/General.php:307
+#: src/Admin/Wizard/Steps/Behavior.php:46
+msgid "Image lightbox"
+msgstr "图像灯箱"
+
+#: src/Admin/Settings_Tab/General.php:309
+#: src/Admin/Wizard/Steps/Behavior.php:47
+msgid "Display images in a lightbox when opened"
+msgstr "打开时在灯箱中显示图像"
+
+#: src/Admin/Settings_Tab/General.php:313
+msgid "Shortcodes"
+msgstr "短代码"
+
+#: src/Admin/Settings_Tab/General.php:316
+msgid ""
+"Display shortcodes, HTML and other formatting in the document content, "
+"excerpt and custom field columns"
+msgstr "在文档内容、摘要和自定义字段列中显示短代码、HTML和其他格式"
+
+#: src/Admin/Settings_Tab/General.php:321
+msgid "Excerpt length"
+msgstr "摘要长度"
+
+#: src/Admin/Settings_Tab/General.php:324
+#: src/Admin/Settings_Tab/General.php:336
+msgid "words"
+msgstr "字"
+
+#: src/Admin/Settings_Tab/General.php:325
+msgid "Enter -1 to show the full excerpt."
+msgstr "输入 -1 以显示完整摘要。"
+
+#: src/Admin/Settings_Tab/General.php:333
+msgid "Content length"
+msgstr "内容长度"
+
+#: src/Admin/Settings_Tab/General.php:337
+msgid "Enter -1 to show the full content."
+msgstr "输入 -1 以显示完整内容。"
+
+#: src/Admin/Settings_Tab/General.php:356
+msgid "Search box"
+msgstr "搜索框"
+
+#: src/Admin/Settings_Tab/General.php:359
+msgid ""
+"The position of the search box above the list of documents. You can also "
+"add a search box using a shortcode or widget."
+msgstr "搜索框在文档列表上方的位置。您还可以使用短代码或小部件添加搜索框。"
+
+#: src/Admin/Settings_Tab/General.php:369
+msgid "Reset button"
+msgstr "重置按钮"
+
+#: src/Admin/Settings_Tab/General.php:372
+msgid "Show the reset button above the library"
+msgstr "在库上方显示重置按钮"
+
+#: src/Admin/Settings_Tab/General.php:388
+#: src/Admin/Wizard/Steps/Behavior.php:52
+msgid "Documents per page"
+msgstr "每页文档数量"
+
+#: src/Admin/Settings_Tab/General.php:391
+msgid ""
+"The number of documents per page of the document library. Enter -1 to "
+"display all documents on one page."
+msgstr "文档库每页的文档数量。输入 -1 以在一页上显示所有文档。"
+
+#: src/Admin/Settings_Tab/General.php:398
+msgid "Pagination type"
+msgstr "分页类型"
+
+#: src/Admin/Settings_Tab/General.php:402
+msgid "Numbers only"
+msgstr "仅限数字"
+
+#: src/Admin/Settings_Tab/General.php:403
+msgid "Prev|Next"
+msgstr "上一页|下一页"
+
+#: src/Admin/Settings_Tab/General.php:404
+msgid "Prev|Next + Numbers"
+msgstr "上一页|下一页 + 数字"
+
+#: src/Admin/Settings_Tab/General.php:405
+msgid "Prev|Next|First|Last"
+msgstr "上一页|下一页|第一页|最后一页"
+
+#: src/Admin/Settings_Tab/General.php:406
+msgid "Prev|Next|First|Last + Numbers"
+msgstr "上一页|下一页|第一页|最后一页 + 数字"
+
+#: src/Admin/Settings_Tab/General.php:411
+msgid "Pagination position"
+msgstr "分页位置"
+
+#: src/Admin/Settings_Tab/General.php:420
+msgid "The position of the paging buttons which scroll between results."
+msgstr "在结果之间滚动的分页按钮的位置。"
+
+#: src/Admin/Settings_Tab/General.php:424
+msgid "Totals"
+msgstr "总计"
+
+#: src/Admin/Settings_Tab/General.php:433
+msgid "The position of the document total, e.g. '25 documents'."
+msgstr "文档总数的位置，例如 '25 个文档'。"
+
+#: src/Admin/Settings_Tab/General.php:449
+#: src/Admin/Wizard/Steps/Behavior.php:58
+msgid "Sort by"
+msgstr "排序依据"
+
+#: src/Admin/Settings_Tab/General.php:453
+#: src/Admin/Wizard/Steps/Behavior.php:64
+#: src/Util/Options.php:240
+msgid "Title"
+msgstr "标题"
+
+#: src/Admin/Settings_Tab/General.php:454
+#: src/Admin/Wizard/Steps/Behavior.php:68
+#: src/Util/Options.php:228
+msgid "ID"
+msgstr "ID"
+
+#: src/Admin/Settings_Tab/General.php:455
+#: src/Admin/Wizard/Steps/Behavior.php:72
+msgid "Date published"
+msgstr "发布日期"
+
+#: src/Admin/Settings_Tab/General.php:456
+#: src/Admin/Wizard/Steps/Behavior.php:76
+msgid "Date modified"
+msgstr "修改日期"
+
+#: src/Admin/Settings_Tab/General.php:457
+#: src/Admin/Wizard/Steps/Behavior.php:80
+msgid "Page order (menu order)"
+msgstr "页面顺序（菜单顺序）"
+
+#: src/Admin/Settings_Tab/General.php:458
+#: src/Admin/Wizard/Steps/Behavior.php:84
+msgid "Author"
+msgstr "作者"
+
+#: src/Admin/Settings_Tab/General.php:459
+#: src/Admin/Wizard/Steps/Behavior.php:88
+msgid "Random"
+msgstr "随机"
+
+#: src/Admin/Settings_Tab/General.php:461
+#: src/Admin/Wizard/Steps/Behavior.php:60
+msgid "The initial sort order of the document library."
+msgstr "文档库的初始排序顺序。"
+
+#: src/Admin/Settings_Tab/General.php:465
+#: src/Admin/Wizard/Steps/Behavior.php:94
+msgid "Sort direction"
+msgstr "排序方向"
+
+#: src/Admin/Settings_Tab/General.php:469
+#: src/Admin/Wizard/Steps/Behavior.php:99
+msgid "Automatic"
+msgstr "自动"
+
+#: src/Admin/Settings_Tab/General.php:470
+#: src/Admin/Wizard/Steps/Behavior.php:103
+msgid "Ascending (A to Z, oldest to newest)"
+msgstr "升序（A 到 Z，最旧到最新）"
+
+#: src/Admin/Settings_Tab/General.php:471
+#: src/Admin/Wizard/Steps/Behavior.php:107
+msgid "Descending (Z to A, newest to oldest)"
+msgstr "降序（Z 到 A，最新到最旧）"
+
+#: src/Admin/Settings_Tab/Single_Document.php:35
+msgid "Single Document"
+msgstr "单一文档"
+
+#: src/Admin/Settings_Tab/Single_Document.php:65
+#. translators: %1: Document Library Pro link start, %2: Document Library Pro link end
+msgid ""
+"Upgrade to %1$sDocument Library Pro%2$s to have a separate page for each "
+"document. You can use this instead - or in addition to - the download links "
+"on the main document library page. It’s ideal for providing more "
+"information about each document, or even embedding documents directly onto "
+"the page:"
+msgstr ""
+"升级到 %1$s文档库专业版%2$s 以为每个文档提供一个单独的页面。您可以使用这个替代 - 或额外 - "
+"主文档库页面上的下载链接。这非常适合提供有关每个文档的更多信息，甚至可以直接将文档嵌入到页面中："
+
+#: src/Admin/Wizard/Steps/Behavior.php:33
+msgid "Behavior"
+msgstr "行为"
+
+#: src/Admin/Wizard/Steps/Behavior.php:34
+msgid ""
+"Finally, choose from a range of options to customize your document "
+"libraries."
+msgstr "最后，从一系列选项中选择以自定义您的文档库。"
+
+#: src/Admin/Wizard/Steps/Behavior.php:35
+msgid "Document library behavior"
+msgstr "文档库行为"
+
+#: src/Admin/Wizard/Steps/Behavior.php:60
+#: src/Admin/Wizard/Steps/Layout.php:47
+msgid "Read more"
+msgstr "阅读更多"
+
+#: src/Admin/Wizard/Steps/Behavior.php:115
+msgid ""
+"Show filters dropdown to allow users to filter by categories, tags, or "
+"custom taxonomy."
+msgstr "显示过滤器下拉菜单，以允许用户按类别、标签或自定义分类筛选。"
+
+#: src/Admin/Wizard/Steps/Behavior.php:129
+msgid "Enable this if you will have lots of documents, otherwise leave it blank."
+msgstr "如果您将有很多文档，请启用此项，否则请留空。"
+
+#: src/Admin/Wizard/Steps/Completed.php:25
+msgid "Ready"
+msgstr "准备好"
+
+#: src/Admin/Wizard/Steps/Completed.php:27
+msgid "Complete Setup"
+msgstr "完成设置"
+
+#: src/Admin/Wizard/Steps/Completed.php:42
+#. translators: %1: Add Document link open %2: Add Document link close %3: Document Library page link open %4: Document library page link close
+msgid ""
+"Congratulations, you have finished setting up the plugin! The next step is "
+"to start %1$sadding%2$s documents. Your documents will be listed on the "
+"%3$sdocument library page%4$s."
+msgstr "恭喜，您已完成插件设置！下一步是开始 %1$s添加%2$s 文档。您的文档将列在 %3$s文档库页面%4$s 上。"
+
+#: src/Admin/Wizard/Steps/Layout.php:32
+msgid "Layout and Content"
+msgstr "布局和内容"
+
+#: src/Admin/Wizard/Steps/Layout.php:33
+msgid "First, choose the layout for your document libraries."
+msgstr "首先，选择您的文档库的布局。"
+
+#: src/Admin/Wizard/Steps/Layout.php:34
+msgid "Layout and content"
+msgstr "布局和内容"
+
+#: src/Admin/Wizard/Steps/Links.php:32
+msgid "Links"
+msgstr "链接"
+
+#: src/Admin/Wizard/Steps/Links.php:33
+msgid "Next, decide how the links to download a document will look and behave."
+msgstr "接下来，决定下载文档的链接将如何显示和行为。"
+
+#: src/Admin/Wizard/Steps/Upsell.php:26
+msgid "More"
+msgstr "更多"
+
+#: src/Admin/Wizard/Steps/Upsell.php:30
+#. translators: %1$s: URL to All Access Pass page %2$s: URL to the KB about the upgrading process
+msgid ""
+"Enhance your website with these fantastic plugins from Barn2, or get them "
+"all by upgrading to an <a href=\"%1$s\" target=\"_blank\">All Access "
+"Pass<a/>! <a href=\"%2$s\" target=\"_blank\">(learn how here)</a>"
+msgstr ""
+"通过这些来自 Barn2 的绝妙插件增强您的网站，或者通过升级到 <a href=\"%1$s\" "
+"target=\"_blank\">全访问通行证<a/> 获取所有插件！ <a href=\"%2$s\" "
+"target=\"_blank\">(在这里了解如何)</a>"
+
+#: src/Admin/Wizard/Steps/Upsell.php:35
+msgid "Extra features"
+msgstr "额外功能"
+
+#: src/Admin/Wizard/Steps/Welcome.php:23
+msgid "Welcome"
+msgstr "欢迎"
+
+#: src/Admin/Wizard/Steps/Welcome.php:25
+msgid "Start displaying documents in no time."
+msgstr "立即开始显示文档。"
+
+#: src/Admin/Wizard/Steps/Welcome.php:36
+msgid ""
+"Use this setup wizard to quickly configure the most popular options for "
+"your document libraries. You can change these options later on the plugin "
+"settings page or by relaunching the setup wizard. You can also override "
+"these options in the shortcode for individual libraries."
+msgstr "使用此安装向导快速配置文档库最常用的选项。您可以在插件设置页面上或通过重新启动安装向导来更改这些选项。您还可以在个别库的短代码中覆盖这些选项。"
+
+#: src/Document.php:48
+msgid "Document does not exist"
+msgstr "文档不存在"
+
+#: src/Frontend_Scripts.php:69
+msgid "(_MAX_ in total)"
+msgstr "（共 _MAX_ 条）"
+
+#: src/Frontend_Scripts.php:70
+msgid "Show _MENU_ entries"
+msgstr "显示 _MENU_ 条目"
+
+#: src/Frontend_Scripts.php:71
+msgid "Search:"
+msgstr "搜索："
+
+#: src/Frontend_Scripts.php:72
+msgid "Loading..."
+msgstr "加载中..."
+
+#: src/Frontend_Scripts.php:74
+msgid "No data available in table"
+msgstr "表中没有可用数据"
+
+#: src/Frontend_Scripts.php:76
+msgid "First"
+msgstr "首页"
+
+#: src/Frontend_Scripts.php:77
+msgid "Last"
+msgstr "末页"
+
+#: src/Frontend_Scripts.php:78
+msgid "Next"
+msgstr "下一页"
+
+#: src/Frontend_Scripts.php:79
+msgid "Previous"
+msgstr "上一页"
+
+#: src/Frontend_Scripts.php:81
+msgid "Showing _START_ to _END_ of _TOTAL_ entries"
+msgstr "显示 _START_ 到 _END_ 的 _TOTAL_ 条目"
+
+#: src/Frontend_Scripts.php:82
+msgid "Showing 0 to 0 of 0 entries"
+msgstr "显示 0 到 0 的 0 条目"
+
+#: src/Frontend_Scripts.php:87
+#. translators: ARIA text for sorting column in ascending order
+msgid ": activate to sort column ascending"
+msgstr "：激活以按升序排序列"
+
+#: src/Frontend_Scripts.php:89
+#. translators: ARIA text for sorting column in descending order
+msgid ": activate to sort column descending"
+msgstr "：激活以按降序排序列"
+
+#: src/Frontend_Scripts.php:91
+msgid "No matching records found"
+msgstr "未找到匹配的记录"
+
+#: src/Frontend_Scripts.php:93
+msgid "No results found"
+msgstr "未找到结果"
+
+#: src/Frontend_Scripts.php:94
+#: src/Util/SVG_Icon.php:81
+msgid "Reset"
+msgstr "重置"
+
+#: src/Post_Type.php:48
+msgid "Documents Archives"
+msgstr "文档归档"
+
+#: src/Post_Type.php:49
+msgid "Documents Attributes"
+msgstr "文档属性"
+
+#: src/Post_Type.php:50
+msgid "Parent Documents:"
+msgstr "父文档："
+
+#: src/Post_Type.php:51
+msgid "All Documents"
+msgstr "所有文档"
+
+#: src/Post_Type.php:52
+msgid "Add New Document"
+msgstr "添加新文档"
+
+#: src/Post_Type.php:54
+msgid "New Document"
+msgstr "新文档"
+
+#: src/Post_Type.php:55
+msgid "Edit Document"
+msgstr "编辑文档"
+
+#: src/Post_Type.php:56
+msgid "Update Document"
+msgstr "更新文档"
+
+#: src/Post_Type.php:57
+msgid "View Document"
+msgstr "查看文档"
+
+#: src/Post_Type.php:58
+msgid "View Documents"
+msgstr "查看文档"
+
+#: src/Post_Type.php:59
+msgid "Search Documents"
+msgstr "搜索文档"
+
+#: src/Post_Type.php:60
+msgid "Not found"
+msgstr "未找到"
+
+#: src/Post_Type.php:61
+msgid "Not found in Trash"
+msgstr "回收站中未找到"
+
+#: src/Post_Type.php:63
+msgid "Set featured image"
+msgstr "设置特色图像"
+
+#: src/Post_Type.php:64
+msgid "Remove featured image"
+msgstr "移除特色图像"
+
+#: src/Post_Type.php:65
+msgid "Use as featured image"
+msgstr "用作特色图像"
+
+#: src/Post_Type.php:66
+msgid "Insert into Document"
+msgstr "插入到文档中"
+
+#: src/Post_Type.php:67
+msgid "Uploaded to this document"
+msgstr "已上传到此文档"
+
+#: src/Post_Type.php:68
+msgid "Document list"
+msgstr "文档列表"
+
+#: src/Post_Type.php:69
+msgid "Documents list navigation"
+msgstr "文档列表导航"
+
+#: src/Post_Type.php:70
+msgid "Filter Documents list"
+msgstr "筛选文档列表"
+
+#: src/Post_Type.php:75
+msgid "Document Library documents."
+msgstr "文档库文档。"
+
+#: src/Review_Notice.php:118
+msgid "Are you enjoying Document Library Lite?"
+msgstr "您喜欢文档库 Lite 吗？"
+
+#: src/Review_Notice.php:119
+msgid ""
+"Congratulations, you've just published your 5th document! If you have time, "
+"it would be great if you could leave us a review and let us know what you "
+"think of the plugin."
+msgstr "恭喜，您刚刚发布了第 5 个文档！如果您有时间，能否给我们留下一个评价，并告诉我们您对这个插件的看法？"
+
+#: src/Review_Notice.php:122
+msgid "Add Review"
+msgstr "添加评价"
+
+#: src/Review_Notice.php:123
+msgid "Dismiss"
+msgstr "关闭"
+
+#: src/Review_Notice.php:126
+msgid "Barn2"
+msgstr "Barn2"
+
+#: src/Taxonomies.php:38
+msgid "All Categories"
+msgstr "所有类别"
+
+#: src/Taxonomies.php:39
+msgid "Parent Category"
+msgstr "父类别"
+
+#: src/Taxonomies.php:40
+msgid "Parent Category:"
+msgstr "父类别："
+
+#: src/Taxonomies.php:41
+msgid "New Category Name"
+msgstr "新类别名称"
+
+#: src/Taxonomies.php:42
+msgid "Add New Category"
+msgstr "添加新类别"
+
+#: src/Taxonomies.php:43
+msgid "Edit Category"
+msgstr "编辑类别"
+
+#: src/Taxonomies.php:44
+msgid "Update Category"
+msgstr "更新类别"
+
+#: src/Taxonomies.php:45
+msgid "View Category"
+msgstr "查看类别"
+
+#: src/Taxonomies.php:46
+msgid "Separate categories with commas"
+msgstr "用逗号分隔类别"
+
+#: src/Taxonomies.php:47
+msgid "Add or remove categories"
+msgstr "添加或删除类别"
+
+#: src/Taxonomies.php:48
+#: src/Taxonomies.php:87
+#: src/Taxonomies.php:125
+msgid "Choose from the most used"
+msgstr "从最常用的中选择"
+
+#: src/Taxonomies.php:49
+msgid "Popular Categories"
+msgstr "热门类别"
+
+#: src/Taxonomies.php:50
+msgid "Search Categories"
+msgstr "搜索类别"
+
+#: src/Taxonomies.php:51
+#: src/Taxonomies.php:90
+#: src/Taxonomies.php:128
+msgid "Not Found"
+msgstr "未找到"
+
+#: src/Taxonomies.php:52
+msgid "No categories"
+msgstr "没有类别"
+
+#: src/Taxonomies.php:53
+msgid "Categories list"
+msgstr "类别列表"
+
+#: src/Taxonomies.php:54
+msgid "Categories list navigation"
+msgstr "类别列表导航"
+
+#: src/Taxonomies.php:76
+msgid "Document Downloads"
+msgstr "文档下载"
+
+#: src/Taxonomies.php:77
+msgid "All Items"
+msgstr "所有项目"
+
+#: src/Taxonomies.php:78
+msgid "Parent Item"
+msgstr "父项目"
+
+#: src/Taxonomies.php:79
+msgid "Parent Item:"
+msgstr "父项目："
+
+#: src/Taxonomies.php:80
+msgid "New Item Name"
+msgstr "新项目名称"
+
+#: src/Taxonomies.php:81
+msgid "Add New Item"
+msgstr "添加新项目"
+
+#: src/Taxonomies.php:82
+msgid "Edit Item"
+msgstr "编辑项目"
+
+#: src/Taxonomies.php:83
+msgid "Update Item"
+msgstr "更新项目"
+
+#: src/Taxonomies.php:84
+msgid "View Item"
+msgstr "查看项目"
+
+#: src/Taxonomies.php:85
+msgid "Separate items with commas"
+msgstr "使用逗号分隔项目"
+
+#: src/Taxonomies.php:86
+msgid "Add or remove items"
+msgstr "添加或删除项目"
+
+#: src/Taxonomies.php:88
+msgid "Popular Items"
+msgstr "热门项目"
+
+#: src/Taxonomies.php:89
+msgid "Search Items"
+msgstr "搜索项目"
+
+#: src/Taxonomies.php:91
+msgid "No items"
+msgstr "没有项目"
+
+#: src/Taxonomies.php:92
+msgid "Items list"
+msgstr "项目列表"
+
+#: src/Taxonomies.php:93
+msgid "Items list navigation"
+msgstr "项目列表导航"
+
+#: src/Taxonomies.php:114
+msgid "File Types"
+msgstr "文件类型"
+
+#: src/Taxonomies.php:115
+msgid "All File Types"
+msgstr "所有文件类型"
+
+#: src/Taxonomies.php:116
+msgid "Parent File Type"
+msgstr "父文件类型"
+
+#: src/Taxonomies.php:117
+msgid "Parent File Type:"
+msgstr "父文件类型："
+
+#: src/Taxonomies.php:118
+msgid "New File Type Name"
+msgstr "新文件类型名称"
+
+#: src/Taxonomies.php:119
+msgid "Add New File Type"
+msgstr "添加新文件类型"
+
+#: src/Taxonomies.php:120
+msgid "Edit File Type"
+msgstr "编辑文件类型"
+
+#: src/Taxonomies.php:121
+msgid "Update File Type"
+msgstr "更新文件类型"
+
+#: src/Taxonomies.php:122
+msgid "View File Type"
+msgstr "查看文件类型"
+
+#: src/Taxonomies.php:123
+msgid "Separate file types with commas"
+msgstr "用逗号分隔文件类型"
+
+#: src/Taxonomies.php:124
+msgid "Add or remove file types"
+msgstr "添加或删除文件类型"
+
+#: src/Taxonomies.php:126
+msgid "Popular File Types"
+msgstr "热门文件类型"
+
+#: src/Taxonomies.php:127
+msgid "Search File Types"
+msgstr "搜索文件类型"
+
+#: src/Taxonomies.php:129
+msgid "No file types"
+msgstr "没有文件类型"
+
+#: src/Taxonomies.php:130
+msgid "File types list"
+msgstr "文件类型列表"
+
+#: src/Taxonomies.php:131
+msgid "File types list navigation"
+msgstr "文件类型列表导航"
+
+#: src/Util/Options.php:112
+#: src/Util/SVG_Icon.php:78
+msgid "Download"
+msgstr "下载"
+
+#: src/Util/Options.php:234
+msgid "Image"
+msgstr "图像"
+
+#: src/Util/Options.php:252
+msgid "Date"
+msgstr "日期"
+
+#: src/Util/Options.php:264
+#: src/Util/SVG_Icon.php:77
+msgid "Link"
+msgstr "链接"
+
+#: src/Util/SVG_Icon.php:80
+msgid "Close"
+msgstr "关闭"
+
+#: templates/photoswipe.php:45
+msgid "Close (Esc)"
+msgstr "关闭 (Esc)"
+
+#: templates/photoswipe.php:47
+msgid "Share"
+msgstr "分享"
+
+#: templates/photoswipe.php:49
+msgid "Toggle fullscreen"
+msgstr "切换全屏"
+
+#: templates/photoswipe.php:51
+msgid "Zoom in/out"
+msgstr "放大/缩小"
+
+#: templates/photoswipe.php:68
+msgid "Previous (arrow left)"
+msgstr "上一个 (左箭头)"
+
+#: templates/photoswipe.php:70
+msgid "Next (arrow right)"
+msgstr "下一个 (右箭头)"
+
+#: src/Frontend_Scripts.php:83
+msgctxt "thousands separator"
+msgid ","
+msgstr ","
+
+#: src/Frontend_Scripts.php:84
+msgctxt "decimal mark"
+msgid "."
+msgstr "."
+
+#: src/Plugin_Setup.php:107
+msgctxt "Page slug"
+msgid "document-library"
+msgstr "文档库"
+
+#: src/Plugin_Setup.php:108
+msgctxt "Page title"
+msgid "Document Library"
+msgstr "文档库"
+
+#: src/Post_Type.php:44
+msgctxt "Post Type General Name"
+msgid "Documents"
+msgstr "文档"
+
+#: src/Post_Type.php:45
+msgctxt "Post Type Singular Name"
+msgid "Document"
+msgstr "文档"
+
+#: src/Post_Type.php:46
+msgctxt "Admin Menu text"
+msgid "Documents"
+msgstr "文档"
+
+#: src/Post_Type.php:47
+msgctxt "Add New on Toolbar"
+msgid "Documents"
+msgstr "文档"
+
+#: src/Taxonomies.php:35
+msgctxt "Taxonomy General Name"
+msgid "Document Categories"
+msgstr "文档类别"
+
+#: src/Taxonomies.php:74
+msgctxt "Taxonomy General Name"
+msgid "Document Download"
+msgstr "文档下载"
+
+#: src/Taxonomies.php:112
+msgctxt "Taxonomy General Name"
+msgid "File Types"
+msgstr "文件类型"
+
+#: src/Taxonomies.php:36
+msgctxt "Taxonomy Singular Name"
+msgid "Document Category"
+msgstr "文档类别"
+
+#: src/Taxonomies.php:75
+msgctxt "Taxonomy Singular Name"
+msgid "Document Download"
+msgstr "文档下载"
+
+#: src/Taxonomies.php:113
+msgctxt "Taxonomy Singular Name"
+msgid "File Type"
+msgstr "文件类型"

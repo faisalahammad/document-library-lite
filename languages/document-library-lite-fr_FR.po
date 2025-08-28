@@ -1,0 +1,1466 @@
+# Copyright (C) 2025 Barn2 Plugins
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Document Library Lite - Manage & Display Downloads "
+"1.1.3\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/document-library-lite\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-04-20T12:36:23+00:00\n"
+"PO-Revision-Date: 2025-08-28 15:53+0000\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: document-library-lite\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr-FR\n"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Plugin Name of the plugin
+msgid "Document Library Lite - Manage & Display Downloads"
+msgstr "Bibliothèque de documents Lite - Gérer & Afficher les téléchargements"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/document-library-lite/"
+msgstr "https://wordpress.org/plugins/document-library-lite/"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Description of the plugin
+msgid "Add documents and display them in a searchable document library."
+msgstr ""
+"Ajoutez des documents et affichez-les dans une bibliothèque de documents "
+"consultable."
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Author of the plugin
+msgid "Barn2 Plugins"
+msgstr "Barn2 Plugins"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Author URI of the plugin
+msgid "https://barn2.com"
+msgstr "https://barn2.com"
+
+#: src/Admin/Admin_Controller.php:70
+#: src/Admin/Page/Settings.php:89
+msgid "Settings"
+msgstr "Paramètres"
+
+#: src/Admin/Admin_Controller.php:88
+msgid "Pro Version"
+msgstr "Version Pro"
+
+#: src/Admin/Admin_Controller.php:123
+msgid "Select File"
+msgstr "Sélectionner un fichier"
+
+#: src/Admin/Admin_Controller.php:124
+#: src/Admin/Metabox/Document_Link.php:59
+msgid "Add File"
+msgstr "Ajouter un fichier"
+
+#: src/Admin/Admin_Controller.php:125
+#: src/Admin/Metabox/Document_Link.php:59
+msgid "Replace File"
+msgstr "Remplacer le fichier"
+
+#: src/Admin/Media_Library.php:41
+msgid "All types"
+msgstr "Tous les types"
+
+#: src/Admin/Media_Library.php:42
+#: src/Admin/Menu.php:36
+#: src/Admin/Menu.php:37
+#: src/Post_Type.php:74
+msgid "Documents"
+msgstr "Documents"
+
+#: src/Admin/Menu.php:48
+#: src/Admin/Menu.php:49
+#: src/Post_Type.php:53
+msgid "Add New"
+msgstr "Ajouter nouveau"
+
+#: src/Admin/Menu.php:59
+#: src/Admin/Menu.php:60
+#: src/Taxonomies.php:37
+#: src/Util/Options.php:246
+msgid "Categories"
+msgstr "Catégories"
+
+#: src/Admin/Metabox/Document_Link.php:43
+msgid "Document Link"
+msgstr "Lien du document"
+
+#: src/Admin/Metabox/Document_Link.php:64
+msgid "Upload a file or select one from the media library:"
+msgstr ""
+"Téléchargez un fichier ou sélectionnez-en un dans la bibliothèque "
+"multimédia :"
+
+#: src/Admin/Metabox/Document_Link.php:68
+msgid "None"
+msgstr "Aucun"
+
+#: src/Admin/Metabox/Document_Link.php:69
+msgid "File Upload"
+msgstr "Téléversement de fichier"
+
+#: src/Admin/Metabox/Document_Link.php:81
+#. translators: %s: File name
+msgid "Remove file: %s"
+msgstr "Supprimer le fichier : %s"
+
+#: src/Admin/Page/Import.php:51
+msgid "Document Library Importing"
+msgstr "Importation de la bibliothèque de documents"
+
+#: src/Admin/Page/Import.php:52
+msgid "Import"
+msgstr "Importer"
+
+#: src/Admin/Page/Import.php:66
+msgid "Import documents"
+msgstr "Importer des documents"
+
+#: src/Admin/Page/Import.php:72
+#. translators: %1: Document Library Pro link start, %2: Document Library Pro link end
+msgid ""
+"Lots of documents? Upgrade to %1$sDocument Library Pro%2$s to add documents "
+"in bulk - either by using drag-and-drop to upload documents directly to "
+"WordPress, or by importing documents from a CSV file. It’s a fantastic "
+"time-saver for adding multiple documents at once."
+msgstr ""
+"Vous avez beaucoup de documents ? Passez à %1$sDocument Library Pro%2$s "
+"pour ajouter des documents en masse - soit en faisant glisser et déposer "
+"pour télécharger des documents directement sur WordPress, soit en important "
+"des documents à partir d'un fichier CSV. C'est un gain de temps fantastique "
+"pour ajouter plusieurs documents à la fois."
+
+#: src/Admin/Page/Protect.php:48
+#: src/Admin/Page/Protect.php:49
+msgid "Protect"
+msgstr "Protéger"
+
+#: src/Admin/Page/Settings.php:88
+#: src/Admin/Page/Settings.php:110
+msgid "Document Library Lite Settings"
+msgstr "Paramètres de Document Library Lite"
+
+#: src/Admin/Page/Settings.php:134
+msgid "Save Changes"
+msgstr "Enregistrer les modifications"
+
+#: src/Admin/Page_List.php:42
+msgid "Document Library Page"
+msgstr "Page de la bibliothèque de documents"
+
+#: src/Admin/Settings_Tab/Document_Grid.php:35
+msgid "Document Grid"
+msgstr "Grille de documents"
+
+#: src/Admin/Settings_Tab/Document_Grid.php:68
+#. translators: %1: Document Library Pro link start, %2: Document Library Pro link end
+msgid ""
+"Upgrade to %1$sDocument Library Pro%2$s to display documents in a beautiful "
+"grid layout:"
+msgstr ""
+"Passez à %1$sDocument Library Pro%2$s pour afficher les documents dans un "
+"beau format de grille :"
+
+#: src/Admin/Settings_Tab/Document_Table.php:36
+msgid "Document Tables"
+msgstr "Tableaux de documents"
+
+#: src/Admin/Settings_Tab/Document_Table.php:55
+#: src/Admin/Settings_Tab/General.php:70
+msgid "Library content"
+msgstr "Contenu de la bibliothèque"
+
+#: src/Admin/Settings_Tab/Document_Table.php:58
+#: src/Admin/Settings_Tab/General.php:64
+#: src/Admin/Wizard/Steps/Links.php:34
+msgid "Document links"
+msgstr "Liens de documents"
+
+#: src/Admin/Settings_Tab/Document_Table.php:61
+msgid "Loading & performance"
+msgstr "Chargement & performance"
+
+#: src/Admin/Settings_Tab/Document_Table.php:64
+#: src/Admin/Settings_Tab/General.php:73
+msgid "Document library controls"
+msgstr "Contrôles de la bibliothèque de documents"
+
+#: src/Admin/Settings_Tab/Document_Table.php:67
+#: src/Admin/Settings_Tab/Document_Table.php:253
+msgid "Design"
+msgstr "Design"
+
+#: src/Admin/Settings_Tab/Document_Table.php:80
+#: src/Admin/Wizard/Steps/Layout.php:46
+msgid "Columns"
+msgstr "Colonnes"
+
+#: src/Admin/Settings_Tab/Document_Table.php:82
+#: src/Admin/Wizard/Steps/Layout.php:47
+msgid "Enter the fields to include in your document tables."
+msgstr "Entrez les champs à inclure dans vos tableaux de documents."
+
+#: src/Admin/Settings_Tab/Document_Table.php:87
+msgid "Image size"
+msgstr "Taille de l'image"
+
+#: src/Admin/Settings_Tab/Document_Table.php:89
+msgid "Enter WxH in pixels (e.g. 80x80)."
+msgstr "Entrez WxH en pixels (par exemple, 80x80)."
+
+#: src/Admin/Settings_Tab/Document_Table.php:105
+msgid "Accessing documents"
+msgstr "Accéder aux documents"
+
+#: src/Admin/Settings_Tab/Document_Table.php:108
+msgid "How a user accesses documents from the ‘link’ column."
+msgstr "Comment un utilisateur accède aux documents depuis la colonne ‘lien’."
+
+#: src/Admin/Settings_Tab/Document_Table.php:110
+#: src/Admin/Settings_Tab/General.php:198
+msgid "Link to document"
+msgstr "Lien vers le document"
+
+#: src/Admin/Settings_Tab/Document_Table.php:111
+msgid "Multi-select checkboxes"
+msgstr "Cases à cocher multi-sélection"
+
+#: src/Admin/Settings_Tab/Document_Table.php:112
+#: src/Admin/Settings_Tab/Document_Table.php:124
+msgid "Both"
+msgstr "Les deux"
+
+#: src/Admin/Settings_Tab/Document_Table.php:117
+msgid "Multi-download button"
+msgstr "Bouton de téléchargement multiple"
+
+#: src/Admin/Settings_Tab/Document_Table.php:120
+msgid "The position of the button to download all selected documents."
+msgstr "La position du bouton pour télécharger tous les documents sélectionnés."
+
+#: src/Admin/Settings_Tab/Document_Table.php:122
+msgid "Below document library"
+msgstr "Sous la bibliothèque de documents"
+
+#: src/Admin/Settings_Tab/Document_Table.php:123
+msgid "Above document library"
+msgstr "Au-dessus de la bibliothèque de documents"
+
+#: src/Admin/Settings_Tab/Document_Table.php:129
+msgid "Multi-download button text"
+msgstr "Texte du bouton de téléchargement multiple"
+
+#: src/Admin/Settings_Tab/Document_Table.php:132
+msgid "The text for the button to download all selected documents."
+msgstr "Le texte pour le bouton de télécharger tous les documents sélectionnés."
+
+#: src/Admin/Settings_Tab/Document_Table.php:133
+msgid "Download Selected Documents"
+msgstr "Télécharger les documents sélectionnés"
+
+#: src/Admin/Settings_Tab/Document_Table.php:148
+#: src/Admin/Wizard/Steps/Behavior.php:126
+msgid "Lazy load"
+msgstr "Chargement paresseux"
+
+#: src/Admin/Settings_Tab/Document_Table.php:151
+#: src/Admin/Wizard/Steps/Behavior.php:128
+msgid "Load the document table one page at a time"
+msgstr "Charger le tableau de documents une page à la fois"
+
+#: src/Admin/Settings_Tab/Document_Table.php:152
+msgid "Enable this if you have many documents or experience slow page load times."
+msgstr ""
+"Activez cela si vous avez de nombreux documents ou si vous rencontrez des "
+"temps de chargement de page lents."
+
+#: src/Admin/Settings_Tab/Document_Table.php:153
+msgid ""
+"Warning: Lazy load limits the searching and sorting features in the "
+"document library. Only use it if you definitely need it."
+msgstr ""
+"Avertissement : Le chargement paresseux limite les fonctionnalités de "
+"recherche et de tri dans la bibliothèque de documents. Utilisez-le "
+"uniquement si vous en avez vraiment besoin."
+
+#: src/Admin/Settings_Tab/Document_Table.php:174
+msgid "Caching"
+msgstr "Mise en cache"
+
+#: src/Admin/Settings_Tab/Document_Table.php:177
+msgid "Cache document libraries to improve load time"
+msgstr ""
+"Mettre en cache les bibliothèques de documents pour améliorer le temps de "
+"chargement"
+
+#: src/Admin/Settings_Tab/Document_Table.php:185
+msgid "Cache expires after"
+msgstr "La mise en cache expire après"
+
+#: src/Admin/Settings_Tab/Document_Table.php:188
+msgid "hours"
+msgstr "heures"
+
+#: src/Admin/Settings_Tab/Document_Table.php:189
+msgid "Your table data will be refreshed after this length of time."
+msgstr "Vos données de tableau seront actualisées après cette durée."
+
+#: src/Admin/Settings_Tab/Document_Table.php:210
+#: src/Admin/Wizard/Steps/Behavior.php:113
+msgid "Search filters"
+msgstr "Filtres de recherche"
+
+#: src/Admin/Settings_Tab/Document_Table.php:214
+#: src/Admin/Wizard/Steps/Behavior.php:119
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: src/Admin/Settings_Tab/Document_Table.php:215
+msgid "Show based on columns in table"
+msgstr "Afficher en fonction des colonnes dans le tableau"
+
+#: src/Admin/Settings_Tab/Document_Table.php:216
+#: src/Admin/Settings_Tab/Document_Table.php:257
+msgid "Custom"
+msgstr "Personnalisé"
+
+#: src/Admin/Settings_Tab/Document_Table.php:218
+msgid ""
+"Show dropdown menus to filter by doc_categories, doc_tags, or custom "
+"taxonomy."
+msgstr ""
+"Afficher des menus déroulants pour filtrer par doc_categories, doc_tags ou "
+"taxonomie personnalisée."
+
+#: src/Admin/Settings_Tab/Document_Table.php:227
+msgid "Page length"
+msgstr "Longueur de page"
+
+#: src/Admin/Settings_Tab/Document_Table.php:231
+#: src/Admin/Settings_Tab/General.php:361
+#: src/Admin/Settings_Tab/General.php:415
+#: src/Admin/Settings_Tab/General.php:428
+msgid "Above library"
+msgstr "Au-dessus de la bibliothèque"
+
+#: src/Admin/Settings_Tab/Document_Table.php:232
+#: src/Admin/Settings_Tab/General.php:362
+#: src/Admin/Settings_Tab/General.php:416
+#: src/Admin/Settings_Tab/General.php:429
+msgid "Below library"
+msgstr "En dessous de la bibliothèque"
+
+#: src/Admin/Settings_Tab/Document_Table.php:233
+#: src/Admin/Settings_Tab/General.php:363
+#: src/Admin/Settings_Tab/General.php:417
+#: src/Admin/Settings_Tab/General.php:430
+msgid "Above and below library"
+msgstr "Au-dessus et en dessous de la bibliothèque"
+
+#: src/Admin/Settings_Tab/Document_Table.php:234
+#: src/Admin/Settings_Tab/General.php:364
+#: src/Admin/Settings_Tab/General.php:418
+#: src/Admin/Settings_Tab/General.php:431
+msgid "Hidden"
+msgstr "Caché"
+
+#: src/Admin/Settings_Tab/Document_Table.php:236
+msgid "The position of the 'Show [x] entries' dropdown list."
+msgstr "La position de la liste déroulante 'Afficher [x] entrées'."
+
+#: src/Admin/Settings_Tab/Document_Table.php:256
+msgid "Default"
+msgstr "Par défaut"
+
+#: src/Admin/Settings_Tab/Document_Table.php:275
+msgid "Customize the design of the document tables."
+msgstr "Personnalisez le design des tableaux de documents."
+
+#: src/Admin/Settings_Tab/Document_Table.php:286
+#. translators: %1: knowledge base link start, %2: knowledge base link end
+msgid ""
+"The following options are used when documents are listed in a table layout. "
+"You can override them in the [doc_library] shortcode. See the %1$sknowledge "
+"base%2$s for details of how to configure your document tables even further."
+msgstr ""
+"Les options suivantes sont utilisées lorsque les documents sont listés dans "
+"un format de tableau. Vous pouvez les remplacer dans le shortcode "
+"[doc_library]. Consultez la %1$sbase de connaissances%2$s pour plus de "
+"détails sur la façon de configurer encore plus vos tableaux de documents."
+
+#: src/Admin/Settings_Tab/General.php:37
+msgid "General"
+msgstr "Général"
+
+#: src/Admin/Settings_Tab/General.php:58
+msgid "Document data"
+msgstr "Données du document"
+
+#: src/Admin/Settings_Tab/General.php:61
+msgid "Document lists"
+msgstr "Listes de documents"
+
+#: src/Admin/Settings_Tab/General.php:67
+#: src/Admin/Settings_Tab/General.php:265
+#: src/Admin/Wizard/Steps/Links.php:83
+msgid "Document preview"
+msgstr "Aperçu du document"
+
+#: src/Admin/Settings_Tab/General.php:76
+msgid "Number of documents"
+msgstr "Nombre de documents"
+
+#: src/Admin/Settings_Tab/General.php:79
+msgid "Sorting"
+msgstr "Tri"
+
+#: src/Admin/Settings_Tab/General.php:88
+msgid ""
+"Use the following options to manage the fields that are used to store "
+"information about your documents."
+msgstr ""
+"Utilisez les options suivantes pour gérer les champs utilisés pour stocker "
+"des informations sur vos documents."
+
+#: src/Admin/Settings_Tab/General.php:100
+#. translators: %1: knowledge base link start, %2: knowledge base link end
+msgid ""
+"These options set defaults for all your document libraries and are used for "
+"the table layout. You can override them in the shortcode for individual "
+"libraries. %1$sRead more%2$s."
+msgstr ""
+"Ces options définissent des valeurs par défaut pour toutes vos "
+"bibliothèques de documents et sont utilisées pour la mise en page du "
+"tableau. Vous pouvez les remplacer dans le shortcode pour des bibliothèques "
+"individuelles. %1$sEn savoir plus%2$s."
+
+#: src/Admin/Settings_Tab/General.php:128
+msgid "Document fields"
+msgstr "Champs de document"
+
+#: src/Admin/Settings_Tab/General.php:129
+#: src/Util/Options.php:150
+msgid "Pro version only"
+msgstr "Version Pro uniquement"
+
+#: src/Admin/Settings_Tab/General.php:132
+#: src/Util/Options.php:258
+msgid "Content"
+msgstr "Contenu"
+
+#: src/Admin/Settings_Tab/General.php:133
+msgid "Excerpt"
+msgstr "Extrait"
+
+#: src/Admin/Settings_Tab/General.php:134
+#: src/Post_Type.php:62
+msgid "Featured Image"
+msgstr "Image mise en avant"
+
+#: src/Admin/Settings_Tab/General.php:135
+msgid "Comments"
+msgstr "Commentaires"
+
+#: src/Admin/Settings_Tab/General.php:161
+msgid "Document library page"
+msgstr "Page de la bibliothèque de documents"
+
+#: src/Admin/Settings_Tab/General.php:163
+msgid "The page to display your documents."
+msgstr "La page pour afficher vos documents."
+
+#: src/Admin/Settings_Tab/General.php:164
+msgid ""
+"You can also use the [doc_library] shortcode to list documents on other "
+"pages."
+msgstr ""
+"Vous pouvez également utiliser le shortcode [doc_library] pour lister des "
+"documents sur d'autres pages."
+
+#: src/Admin/Settings_Tab/General.php:170
+#: src/Admin/Wizard/Steps/Layout.php:52
+msgid "Default layout"
+msgstr "Mise en page par défaut"
+
+#: src/Admin/Settings_Tab/General.php:173
+#: src/Admin/Wizard/Steps/Layout.php:57
+msgid "Table"
+msgstr "Tableau"
+
+#: src/Admin/Settings_Tab/General.php:174
+#: src/Admin/Wizard/Steps/Layout.php:61
+msgid "Grid"
+msgstr "Grille"
+
+#: src/Admin/Settings_Tab/General.php:179
+#: src/Admin/Wizard/Steps/Layout.php:68
+msgid "Folders"
+msgstr "Dossiers"
+
+#: src/Admin/Settings_Tab/General.php:182
+#: src/Admin/Wizard/Steps/Layout.php:69
+msgid "Display the document library in folders"
+msgstr "Afficher la bibliothèque de documents dans des dossiers"
+
+#: src/Admin/Settings_Tab/General.php:201
+msgid "Include a link to the document."
+msgstr "Inclure un lien vers le document."
+
+#: src/Admin/Settings_Tab/General.php:202
+msgid "Use the 'Link destination' option below to control the link behavior."
+msgstr ""
+"Utilisez l'option 'Destination du lien' ci-dessous pour contrôler le "
+"comportement du lien."
+
+#: src/Admin/Settings_Tab/General.php:206
+#: src/Admin/Wizard/Steps/Links.php:52
+msgid "Link style"
+msgstr "Style de lien"
+
+#: src/Admin/Settings_Tab/General.php:209
+msgid "Control the appearance of the link to the document."
+msgstr "Contrôlez l'apparence du lien vers le document."
+
+#: src/Admin/Settings_Tab/General.php:211
+#: src/Admin/Settings_Tab/General.php:278
+#: src/Admin/Wizard/Steps/Links.php:57
+msgid "Button with text"
+msgstr "Bouton avec texte"
+
+#: src/Admin/Settings_Tab/General.php:212
+#: src/Admin/Settings_Tab/General.php:279
+#: src/Admin/Wizard/Steps/Links.php:61
+msgid "Button with icon and text"
+msgstr "Bouton avec icône et texte"
+
+#: src/Admin/Settings_Tab/General.php:213
+#: src/Admin/Settings_Tab/General.php:280
+#: src/Admin/Wizard/Steps/Links.php:65
+msgid "Button with icon"
+msgstr "Bouton avec icône"
+
+#: src/Admin/Settings_Tab/General.php:214
+#: src/Admin/Wizard/Steps/Links.php:69
+msgid "Download icon only"
+msgstr "Télécharger uniquement l'icône"
+
+#: src/Admin/Settings_Tab/General.php:215
+#: src/Admin/Wizard/Steps/Links.php:73
+msgid "File type icon"
+msgstr "Icône de type de fichier"
+
+#: src/Admin/Settings_Tab/General.php:216
+#: src/Admin/Settings_Tab/General.php:282
+#: src/Admin/Wizard/Steps/Links.php:77
+msgid "Text link"
+msgstr "Lien texte"
+
+#: src/Admin/Settings_Tab/General.php:222
+#: src/Admin/Wizard/Steps/Links.php:46
+msgid "Link text"
+msgstr "Texte du lien"
+
+#: src/Admin/Settings_Tab/General.php:224
+#: src/Admin/Wizard/Steps/Behavior.php:54
+#: src/Admin/Wizard/Steps/Links.php:48
+msgid "The text displayed on the button or link."
+msgstr "Le texte affiché sur le bouton ou le lien."
+
+#: src/Admin/Settings_Tab/General.php:228
+msgid "Link destination"
+msgstr "Destination du lien"
+
+#: src/Admin/Settings_Tab/General.php:231
+msgid "What happens when someone clicks on a link to a document."
+msgstr "Ce qui se passe lorsque quelqu'un clique sur un lien vers un document."
+
+#: src/Admin/Settings_Tab/General.php:233
+msgid "Direct access"
+msgstr "Accès direct"
+
+#: src/Admin/Settings_Tab/General.php:234
+msgid "Open single document page"
+msgstr "Ouvrir une page de document unique"
+
+#: src/Admin/Settings_Tab/General.php:239
+msgid "Link target"
+msgstr "Cible du lien"
+
+#: src/Admin/Settings_Tab/General.php:242
+msgid "Open links in a new tab"
+msgstr "Ouvrir les liens dans un nouvel onglet"
+
+#: src/Admin/Settings_Tab/General.php:247
+msgid "Clickable fields"
+msgstr "Champs cliquables"
+
+#: src/Admin/Settings_Tab/General.php:249
+msgid "Control which fields are clickable, in addition to the 'link' field."
+msgstr "Contrôlez quels champs sont cliquables, en plus du champ 'lien'."
+
+#: src/Admin/Settings_Tab/General.php:268
+#: src/Admin/Wizard/Steps/Links.php:84
+msgid "Allow users to preview documents in a lightbox"
+msgstr "Permettre aux utilisateurs de prévisualiser des documents dans une lightbox"
+
+#: src/Admin/Settings_Tab/General.php:269
+msgid "The preview option will appear for supported file types only."
+msgstr ""
+"L'option de prévisualisation apparaîtra uniquement pour les types de "
+"fichiers pris en charge."
+
+#: src/Admin/Settings_Tab/General.php:273
+msgid "Preview style"
+msgstr "Style de prévisualisation"
+
+#: src/Admin/Settings_Tab/General.php:276
+msgid "Control the appearance of the preview option."
+msgstr "Contrôlez l'apparence de l'option de prévisualisation."
+
+#: src/Admin/Settings_Tab/General.php:281
+msgid "Icon only"
+msgstr "Icône seulement"
+
+#: src/Admin/Settings_Tab/General.php:287
+msgid "Preview text"
+msgstr "Texte de prévisualisation"
+
+#: src/Admin/Settings_Tab/General.php:290
+msgid "The text displayed on the preview button or link."
+msgstr "Le texte affiché sur le bouton ou le lien de prévisualisation."
+
+#: src/Admin/Settings_Tab/General.php:291
+#: src/Util/SVG_Icon.php:79
+msgid "Preview"
+msgstr "Prévisualiser"
+
+#: src/Admin/Settings_Tab/General.php:307
+#: src/Admin/Wizard/Steps/Behavior.php:46
+msgid "Image lightbox"
+msgstr "Lightbox d'image"
+
+#: src/Admin/Settings_Tab/General.php:309
+#: src/Admin/Wizard/Steps/Behavior.php:47
+msgid "Display images in a lightbox when opened"
+msgstr "Afficher les images dans une lightbox lorsqu'elles sont ouvertes"
+
+#: src/Admin/Settings_Tab/General.php:313
+msgid "Shortcodes"
+msgstr "Shortcodes"
+
+#: src/Admin/Settings_Tab/General.php:316
+msgid ""
+"Display shortcodes, HTML and other formatting in the document content, "
+"excerpt and custom field columns"
+msgstr ""
+"Afficher les shortcodes, HTML et autres formats dans le contenu du "
+"document, l'extrait et les colonnes de champ personnalisé"
+
+#: src/Admin/Settings_Tab/General.php:321
+msgid "Excerpt length"
+msgstr "Longueur de l'extrait"
+
+#: src/Admin/Settings_Tab/General.php:324
+#: src/Admin/Settings_Tab/General.php:336
+msgid "words"
+msgstr "mots"
+
+#: src/Admin/Settings_Tab/General.php:325
+msgid "Enter -1 to show the full excerpt."
+msgstr "Entrez -1 pour afficher l'extrait complet."
+
+#: src/Admin/Settings_Tab/General.php:333
+msgid "Content length"
+msgstr "Longueur du contenu"
+
+#: src/Admin/Settings_Tab/General.php:337
+msgid "Enter -1 to show the full content."
+msgstr "Entrez -1 pour afficher le contenu complet."
+
+#: src/Admin/Settings_Tab/General.php:356
+msgid "Search box"
+msgstr "Boîte de recherche"
+
+#: src/Admin/Settings_Tab/General.php:359
+msgid ""
+"The position of the search box above the list of documents. You can also "
+"add a search box using a shortcode or widget."
+msgstr ""
+"La position de la boîte de recherche au-dessus de la liste des documents. "
+"Vous pouvez également ajouter une boîte de recherche en utilisant un "
+"shortcode ou un widget."
+
+#: src/Admin/Settings_Tab/General.php:369
+msgid "Reset button"
+msgstr "Bouton de réinitialisation"
+
+#: src/Admin/Settings_Tab/General.php:372
+msgid "Show the reset button above the library"
+msgstr "Afficher le bouton de réinitialisation au-dessus de la bibliothèque"
+
+#: src/Admin/Settings_Tab/General.php:388
+#: src/Admin/Wizard/Steps/Behavior.php:52
+msgid "Documents per page"
+msgstr "Documents par page"
+
+#: src/Admin/Settings_Tab/General.php:391
+msgid ""
+"The number of documents per page of the document library. Enter -1 to "
+"display all documents on one page."
+msgstr ""
+"Le nombre de documents par page de la bibliothèque de documents. Entrez -1 "
+"pour afficher tous les documents sur une seule page."
+
+#: src/Admin/Settings_Tab/General.php:398
+msgid "Pagination type"
+msgstr "Type de pagination"
+
+#: src/Admin/Settings_Tab/General.php:402
+msgid "Numbers only"
+msgstr "Chiffres uniquement"
+
+#: src/Admin/Settings_Tab/General.php:403
+msgid "Prev|Next"
+msgstr "Précédent|Suivant"
+
+#: src/Admin/Settings_Tab/General.php:404
+msgid "Prev|Next + Numbers"
+msgstr "Précédent|Suivant + Chiffres"
+
+#: src/Admin/Settings_Tab/General.php:405
+msgid "Prev|Next|First|Last"
+msgstr "Précédent|Suivant|Premier|Dernier"
+
+#: src/Admin/Settings_Tab/General.php:406
+msgid "Prev|Next|First|Last + Numbers"
+msgstr "Précédent|Suivant|Premier|Dernier + Chiffres"
+
+#: src/Admin/Settings_Tab/General.php:411
+msgid "Pagination position"
+msgstr "Position de pagination"
+
+#: src/Admin/Settings_Tab/General.php:420
+msgid "The position of the paging buttons which scroll between results."
+msgstr "La position des boutons de pagination qui défilent entre les résultats."
+
+#: src/Admin/Settings_Tab/General.php:424
+msgid "Totals"
+msgstr "Totaux"
+
+#: src/Admin/Settings_Tab/General.php:433
+msgid "The position of the document total, e.g. '25 documents'."
+msgstr "La position du total de documents, par ex. '25 documents'."
+
+#: src/Admin/Settings_Tab/General.php:449
+#: src/Admin/Wizard/Steps/Behavior.php:58
+msgid "Sort by"
+msgstr "Trier par"
+
+#: src/Admin/Settings_Tab/General.php:453
+#: src/Admin/Wizard/Steps/Behavior.php:64
+#: src/Util/Options.php:240
+msgid "Title"
+msgstr "Titre"
+
+#: src/Admin/Settings_Tab/General.php:454
+#: src/Admin/Wizard/Steps/Behavior.php:68
+#: src/Util/Options.php:228
+msgid "ID"
+msgstr "ID"
+
+#: src/Admin/Settings_Tab/General.php:455
+#: src/Admin/Wizard/Steps/Behavior.php:72
+msgid "Date published"
+msgstr "Date de publication"
+
+#: src/Admin/Settings_Tab/General.php:456
+#: src/Admin/Wizard/Steps/Behavior.php:76
+msgid "Date modified"
+msgstr "Date modifiée"
+
+#: src/Admin/Settings_Tab/General.php:457
+#: src/Admin/Wizard/Steps/Behavior.php:80
+msgid "Page order (menu order)"
+msgstr "Ordre des pages (ordre du menu)"
+
+#: src/Admin/Settings_Tab/General.php:458
+#: src/Admin/Wizard/Steps/Behavior.php:84
+msgid "Author"
+msgstr "Auteur"
+
+#: src/Admin/Settings_Tab/General.php:459
+#: src/Admin/Wizard/Steps/Behavior.php:88
+msgid "Random"
+msgstr "Aléatoire"
+
+#: src/Admin/Settings_Tab/General.php:461
+#: src/Admin/Wizard/Steps/Behavior.php:60
+msgid "The initial sort order of the document library."
+msgstr "L'ordre de tri initial de la bibliothèque de documents."
+
+#: src/Admin/Settings_Tab/General.php:465
+#: src/Admin/Wizard/Steps/Behavior.php:94
+msgid "Sort direction"
+msgstr "Direction de tri"
+
+#: src/Admin/Settings_Tab/General.php:469
+#: src/Admin/Wizard/Steps/Behavior.php:99
+msgid "Automatic"
+msgstr "Automatique"
+
+#: src/Admin/Settings_Tab/General.php:470
+#: src/Admin/Wizard/Steps/Behavior.php:103
+msgid "Ascending (A to Z, oldest to newest)"
+msgstr "Ascendant (A à Z, du plus ancien au plus récent)"
+
+#: src/Admin/Settings_Tab/General.php:471
+#: src/Admin/Wizard/Steps/Behavior.php:107
+msgid "Descending (Z to A, newest to oldest)"
+msgstr "Descendant (Z à A, du plus récent au plus ancien)"
+
+#: src/Admin/Settings_Tab/Single_Document.php:35
+msgid "Single Document"
+msgstr "Document unique"
+
+#: src/Admin/Settings_Tab/Single_Document.php:65
+#. translators: %1: Document Library Pro link start, %2: Document Library Pro link end
+msgid ""
+"Upgrade to %1$sDocument Library Pro%2$s to have a separate page for each "
+"document. You can use this instead - or in addition to - the download links "
+"on the main document library page. It’s ideal for providing more "
+"information about each document, or even embedding documents directly onto "
+"the page:"
+msgstr ""
+"Mettez à niveau vers %1$sDocument Library Pro%2$s pour avoir une page "
+"séparée pour chaque document. Vous pouvez utiliser ceci à la place - ou en "
+"plus - des liens de téléchargement sur la page principale de la "
+"bibliothèque de documents. C'est idéal pour fournir plus d'informations sur "
+"chaque document, ou même intégrer des documents directement sur la page :"
+
+#: src/Admin/Wizard/Steps/Behavior.php:33
+msgid "Behavior"
+msgstr "Comportement"
+
+#: src/Admin/Wizard/Steps/Behavior.php:34
+msgid ""
+"Finally, choose from a range of options to customize your document "
+"libraries."
+msgstr ""
+"Enfin, choisissez parmi une gamme d'options pour personnaliser vos "
+"bibliothèques de documents."
+
+#: src/Admin/Wizard/Steps/Behavior.php:35
+msgid "Document library behavior"
+msgstr "Comportement de la bibliothèque de documents"
+
+#: src/Admin/Wizard/Steps/Behavior.php:60
+#: src/Admin/Wizard/Steps/Layout.php:47
+msgid "Read more"
+msgstr "En savoir plus"
+
+#: src/Admin/Wizard/Steps/Behavior.php:115
+msgid ""
+"Show filters dropdown to allow users to filter by categories, tags, or "
+"custom taxonomy."
+msgstr ""
+"Afficher le menu déroulant des filtres pour permettre aux utilisateurs de "
+"filtrer par catégories, tags ou taxonomie personnalisée."
+
+#: src/Admin/Wizard/Steps/Behavior.php:129
+msgid "Enable this if you will have lots of documents, otherwise leave it blank."
+msgstr "Activez ceci si vous aurez beaucoup de documents, sinon laissez-le vide."
+
+#: src/Admin/Wizard/Steps/Completed.php:25
+msgid "Ready"
+msgstr "Prêt"
+
+#: src/Admin/Wizard/Steps/Completed.php:27
+msgid "Complete Setup"
+msgstr "Configurer complètement"
+
+#: src/Admin/Wizard/Steps/Completed.php:42
+#. translators: %1: Add Document link open %2: Add Document link close %3: Document Library page link open %4: Document library page link close
+msgid ""
+"Congratulations, you have finished setting up the plugin! The next step is "
+"to start %1$sadding%2$s documents. Your documents will be listed on the "
+"%3$sdocument library page%4$s."
+msgstr ""
+"Félicitations, vous avez terminé de configurer le plugin ! La prochaine "
+"étape consiste à commencer à %1$sajouter%2$s des documents. Vos documents "
+"seront listés sur la %3$sbibliothèque de documents%4$s."
+
+#: src/Admin/Wizard/Steps/Layout.php:32
+msgid "Layout and Content"
+msgstr "Disposition et contenu"
+
+#: src/Admin/Wizard/Steps/Layout.php:33
+msgid "First, choose the layout for your document libraries."
+msgstr "Tout d'abord, choisissez la disposition pour vos bibliothèques de documents."
+
+#: src/Admin/Wizard/Steps/Layout.php:34
+msgid "Layout and content"
+msgstr "Disposition et contenu"
+
+#: src/Admin/Wizard/Steps/Links.php:32
+msgid "Links"
+msgstr "Liens"
+
+#: src/Admin/Wizard/Steps/Links.php:33
+msgid "Next, decide how the links to download a document will look and behave."
+msgstr ""
+"Ensuite, décidez de l'apparence et du comportement des liens pour "
+"télécharger un document."
+
+#: src/Admin/Wizard/Steps/Upsell.php:26
+msgid "More"
+msgstr "Plus"
+
+#: src/Admin/Wizard/Steps/Upsell.php:30
+#. translators: %1$s: URL to All Access Pass page %2$s: URL to the KB about the upgrading process
+msgid ""
+"Enhance your website with these fantastic plugins from Barn2, or get them "
+"all by upgrading to an <a href=\"%1$s\" target=\"_blank\">All Access "
+"Pass<a/>! <a href=\"%2$s\" target=\"_blank\">(learn how here)</a>"
+msgstr ""
+"Améliorez votre site web avec ces fantastiques plugins de Barn2, ou "
+"obtenez-les tous en vous inscrivant à un <a href=\"%1$s\" "
+"target=\"_blank\">Accès Total<a/> ! <a href=\"%2$s\" "
+"target=\"_blank\">(apprenez comment ici)</a>"
+
+#: src/Admin/Wizard/Steps/Upsell.php:35
+msgid "Extra features"
+msgstr "Fonctionnalités supplémentaires"
+
+#: src/Admin/Wizard/Steps/Welcome.php:23
+msgid "Welcome"
+msgstr "Bienvenue"
+
+#: src/Admin/Wizard/Steps/Welcome.php:25
+msgid "Start displaying documents in no time."
+msgstr "Commencez à afficher des documents en un rien de temps."
+
+#: src/Admin/Wizard/Steps/Welcome.php:36
+msgid ""
+"Use this setup wizard to quickly configure the most popular options for "
+"your document libraries. You can change these options later on the plugin "
+"settings page or by relaunching the setup wizard. You can also override "
+"these options in the shortcode for individual libraries."
+msgstr ""
+"Utilisez cet assistant de configuration pour configurer rapidement les "
+"options les plus populaires pour vos bibliothèques de documents. Vous "
+"pouvez modifier ces options plus tard sur la page des paramètres du plugin "
+"ou en relançant l'assistant de configuration. Vous pouvez également "
+"remplacer ces options dans le shortcode pour des bibliothèques "
+"individuelles."
+
+#: src/Document.php:48
+msgid "Document does not exist"
+msgstr "Le document n'existe pas"
+
+#: src/Frontend_Scripts.php:69
+msgid "(_MAX_ in total)"
+msgstr "(_MAX_ au total)"
+
+#: src/Frontend_Scripts.php:70
+msgid "Show _MENU_ entries"
+msgstr "Afficher _MENU_ entrées"
+
+#: src/Frontend_Scripts.php:71
+msgid "Search:"
+msgstr "Recherche :"
+
+#: src/Frontend_Scripts.php:72
+msgid "Loading..."
+msgstr "Chargement..."
+
+#: src/Frontend_Scripts.php:74
+msgid "No data available in table"
+msgstr "Aucune donnée disponible dans le tableau"
+
+#: src/Frontend_Scripts.php:76
+msgid "First"
+msgstr "Premier"
+
+#: src/Frontend_Scripts.php:77
+msgid "Last"
+msgstr "Dernier"
+
+#: src/Frontend_Scripts.php:78
+msgid "Next"
+msgstr "Suivant"
+
+#: src/Frontend_Scripts.php:79
+msgid "Previous"
+msgstr "Précédent"
+
+#: src/Frontend_Scripts.php:81
+msgid "Showing _START_ to _END_ of _TOTAL_ entries"
+msgstr "Affichage de _START_ à _END_ sur _TOTAL_ entrées"
+
+#: src/Frontend_Scripts.php:82
+msgid "Showing 0 to 0 of 0 entries"
+msgstr "Affichage de 0 à 0 sur 0 entrées"
+
+#: src/Frontend_Scripts.php:87
+#. translators: ARIA text for sorting column in ascending order
+msgid ": activate to sort column ascending"
+msgstr ": activer pour trier la colonne par ordre croissant"
+
+#: src/Frontend_Scripts.php:89
+#. translators: ARIA text for sorting column in descending order
+msgid ": activate to sort column descending"
+msgstr ": activer pour trier la colonne par ordre décroissant"
+
+#: src/Frontend_Scripts.php:91
+msgid "No matching records found"
+msgstr "Aucun enregistrement correspondant trouvé"
+
+#: src/Frontend_Scripts.php:93
+msgid "No results found"
+msgstr "Aucun résultat trouvé"
+
+#: src/Frontend_Scripts.php:94
+#: src/Util/SVG_Icon.php:81
+msgid "Reset"
+msgstr "Réinitialiser"
+
+#: src/Post_Type.php:48
+msgid "Documents Archives"
+msgstr "Documents Archives"
+
+#: src/Post_Type.php:49
+msgid "Documents Attributes"
+msgstr "Attributs des Documents"
+
+#: src/Post_Type.php:50
+msgid "Parent Documents:"
+msgstr "Documents Parents :"
+
+#: src/Post_Type.php:51
+msgid "All Documents"
+msgstr "Tous les Documents"
+
+#: src/Post_Type.php:52
+msgid "Add New Document"
+msgstr "Ajouter un Nouveau Document"
+
+#: src/Post_Type.php:54
+msgid "New Document"
+msgstr "Nouveau Document"
+
+#: src/Post_Type.php:55
+msgid "Edit Document"
+msgstr "Modifier le Document"
+
+#: src/Post_Type.php:56
+msgid "Update Document"
+msgstr "Mettre à jour le Document"
+
+#: src/Post_Type.php:57
+msgid "View Document"
+msgstr "Afficher le Document"
+
+#: src/Post_Type.php:58
+msgid "View Documents"
+msgstr "Afficher les Documents"
+
+#: src/Post_Type.php:59
+msgid "Search Documents"
+msgstr "Rechercher des Documents"
+
+#: src/Post_Type.php:60
+msgid "Not found"
+msgstr "Non trouvé"
+
+#: src/Post_Type.php:61
+msgid "Not found in Trash"
+msgstr "Non trouvé dans la Corbeille"
+
+#: src/Post_Type.php:63
+msgid "Set featured image"
+msgstr "Définir l'image à la une"
+
+#: src/Post_Type.php:64
+msgid "Remove featured image"
+msgstr "Supprimer l'image à la une"
+
+#: src/Post_Type.php:65
+msgid "Use as featured image"
+msgstr "Utiliser comme image à la une"
+
+#: src/Post_Type.php:66
+msgid "Insert into Document"
+msgstr "Insérer dans le Document"
+
+#: src/Post_Type.php:67
+msgid "Uploaded to this document"
+msgstr "Téléversé dans ce document"
+
+#: src/Post_Type.php:68
+msgid "Document list"
+msgstr "Liste des Documents"
+
+#: src/Post_Type.php:69
+msgid "Documents list navigation"
+msgstr "Navigation dans la liste des documents"
+
+#: src/Post_Type.php:70
+msgid "Filter Documents list"
+msgstr "Filtrer la liste des documents"
+
+#: src/Post_Type.php:75
+msgid "Document Library documents."
+msgstr "Documents de la bibliothèque de documents."
+
+#: src/Review_Notice.php:118
+msgid "Are you enjoying Document Library Lite?"
+msgstr "Aimez-vous Document Library Lite ?"
+
+#: src/Review_Notice.php:119
+msgid ""
+"Congratulations, you've just published your 5th document! If you have time, "
+"it would be great if you could leave us a review and let us know what you "
+"think of the plugin."
+msgstr ""
+"Félicitations, vous venez de publier votre 5ème document ! Si vous avez le "
+"temps, ce serait génial si vous pouviez nous laisser un avis et nous dire "
+"ce que vous pensez du plugin."
+
+#: src/Review_Notice.php:122
+msgid "Add Review"
+msgstr "Ajouter un avis"
+
+#: src/Review_Notice.php:123
+msgid "Dismiss"
+msgstr "Ignorer"
+
+#: src/Review_Notice.php:126
+msgid "Barn2"
+msgstr "Barn2"
+
+#: src/Taxonomies.php:38
+msgid "All Categories"
+msgstr "Toutes les catégories"
+
+#: src/Taxonomies.php:39
+msgid "Parent Category"
+msgstr "Catégorie parente"
+
+#: src/Taxonomies.php:40
+msgid "Parent Category:"
+msgstr "Catégorie parente :"
+
+#: src/Taxonomies.php:41
+msgid "New Category Name"
+msgstr "Nouveau nom de catégorie"
+
+#: src/Taxonomies.php:42
+msgid "Add New Category"
+msgstr "Ajouter une nouvelle catégorie"
+
+#: src/Taxonomies.php:43
+msgid "Edit Category"
+msgstr "Modifier la catégorie"
+
+#: src/Taxonomies.php:44
+msgid "Update Category"
+msgstr "Mettre à jour la catégorie"
+
+#: src/Taxonomies.php:45
+msgid "View Category"
+msgstr "Voir la catégorie"
+
+#: src/Taxonomies.php:46
+msgid "Separate categories with commas"
+msgstr "Séparez les catégories par des virgules"
+
+#: src/Taxonomies.php:47
+msgid "Add or remove categories"
+msgstr "Ajouter ou supprimer des catégories"
+
+#: src/Taxonomies.php:48
+#: src/Taxonomies.php:87
+#: src/Taxonomies.php:125
+msgid "Choose from the most used"
+msgstr "Choisissez parmi les plus utilisées"
+
+#: src/Taxonomies.php:49
+msgid "Popular Categories"
+msgstr "Catégories populaires"
+
+#: src/Taxonomies.php:50
+msgid "Search Categories"
+msgstr "Catégories de recherche"
+
+#: src/Taxonomies.php:51
+#: src/Taxonomies.php:90
+#: src/Taxonomies.php:128
+msgid "Not Found"
+msgstr "Non trouvé"
+
+#: src/Taxonomies.php:52
+msgid "No categories"
+msgstr "Aucune catégorie"
+
+#: src/Taxonomies.php:53
+msgid "Categories list"
+msgstr "Liste des catégories"
+
+#: src/Taxonomies.php:54
+msgid "Categories list navigation"
+msgstr "Navigation dans la liste des catégories"
+
+#: src/Taxonomies.php:76
+msgid "Document Downloads"
+msgstr "Téléchargements de documents"
+
+#: src/Taxonomies.php:77
+msgid "All Items"
+msgstr "Tous les éléments"
+
+#: src/Taxonomies.php:78
+msgid "Parent Item"
+msgstr "Élément parent"
+
+#: src/Taxonomies.php:79
+msgid "Parent Item:"
+msgstr "Élément parent :"
+
+#: src/Taxonomies.php:80
+msgid "New Item Name"
+msgstr "Nom de nouvel élément"
+
+#: src/Taxonomies.php:81
+msgid "Add New Item"
+msgstr "Ajouter un nouvel élément"
+
+#: src/Taxonomies.php:82
+msgid "Edit Item"
+msgstr "Éditer l'élément"
+
+#: src/Taxonomies.php:83
+msgid "Update Item"
+msgstr "Mettre à jour l'élément"
+
+#: src/Taxonomies.php:84
+msgid "View Item"
+msgstr "Voir l'élément"
+
+#: src/Taxonomies.php:85
+msgid "Separate items with commas"
+msgstr "Séparez les éléments par des virgules"
+
+#: src/Taxonomies.php:86
+msgid "Add or remove items"
+msgstr "Ajouter ou supprimer des éléments"
+
+#: src/Taxonomies.php:88
+msgid "Popular Items"
+msgstr "Éléments populaires"
+
+#: src/Taxonomies.php:89
+msgid "Search Items"
+msgstr "Rechercher des éléments"
+
+#: src/Taxonomies.php:91
+msgid "No items"
+msgstr "Aucun élément"
+
+#: src/Taxonomies.php:92
+msgid "Items list"
+msgstr "Liste des éléments"
+
+#: src/Taxonomies.php:93
+msgid "Items list navigation"
+msgstr "Navigation de la liste des éléments"
+
+#: src/Taxonomies.php:114
+msgid "File Types"
+msgstr "Types de fichiers"
+
+#: src/Taxonomies.php:115
+msgid "All File Types"
+msgstr "Tous les types de fichiers"
+
+#: src/Taxonomies.php:116
+msgid "Parent File Type"
+msgstr "Type de fichier parent"
+
+#: src/Taxonomies.php:117
+msgid "Parent File Type:"
+msgstr "Type de fichier parent :"
+
+#: src/Taxonomies.php:118
+msgid "New File Type Name"
+msgstr "Nom du nouveau type de fichier"
+
+#: src/Taxonomies.php:119
+msgid "Add New File Type"
+msgstr "Ajouter un nouveau type de fichier"
+
+#: src/Taxonomies.php:120
+msgid "Edit File Type"
+msgstr "Modifier le type de fichier"
+
+#: src/Taxonomies.php:121
+msgid "Update File Type"
+msgstr "Mettre à jour le type de fichier"
+
+#: src/Taxonomies.php:122
+msgid "View File Type"
+msgstr "Voir le type de fichier"
+
+#: src/Taxonomies.php:123
+msgid "Separate file types with commas"
+msgstr "Séparez les types de fichiers par des virgules"
+
+#: src/Taxonomies.php:124
+msgid "Add or remove file types"
+msgstr "Ajouter ou supprimer des types de fichiers"
+
+#: src/Taxonomies.php:126
+msgid "Popular File Types"
+msgstr "Types de fichiers populaires"
+
+#: src/Taxonomies.php:127
+msgid "Search File Types"
+msgstr "Rechercher des types de fichiers"
+
+#: src/Taxonomies.php:129
+msgid "No file types"
+msgstr "Aucun type de fichier"
+
+#: src/Taxonomies.php:130
+msgid "File types list"
+msgstr "Liste des types de fichiers"
+
+#: src/Taxonomies.php:131
+msgid "File types list navigation"
+msgstr "Navigation dans la liste des types de fichiers"
+
+#: src/Util/Options.php:112
+#: src/Util/SVG_Icon.php:78
+msgid "Download"
+msgstr "Télécharger"
+
+#: src/Util/Options.php:234
+msgid "Image"
+msgstr "Image"
+
+#: src/Util/Options.php:252
+msgid "Date"
+msgstr "Date"
+
+#: src/Util/Options.php:264
+#: src/Util/SVG_Icon.php:77
+msgid "Link"
+msgstr "Lien"
+
+#: src/Util/SVG_Icon.php:80
+msgid "Close"
+msgstr "Fermer"
+
+#: templates/photoswipe.php:45
+msgid "Close (Esc)"
+msgstr "Fermer (Échap)"
+
+#: templates/photoswipe.php:47
+msgid "Share"
+msgstr "Partager"
+
+#: templates/photoswipe.php:49
+msgid "Toggle fullscreen"
+msgstr "Basculer en plein écran"
+
+#: templates/photoswipe.php:51
+msgid "Zoom in/out"
+msgstr "Zoom avant/arrière"
+
+#: templates/photoswipe.php:68
+msgid "Previous (arrow left)"
+msgstr "Précédent (flèche gauche)"
+
+#: templates/photoswipe.php:70
+msgid "Next (arrow right)"
+msgstr "Suivant (flèche droite)"
+
+#: src/Frontend_Scripts.php:83
+msgctxt "thousands separator"
+msgid ","
+msgstr ","
+
+#: src/Frontend_Scripts.php:84
+msgctxt "decimal mark"
+msgid "."
+msgstr "."
+
+#: src/Plugin_Setup.php:107
+msgctxt "Page slug"
+msgid "document-library"
+msgstr "bibliothèque-de-documents"
+
+#: src/Plugin_Setup.php:108
+msgctxt "Page title"
+msgid "Document Library"
+msgstr "Bibliothèque de documents"
+
+#: src/Post_Type.php:44
+msgctxt "Post Type General Name"
+msgid "Documents"
+msgstr "Documents"
+
+#: src/Post_Type.php:45
+msgctxt "Post Type Singular Name"
+msgid "Document"
+msgstr "Document"
+
+#: src/Post_Type.php:46
+msgctxt "Admin Menu text"
+msgid "Documents"
+msgstr "Documents"
+
+#: src/Post_Type.php:47
+msgctxt "Add New on Toolbar"
+msgid "Documents"
+msgstr "Documents"
+
+#: src/Taxonomies.php:35
+msgctxt "Taxonomy General Name"
+msgid "Document Categories"
+msgstr "Catégories de documents"
+
+#: src/Taxonomies.php:74
+msgctxt "Taxonomy General Name"
+msgid "Document Download"
+msgstr "Téléchargement de document"
+
+#: src/Taxonomies.php:112
+msgctxt "Taxonomy General Name"
+msgid "File Types"
+msgstr "Types de fichiers"
+
+#: src/Taxonomies.php:36
+msgctxt "Taxonomy Singular Name"
+msgid "Document Category"
+msgstr "Catégorie de document"
+
+#: src/Taxonomies.php:75
+msgctxt "Taxonomy Singular Name"
+msgid "Document Download"
+msgstr "Téléchargement de Document"
+
+#: src/Taxonomies.php:113
+msgctxt "Taxonomy Singular Name"
+msgid "File Type"
+msgstr "Type de Fichier"

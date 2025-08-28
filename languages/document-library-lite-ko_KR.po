@@ -1,0 +1,1413 @@
+# Copyright (C) 2025 Barn2 Plugins
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Document Library Lite - Manage & Display Downloads "
+"1.1.3\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/document-library-lite\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-04-20T12:36:23+00:00\n"
+"PO-Revision-Date: 2025-08-28 16:00+0000\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: document-library-lite\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ko-KR\n"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Plugin Name of the plugin
+msgid "Document Library Lite - Manage & Display Downloads"
+msgstr "문서 라이브러리 라이트 - 다운로드 관리 및 표시"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/document-library-lite/"
+msgstr "https://wordpress.org/plugins/document-library-lite/"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Description of the plugin
+msgid "Add documents and display them in a searchable document library."
+msgstr "문서를 추가하고 검색 가능한 문서 라이브러리에서 표시합니다."
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Author of the plugin
+msgid "Barn2 Plugins"
+msgstr "Barn2 플러그인"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Author URI of the plugin
+msgid "https://barn2.com"
+msgstr "https://barn2.com"
+
+#: src/Admin/Admin_Controller.php:70
+#: src/Admin/Page/Settings.php:89
+msgid "Settings"
+msgstr "설정"
+
+#: src/Admin/Admin_Controller.php:88
+msgid "Pro Version"
+msgstr "프로 버전"
+
+#: src/Admin/Admin_Controller.php:123
+msgid "Select File"
+msgstr "파일 선택"
+
+#: src/Admin/Admin_Controller.php:124
+#: src/Admin/Metabox/Document_Link.php:59
+msgid "Add File"
+msgstr "파일 추가"
+
+#: src/Admin/Admin_Controller.php:125
+#: src/Admin/Metabox/Document_Link.php:59
+msgid "Replace File"
+msgstr "파일 교체"
+
+#: src/Admin/Media_Library.php:41
+msgid "All types"
+msgstr "모든 유형"
+
+#: src/Admin/Media_Library.php:42
+#: src/Admin/Menu.php:36
+#: src/Admin/Menu.php:37
+#: src/Post_Type.php:74
+msgid "Documents"
+msgstr "문서"
+
+#: src/Admin/Menu.php:48
+#: src/Admin/Menu.php:49
+#: src/Post_Type.php:53
+msgid "Add New"
+msgstr "새로 추가"
+
+#: src/Admin/Menu.php:59
+#: src/Admin/Menu.php:60
+#: src/Taxonomies.php:37
+#: src/Util/Options.php:246
+msgid "Categories"
+msgstr "카테고리"
+
+#: src/Admin/Metabox/Document_Link.php:43
+msgid "Document Link"
+msgstr "문서 링크"
+
+#: src/Admin/Metabox/Document_Link.php:64
+msgid "Upload a file or select one from the media library:"
+msgstr "파일을 업로드하거나 미디어 라이브러리에서 선택하세요:"
+
+#: src/Admin/Metabox/Document_Link.php:68
+msgid "None"
+msgstr "없음"
+
+#: src/Admin/Metabox/Document_Link.php:69
+msgid "File Upload"
+msgstr "파일 업로드"
+
+#: src/Admin/Metabox/Document_Link.php:81
+#. translators: %s: File name
+msgid "Remove file: %s"
+msgstr "파일 제거: %s"
+
+#: src/Admin/Page/Import.php:51
+msgid "Document Library Importing"
+msgstr "문서 라이브러리 가져오기"
+
+#: src/Admin/Page/Import.php:52
+msgid "Import"
+msgstr "가져오기"
+
+#: src/Admin/Page/Import.php:66
+msgid "Import documents"
+msgstr "문서 가져오기"
+
+#: src/Admin/Page/Import.php:72
+#. translators: %1: Document Library Pro link start, %2: Document Library Pro link end
+msgid ""
+"Lots of documents? Upgrade to %1$sDocument Library Pro%2$s to add documents "
+"in bulk - either by using drag-and-drop to upload documents directly to "
+"WordPress, or by importing documents from a CSV file. It’s a fantastic "
+"time-saver for adding multiple documents at once."
+msgstr ""
+"문서가 많으신가요? 대량으로 문서를 추가하려면 %1$sDocument Library Pro%2$s로 업그레이드하세요 - 문서를 드래그 "
+"앤 드롭하여 WordPress에 직접 업로드하거나 CSV 파일에서 문서를 가져올 수 있습니다. 여러 문서를 한 번에 추가하는 데 매우 "
+"유용합니다."
+
+#: src/Admin/Page/Protect.php:48
+#: src/Admin/Page/Protect.php:49
+msgid "Protect"
+msgstr "보호하기"
+
+#: src/Admin/Page/Settings.php:88
+#: src/Admin/Page/Settings.php:110
+msgid "Document Library Lite Settings"
+msgstr "문서 라이브러리 라이트 설정"
+
+#: src/Admin/Page/Settings.php:134
+msgid "Save Changes"
+msgstr "변경 사항 저장"
+
+#: src/Admin/Page_List.php:42
+msgid "Document Library Page"
+msgstr "문서 라이브러리 페이지"
+
+#: src/Admin/Settings_Tab/Document_Grid.php:35
+msgid "Document Grid"
+msgstr "문서 그리드"
+
+#: src/Admin/Settings_Tab/Document_Grid.php:68
+#. translators: %1: Document Library Pro link start, %2: Document Library Pro link end
+msgid ""
+"Upgrade to %1$sDocument Library Pro%2$s to display documents in a beautiful "
+"grid layout:"
+msgstr "아름다운 그리드 레이아웃으로 문서를 표시하려면 %1$sDocument Library Pro%2$s로 업그레이드하세요:"
+
+#: src/Admin/Settings_Tab/Document_Table.php:36
+msgid "Document Tables"
+msgstr "문서 테이블"
+
+#: src/Admin/Settings_Tab/Document_Table.php:55
+#: src/Admin/Settings_Tab/General.php:70
+msgid "Library content"
+msgstr "라이브러리 내용"
+
+#: src/Admin/Settings_Tab/Document_Table.php:58
+#: src/Admin/Settings_Tab/General.php:64
+#: src/Admin/Wizard/Steps/Links.php:34
+msgid "Document links"
+msgstr "문서 링크"
+
+#: src/Admin/Settings_Tab/Document_Table.php:61
+msgid "Loading & performance"
+msgstr "로드 중 및 성능"
+
+#: src/Admin/Settings_Tab/Document_Table.php:64
+#: src/Admin/Settings_Tab/General.php:73
+msgid "Document library controls"
+msgstr "문서 라이브러리 컨트롤"
+
+#: src/Admin/Settings_Tab/Document_Table.php:67
+#: src/Admin/Settings_Tab/Document_Table.php:253
+msgid "Design"
+msgstr "디자인"
+
+#: src/Admin/Settings_Tab/Document_Table.php:80
+#: src/Admin/Wizard/Steps/Layout.php:46
+msgid "Columns"
+msgstr "열"
+
+#: src/Admin/Settings_Tab/Document_Table.php:82
+#: src/Admin/Wizard/Steps/Layout.php:47
+msgid "Enter the fields to include in your document tables."
+msgstr "문서 테이블에 포함할 필드를 입력하세요."
+
+#: src/Admin/Settings_Tab/Document_Table.php:87
+msgid "Image size"
+msgstr "이미지 크기"
+
+#: src/Admin/Settings_Tab/Document_Table.php:89
+msgid "Enter WxH in pixels (e.g. 80x80)."
+msgstr "픽셀로 WxH 입력 (예: 80x80)."
+
+#: src/Admin/Settings_Tab/Document_Table.php:105
+msgid "Accessing documents"
+msgstr "문서 접근하기"
+
+#: src/Admin/Settings_Tab/Document_Table.php:108
+msgid "How a user accesses documents from the ‘link’ column."
+msgstr "사용자가 '링크' 열에서 문서에 접근하는 방법입니다."
+
+#: src/Admin/Settings_Tab/Document_Table.php:110
+#: src/Admin/Settings_Tab/General.php:198
+msgid "Link to document"
+msgstr "문서 링크"
+
+#: src/Admin/Settings_Tab/Document_Table.php:111
+msgid "Multi-select checkboxes"
+msgstr "다중 선택 체크박스"
+
+#: src/Admin/Settings_Tab/Document_Table.php:112
+#: src/Admin/Settings_Tab/Document_Table.php:124
+msgid "Both"
+msgstr "둘 다"
+
+#: src/Admin/Settings_Tab/Document_Table.php:117
+msgid "Multi-download button"
+msgstr "다중 다운로드 버튼"
+
+#: src/Admin/Settings_Tab/Document_Table.php:120
+msgid "The position of the button to download all selected documents."
+msgstr "선택한 모든 문서를 다운로드하는 버튼의 위치입니다."
+
+#: src/Admin/Settings_Tab/Document_Table.php:122
+msgid "Below document library"
+msgstr "문서 라이브러리 아래"
+
+#: src/Admin/Settings_Tab/Document_Table.php:123
+msgid "Above document library"
+msgstr "문서 라이브러리 위"
+
+#: src/Admin/Settings_Tab/Document_Table.php:129
+msgid "Multi-download button text"
+msgstr "다중 다운로드 버튼 텍스트"
+
+#: src/Admin/Settings_Tab/Document_Table.php:132
+msgid "The text for the button to download all selected documents."
+msgstr "선택한 모든 문서를 다운로드하는 버튼의 텍스트입니다."
+
+#: src/Admin/Settings_Tab/Document_Table.php:133
+msgid "Download Selected Documents"
+msgstr "선택한 문서 다운로드"
+
+#: src/Admin/Settings_Tab/Document_Table.php:148
+#: src/Admin/Wizard/Steps/Behavior.php:126
+msgid "Lazy load"
+msgstr "지연 로드"
+
+#: src/Admin/Settings_Tab/Document_Table.php:151
+#: src/Admin/Wizard/Steps/Behavior.php:128
+msgid "Load the document table one page at a time"
+msgstr "문서 테이블을 한 페이지씩 로드합니다"
+
+#: src/Admin/Settings_Tab/Document_Table.php:152
+msgid "Enable this if you have many documents or experience slow page load times."
+msgstr "문서가 많거나 페이지 로드 시간이 느린 경우 이 기능을 활성화하세요."
+
+#: src/Admin/Settings_Tab/Document_Table.php:153
+msgid ""
+"Warning: Lazy load limits the searching and sorting features in the "
+"document library. Only use it if you definitely need it."
+msgstr "경고: 지연 로드는 문서 라이브러리에서 검색 및 정렬 기능을 제한합니다. 꼭 필요할 때만 사용하세요."
+
+#: src/Admin/Settings_Tab/Document_Table.php:174
+msgid "Caching"
+msgstr "캐싱"
+
+#: src/Admin/Settings_Tab/Document_Table.php:177
+msgid "Cache document libraries to improve load time"
+msgstr "로드 시간을 개선하기 위해 문서 라이브러리를 캐시합니다"
+
+#: src/Admin/Settings_Tab/Document_Table.php:185
+msgid "Cache expires after"
+msgstr "캐시 만료 후"
+
+#: src/Admin/Settings_Tab/Document_Table.php:188
+msgid "hours"
+msgstr "시간"
+
+#: src/Admin/Settings_Tab/Document_Table.php:189
+msgid "Your table data will be refreshed after this length of time."
+msgstr "이 시간이 지나면 테이블 데이터가 새로 고쳐집니다."
+
+#: src/Admin/Settings_Tab/Document_Table.php:210
+#: src/Admin/Wizard/Steps/Behavior.php:113
+msgid "Search filters"
+msgstr "검색 필터"
+
+#: src/Admin/Settings_Tab/Document_Table.php:214
+#: src/Admin/Wizard/Steps/Behavior.php:119
+msgid "Disabled"
+msgstr "비활성화됨"
+
+#: src/Admin/Settings_Tab/Document_Table.php:215
+msgid "Show based on columns in table"
+msgstr "테이블의 열을 기준으로 표시"
+
+#: src/Admin/Settings_Tab/Document_Table.php:216
+#: src/Admin/Settings_Tab/Document_Table.php:257
+msgid "Custom"
+msgstr "사용자 정의"
+
+#: src/Admin/Settings_Tab/Document_Table.php:218
+msgid ""
+"Show dropdown menus to filter by doc_categories, doc_tags, or custom "
+"taxonomy."
+msgstr "doc_categories, doc_tags 또는 사용자 정의 분류로 필터링하기 위해 드롭다운 메뉴를 표시합니다."
+
+#: src/Admin/Settings_Tab/Document_Table.php:227
+msgid "Page length"
+msgstr "페이지 길이"
+
+#: src/Admin/Settings_Tab/Document_Table.php:231
+#: src/Admin/Settings_Tab/General.php:361
+#: src/Admin/Settings_Tab/General.php:415
+#: src/Admin/Settings_Tab/General.php:428
+msgid "Above library"
+msgstr "라이브러리 위"
+
+#: src/Admin/Settings_Tab/Document_Table.php:232
+#: src/Admin/Settings_Tab/General.php:362
+#: src/Admin/Settings_Tab/General.php:416
+#: src/Admin/Settings_Tab/General.php:429
+msgid "Below library"
+msgstr "라이브러리 아래"
+
+#: src/Admin/Settings_Tab/Document_Table.php:233
+#: src/Admin/Settings_Tab/General.php:363
+#: src/Admin/Settings_Tab/General.php:417
+#: src/Admin/Settings_Tab/General.php:430
+msgid "Above and below library"
+msgstr "라이브러리 위와 아래"
+
+#: src/Admin/Settings_Tab/Document_Table.php:234
+#: src/Admin/Settings_Tab/General.php:364
+#: src/Admin/Settings_Tab/General.php:418
+#: src/Admin/Settings_Tab/General.php:431
+msgid "Hidden"
+msgstr "숨김"
+
+#: src/Admin/Settings_Tab/Document_Table.php:236
+msgid "The position of the 'Show [x] entries' dropdown list."
+msgstr "'[x] 항목 표시' 드롭다운 목록의 위치입니다."
+
+#: src/Admin/Settings_Tab/Document_Table.php:256
+msgid "Default"
+msgstr "기본값"
+
+#: src/Admin/Settings_Tab/Document_Table.php:275
+msgid "Customize the design of the document tables."
+msgstr "문서 테이블의 디자인을 사용자 정의합니다."
+
+#: src/Admin/Settings_Tab/Document_Table.php:286
+#. translators: %1: knowledge base link start, %2: knowledge base link end
+msgid ""
+"The following options are used when documents are listed in a table layout. "
+"You can override them in the [doc_library] shortcode. See the %1$sknowledge "
+"base%2$s for details of how to configure your document tables even further."
+msgstr ""
+"문서가 테이블 레이아웃으로 나열될 때 다음 옵션이 사용됩니다. [doc_library] 단축코드에서 이를 오버라이드할 수 있습니다. "
+"문서 테이블을 더욱 구성하는 방법에 대한 자세한 내용은 %1$스마트 지식 베이스%2$s를 참조하세요."
+
+#: src/Admin/Settings_Tab/General.php:37
+msgid "General"
+msgstr "일반"
+
+#: src/Admin/Settings_Tab/General.php:58
+msgid "Document data"
+msgstr "문서 데이터"
+
+#: src/Admin/Settings_Tab/General.php:61
+msgid "Document lists"
+msgstr "문서 목록"
+
+#: src/Admin/Settings_Tab/General.php:67
+#: src/Admin/Settings_Tab/General.php:265
+#: src/Admin/Wizard/Steps/Links.php:83
+msgid "Document preview"
+msgstr "문서 미리보기"
+
+#: src/Admin/Settings_Tab/General.php:76
+msgid "Number of documents"
+msgstr "문서 수"
+
+#: src/Admin/Settings_Tab/General.php:79
+msgid "Sorting"
+msgstr "정렬"
+
+#: src/Admin/Settings_Tab/General.php:88
+msgid ""
+"Use the following options to manage the fields that are used to store "
+"information about your documents."
+msgstr "다음 옵션을 사용하여 문서에 대한 정보를 저장하는 필드를 관리하십시오."
+
+#: src/Admin/Settings_Tab/General.php:100
+#. translators: %1: knowledge base link start, %2: knowledge base link end
+msgid ""
+"These options set defaults for all your document libraries and are used for "
+"the table layout. You can override them in the shortcode for individual "
+"libraries. %1$sRead more%2$s."
+msgstr ""
+"이 옵션은 모든 문서 라이브러리에 대한 기본값을 설정하며, 테이블 레이아웃에 사용됩니다. 개별 라이브러리의 단축 코드에서 이를 재정의할 "
+"수 있습니다. %1$s자세히 읽기%2$s."
+
+#: src/Admin/Settings_Tab/General.php:128
+msgid "Document fields"
+msgstr "문서 필드"
+
+#: src/Admin/Settings_Tab/General.php:129
+#: src/Util/Options.php:150
+msgid "Pro version only"
+msgstr "프로 버전 전용"
+
+#: src/Admin/Settings_Tab/General.php:132
+#: src/Util/Options.php:258
+msgid "Content"
+msgstr "내용"
+
+#: src/Admin/Settings_Tab/General.php:133
+msgid "Excerpt"
+msgstr "발췌"
+
+#: src/Admin/Settings_Tab/General.php:134
+#: src/Post_Type.php:62
+msgid "Featured Image"
+msgstr "특징 이미지"
+
+#: src/Admin/Settings_Tab/General.php:135
+msgid "Comments"
+msgstr "댓글"
+
+#: src/Admin/Settings_Tab/General.php:161
+msgid "Document library page"
+msgstr "문서 라이브러리 페이지"
+
+#: src/Admin/Settings_Tab/General.php:163
+msgid "The page to display your documents."
+msgstr "문서를 표시할 페이지입니다."
+
+#: src/Admin/Settings_Tab/General.php:164
+msgid ""
+"You can also use the [doc_library] shortcode to list documents on other "
+"pages."
+msgstr "다른 페이지에서 문서를 나열하려면 [doc_library] 단축 코드를 사용할 수도 있습니다."
+
+#: src/Admin/Settings_Tab/General.php:170
+#: src/Admin/Wizard/Steps/Layout.php:52
+msgid "Default layout"
+msgstr "기본 레이아웃"
+
+#: src/Admin/Settings_Tab/General.php:173
+#: src/Admin/Wizard/Steps/Layout.php:57
+msgid "Table"
+msgstr "테이블"
+
+#: src/Admin/Settings_Tab/General.php:174
+#: src/Admin/Wizard/Steps/Layout.php:61
+msgid "Grid"
+msgstr "격자"
+
+#: src/Admin/Settings_Tab/General.php:179
+#: src/Admin/Wizard/Steps/Layout.php:68
+msgid "Folders"
+msgstr "폴더"
+
+#: src/Admin/Settings_Tab/General.php:182
+#: src/Admin/Wizard/Steps/Layout.php:69
+msgid "Display the document library in folders"
+msgstr "폴더에 문서 라이브러리를 표시합니다."
+
+#: src/Admin/Settings_Tab/General.php:201
+msgid "Include a link to the document."
+msgstr "문서에 대한 링크를 포함합니다."
+
+#: src/Admin/Settings_Tab/General.php:202
+msgid "Use the 'Link destination' option below to control the link behavior."
+msgstr "아래의 '링크 목적지' 옵션을 사용하여 링크 동작을 제어하십시오."
+
+#: src/Admin/Settings_Tab/General.php:206
+#: src/Admin/Wizard/Steps/Links.php:52
+msgid "Link style"
+msgstr "링크 스타일"
+
+#: src/Admin/Settings_Tab/General.php:209
+msgid "Control the appearance of the link to the document."
+msgstr "문서에 대한 링크의 모양을 제어합니다."
+
+#: src/Admin/Settings_Tab/General.php:211
+#: src/Admin/Settings_Tab/General.php:278
+#: src/Admin/Wizard/Steps/Links.php:57
+msgid "Button with text"
+msgstr "텍스트가 있는 버튼"
+
+#: src/Admin/Settings_Tab/General.php:212
+#: src/Admin/Settings_Tab/General.php:279
+#: src/Admin/Wizard/Steps/Links.php:61
+msgid "Button with icon and text"
+msgstr "아이콘과 텍스트가 있는 버튼"
+
+#: src/Admin/Settings_Tab/General.php:213
+#: src/Admin/Settings_Tab/General.php:280
+#: src/Admin/Wizard/Steps/Links.php:65
+msgid "Button with icon"
+msgstr "아이콘이 있는 버튼"
+
+#: src/Admin/Settings_Tab/General.php:214
+#: src/Admin/Wizard/Steps/Links.php:69
+msgid "Download icon only"
+msgstr "아이콘만 다운로드"
+
+#: src/Admin/Settings_Tab/General.php:215
+#: src/Admin/Wizard/Steps/Links.php:73
+msgid "File type icon"
+msgstr "파일 유형 아이콘"
+
+#: src/Admin/Settings_Tab/General.php:216
+#: src/Admin/Settings_Tab/General.php:282
+#: src/Admin/Wizard/Steps/Links.php:77
+msgid "Text link"
+msgstr "텍스트 링크"
+
+#: src/Admin/Settings_Tab/General.php:222
+#: src/Admin/Wizard/Steps/Links.php:46
+msgid "Link text"
+msgstr "링크 텍스트"
+
+#: src/Admin/Settings_Tab/General.php:224
+#: src/Admin/Wizard/Steps/Behavior.php:54
+#: src/Admin/Wizard/Steps/Links.php:48
+msgid "The text displayed on the button or link."
+msgstr "버튼 또는 링크에 표시되는 텍스트입니다."
+
+#: src/Admin/Settings_Tab/General.php:228
+msgid "Link destination"
+msgstr "링크 목적지"
+
+#: src/Admin/Settings_Tab/General.php:231
+msgid "What happens when someone clicks on a link to a document."
+msgstr "문서에 대한 링크를 클릭했을 때 발생하는 일입니다."
+
+#: src/Admin/Settings_Tab/General.php:233
+msgid "Direct access"
+msgstr "직접 접근"
+
+#: src/Admin/Settings_Tab/General.php:234
+msgid "Open single document page"
+msgstr "단일 문서 페이지 열기"
+
+#: src/Admin/Settings_Tab/General.php:239
+msgid "Link target"
+msgstr "링크 대상"
+
+#: src/Admin/Settings_Tab/General.php:242
+msgid "Open links in a new tab"
+msgstr "새 탭에서 링크 열기"
+
+#: src/Admin/Settings_Tab/General.php:247
+msgid "Clickable fields"
+msgstr "클릭 가능한 필드"
+
+#: src/Admin/Settings_Tab/General.php:249
+msgid "Control which fields are clickable, in addition to the 'link' field."
+msgstr "'링크' 필드를 제외하고 어떤 필드가 클릭 가능한지를 제어합니다."
+
+#: src/Admin/Settings_Tab/General.php:268
+#: src/Admin/Wizard/Steps/Links.php:84
+msgid "Allow users to preview documents in a lightbox"
+msgstr "사용자가 라이트박스에서 문서를 미리 볼 수 있도록 허용"
+
+#: src/Admin/Settings_Tab/General.php:269
+msgid "The preview option will appear for supported file types only."
+msgstr "미리 보기 옵션은 지원되는 파일 유형에 대해서만 나타납니다."
+
+#: src/Admin/Settings_Tab/General.php:273
+msgid "Preview style"
+msgstr "미리 보기 스타일"
+
+#: src/Admin/Settings_Tab/General.php:276
+msgid "Control the appearance of the preview option."
+msgstr "미리 보기 옵션의 모양을 제어합니다."
+
+#: src/Admin/Settings_Tab/General.php:281
+msgid "Icon only"
+msgstr "아이콘만"
+
+#: src/Admin/Settings_Tab/General.php:287
+msgid "Preview text"
+msgstr "미리보기 텍스트"
+
+#: src/Admin/Settings_Tab/General.php:290
+msgid "The text displayed on the preview button or link."
+msgstr "미리보기 버튼이나 링크에 표시되는 텍스트입니다."
+
+#: src/Admin/Settings_Tab/General.php:291
+#: src/Util/SVG_Icon.php:79
+msgid "Preview"
+msgstr "미리보기"
+
+#: src/Admin/Settings_Tab/General.php:307
+#: src/Admin/Wizard/Steps/Behavior.php:46
+msgid "Image lightbox"
+msgstr "이미지 라이트박스"
+
+#: src/Admin/Settings_Tab/General.php:309
+#: src/Admin/Wizard/Steps/Behavior.php:47
+msgid "Display images in a lightbox when opened"
+msgstr "열 때 라이트박스에서 이미지를 표시"
+
+#: src/Admin/Settings_Tab/General.php:313
+msgid "Shortcodes"
+msgstr "쇼트코드"
+
+#: src/Admin/Settings_Tab/General.php:316
+msgid ""
+"Display shortcodes, HTML and other formatting in the document content, "
+"excerpt and custom field columns"
+msgstr "문서 내용, 발췌 및 사용자 정의 필드 열에 쇼트코드, HTML 및 기타 형식을 표시"
+
+#: src/Admin/Settings_Tab/General.php:321
+msgid "Excerpt length"
+msgstr "발췌 길이"
+
+#: src/Admin/Settings_Tab/General.php:324
+#: src/Admin/Settings_Tab/General.php:336
+msgid "words"
+msgstr "단어"
+
+#: src/Admin/Settings_Tab/General.php:325
+msgid "Enter -1 to show the full excerpt."
+msgstr "전체 발췌를 표시하려면 -1을 입력하십시오."
+
+#: src/Admin/Settings_Tab/General.php:333
+msgid "Content length"
+msgstr "내용 길이"
+
+#: src/Admin/Settings_Tab/General.php:337
+msgid "Enter -1 to show the full content."
+msgstr "전체 내용을 표시하려면 -1을 입력하십시오."
+
+#: src/Admin/Settings_Tab/General.php:356
+msgid "Search box"
+msgstr "검색 상자"
+
+#: src/Admin/Settings_Tab/General.php:359
+msgid ""
+"The position of the search box above the list of documents. You can also "
+"add a search box using a shortcode or widget."
+msgstr "문서 목록 위의 검색 상자의 위치. 쇼트코드나 위젯을 사용하여 검색 상자를 추가할 수도 있습니다."
+
+#: src/Admin/Settings_Tab/General.php:369
+msgid "Reset button"
+msgstr "재설정 버튼"
+
+#: src/Admin/Settings_Tab/General.php:372
+msgid "Show the reset button above the library"
+msgstr "라이브러리 위에 재설정 버튼 표시"
+
+#: src/Admin/Settings_Tab/General.php:388
+#: src/Admin/Wizard/Steps/Behavior.php:52
+msgid "Documents per page"
+msgstr "페이지당 문서 수"
+
+#: src/Admin/Settings_Tab/General.php:391
+msgid ""
+"The number of documents per page of the document library. Enter -1 to "
+"display all documents on one page."
+msgstr "문서 라이브러리의 페이지당 문서 수입니다. -1을 입력하여 한 페이지에 모든 문서를 표시합니다."
+
+#: src/Admin/Settings_Tab/General.php:398
+msgid "Pagination type"
+msgstr "페이지 매김 유형"
+
+#: src/Admin/Settings_Tab/General.php:402
+msgid "Numbers only"
+msgstr "숫자만"
+
+#: src/Admin/Settings_Tab/General.php:403
+msgid "Prev|Next"
+msgstr "이전|다음"
+
+#: src/Admin/Settings_Tab/General.php:404
+msgid "Prev|Next + Numbers"
+msgstr "이전|다음 + 숫자"
+
+#: src/Admin/Settings_Tab/General.php:405
+msgid "Prev|Next|First|Last"
+msgstr "이전|다음|처음|마지막"
+
+#: src/Admin/Settings_Tab/General.php:406
+msgid "Prev|Next|First|Last + Numbers"
+msgstr "이전|다음|처음|마지막 + 숫자"
+
+#: src/Admin/Settings_Tab/General.php:411
+msgid "Pagination position"
+msgstr "페이지 매김 위치"
+
+#: src/Admin/Settings_Tab/General.php:420
+msgid "The position of the paging buttons which scroll between results."
+msgstr "결과 사이를 스크롤하는 페이지 버튼의 위치입니다."
+
+#: src/Admin/Settings_Tab/General.php:424
+msgid "Totals"
+msgstr "총계"
+
+#: src/Admin/Settings_Tab/General.php:433
+msgid "The position of the document total, e.g. '25 documents'."
+msgstr "문서 총계의 위치, 예: '25 문서'입니다."
+
+#: src/Admin/Settings_Tab/General.php:449
+#: src/Admin/Wizard/Steps/Behavior.php:58
+msgid "Sort by"
+msgstr "정렬 기준"
+
+#: src/Admin/Settings_Tab/General.php:453
+#: src/Admin/Wizard/Steps/Behavior.php:64
+#: src/Util/Options.php:240
+msgid "Title"
+msgstr "제목"
+
+#: src/Admin/Settings_Tab/General.php:454
+#: src/Admin/Wizard/Steps/Behavior.php:68
+#: src/Util/Options.php:228
+msgid "ID"
+msgstr "아이디"
+
+#: src/Admin/Settings_Tab/General.php:455
+#: src/Admin/Wizard/Steps/Behavior.php:72
+msgid "Date published"
+msgstr "게시 날짜"
+
+#: src/Admin/Settings_Tab/General.php:456
+#: src/Admin/Wizard/Steps/Behavior.php:76
+msgid "Date modified"
+msgstr "수정 날짜"
+
+#: src/Admin/Settings_Tab/General.php:457
+#: src/Admin/Wizard/Steps/Behavior.php:80
+msgid "Page order (menu order)"
+msgstr "페이지 순서 (메뉴 순서)"
+
+#: src/Admin/Settings_Tab/General.php:458
+#: src/Admin/Wizard/Steps/Behavior.php:84
+msgid "Author"
+msgstr "저자"
+
+#: src/Admin/Settings_Tab/General.php:459
+#: src/Admin/Wizard/Steps/Behavior.php:88
+msgid "Random"
+msgstr "무작위"
+
+#: src/Admin/Settings_Tab/General.php:461
+#: src/Admin/Wizard/Steps/Behavior.php:60
+msgid "The initial sort order of the document library."
+msgstr "문서 라이브러리의 초기 정렬 순서입니다."
+
+#: src/Admin/Settings_Tab/General.php:465
+#: src/Admin/Wizard/Steps/Behavior.php:94
+msgid "Sort direction"
+msgstr "정렬 방향"
+
+#: src/Admin/Settings_Tab/General.php:469
+#: src/Admin/Wizard/Steps/Behavior.php:99
+msgid "Automatic"
+msgstr "자동"
+
+#: src/Admin/Settings_Tab/General.php:470
+#: src/Admin/Wizard/Steps/Behavior.php:103
+msgid "Ascending (A to Z, oldest to newest)"
+msgstr "오름차순 (A에서 Z, 오래된 것에서 최신으로)"
+
+#: src/Admin/Settings_Tab/General.php:471
+#: src/Admin/Wizard/Steps/Behavior.php:107
+msgid "Descending (Z to A, newest to oldest)"
+msgstr "내림차순 (Z에서 A, 최신에서 오래된 것으로)"
+
+#: src/Admin/Settings_Tab/Single_Document.php:35
+msgid "Single Document"
+msgstr "단일 문서"
+
+#: src/Admin/Settings_Tab/Single_Document.php:65
+#. translators: %1: Document Library Pro link start, %2: Document Library Pro link end
+msgid ""
+"Upgrade to %1$sDocument Library Pro%2$s to have a separate page for each "
+"document. You can use this instead - or in addition to - the download links "
+"on the main document library page. It’s ideal for providing more "
+"information about each document, or even embedding documents directly onto "
+"the page:"
+msgstr ""
+"%1$s문서 라이브러리 프로%2$s로 업그레이드하여 각 문서에 대한 별도의 페이지를 가질 수 있습니다. 이를 대신 사용하거나 주요 문서 "
+"라이브러리 페이지의 다운로드 링크와 함께 사용할 수 있습니다. 각 문서에 대한 더 많은 정보를 제공하거나 문서를 페이지에 직접 삽입하는 "
+"데 이상적입니다:"
+
+#: src/Admin/Wizard/Steps/Behavior.php:33
+msgid "Behavior"
+msgstr "동작"
+
+#: src/Admin/Wizard/Steps/Behavior.php:34
+msgid ""
+"Finally, choose from a range of options to customize your document "
+"libraries."
+msgstr "마지막으로, 문서 라이브러리를 사용자 정의할 다양한 옵션 중에서 선택하세요."
+
+#: src/Admin/Wizard/Steps/Behavior.php:35
+msgid "Document library behavior"
+msgstr "문서 라이브러리 동작"
+
+#: src/Admin/Wizard/Steps/Behavior.php:60
+#: src/Admin/Wizard/Steps/Layout.php:47
+msgid "Read more"
+msgstr "더 읽기"
+
+#: src/Admin/Wizard/Steps/Behavior.php:115
+msgid ""
+"Show filters dropdown to allow users to filter by categories, tags, or "
+"custom taxonomy."
+msgstr "사용자가 카테고리, 태그 또는 사용자 정의 분류법으로 필터링할 수 있도록 필터 드롭다운을 표시합니다."
+
+#: src/Admin/Wizard/Steps/Behavior.php:129
+msgid "Enable this if you will have lots of documents, otherwise leave it blank."
+msgstr "문서가 많이 있을 경우 이 옵션을 활성화하세요. 그렇지 않으면 비워 두세요."
+
+#: src/Admin/Wizard/Steps/Completed.php:25
+msgid "Ready"
+msgstr "준비 완료"
+
+#: src/Admin/Wizard/Steps/Completed.php:27
+msgid "Complete Setup"
+msgstr "설정 완료"
+
+#: src/Admin/Wizard/Steps/Completed.php:42
+#. translators: %1: Add Document link open %2: Add Document link close %3: Document Library page link open %4: Document library page link close
+msgid ""
+"Congratulations, you have finished setting up the plugin! The next step is "
+"to start %1$sadding%2$s documents. Your documents will be listed on the "
+"%3$sdocument library page%4$s."
+msgstr ""
+"축하합니다, 플러그인 설정을 완료했습니다! 다음 단계는 %1$s문서를 추가하기%2$s입니다. 귀하의 문서는 %3$s문서 라이브러리 "
+"페이지%4$s에 나열됩니다."
+
+#: src/Admin/Wizard/Steps/Layout.php:32
+msgid "Layout and Content"
+msgstr "레이아웃 및 내용"
+
+#: src/Admin/Wizard/Steps/Layout.php:33
+msgid "First, choose the layout for your document libraries."
+msgstr "먼저, 문서 라이브러리의 레이아웃을 선택하세요."
+
+#: src/Admin/Wizard/Steps/Layout.php:34
+msgid "Layout and content"
+msgstr "레이아웃 및 내용"
+
+#: src/Admin/Wizard/Steps/Links.php:32
+msgid "Links"
+msgstr "링크"
+
+#: src/Admin/Wizard/Steps/Links.php:33
+msgid "Next, decide how the links to download a document will look and behave."
+msgstr "다음으로, 문서를 다운로드하기 위한 링크의 모양과 동작을 결정하세요."
+
+#: src/Admin/Wizard/Steps/Upsell.php:26
+msgid "More"
+msgstr "더 보기"
+
+#: src/Admin/Wizard/Steps/Upsell.php:30
+#. translators: %1$s: URL to All Access Pass page %2$s: URL to the KB about the upgrading process
+msgid ""
+"Enhance your website with these fantastic plugins from Barn2, or get them "
+"all by upgrading to an <a href=\"%1$s\" target=\"_blank\">All Access "
+"Pass<a/>! <a href=\"%2$s\" target=\"_blank\">(learn how here)</a>"
+msgstr ""
+"Barn2의 이 환상적인 플러그인으로 웹사이트를 향상시키거나 <a href=\"%1$s\" target=\"_blank\">올인클루시브 "
+"패스<a/>로 업그레이드하여 모든 플러그인을 얻으세요! <a href=\"%2$s\" target=\"_blank\">(여기서 방법을 "
+"배우세요)</a>"
+
+#: src/Admin/Wizard/Steps/Upsell.php:35
+msgid "Extra features"
+msgstr "추가 기능"
+
+#: src/Admin/Wizard/Steps/Welcome.php:23
+msgid "Welcome"
+msgstr "환영합니다"
+
+#: src/Admin/Wizard/Steps/Welcome.php:25
+msgid "Start displaying documents in no time."
+msgstr "문서를 곧바로 표시하기 시작합니다."
+
+#: src/Admin/Wizard/Steps/Welcome.php:36
+msgid ""
+"Use this setup wizard to quickly configure the most popular options for "
+"your document libraries. You can change these options later on the plugin "
+"settings page or by relaunching the setup wizard. You can also override "
+"these options in the shortcode for individual libraries."
+msgstr ""
+"이 설정 마법사를 사용하여 문서 라이브러리에 가장 인기 있는 옵션을 빠르게 구성하세요. 이러한 옵션은 나중에 플러그인 설정 페이지에서 "
+"변경하거나 설정 마법사를 다시 실행하여 변경할 수 있습니다. 개별 라이브러리에 대한 단축 코드에서 이러한 옵션을 무시할 수도 있습니다."
+
+#: src/Document.php:48
+msgid "Document does not exist"
+msgstr "문서가 존재하지 않습니다"
+
+#: src/Frontend_Scripts.php:69
+msgid "(_MAX_ in total)"
+msgstr "(_MAX_ 총)"
+
+#: src/Frontend_Scripts.php:70
+msgid "Show _MENU_ entries"
+msgstr "_MENU_ 항목 표시"
+
+#: src/Frontend_Scripts.php:71
+msgid "Search:"
+msgstr "검색:"
+
+#: src/Frontend_Scripts.php:72
+msgid "Loading..."
+msgstr "로딩 중..."
+
+#: src/Frontend_Scripts.php:74
+msgid "No data available in table"
+msgstr "테이블에 사용할 수 있는 데이터가 없습니다"
+
+#: src/Frontend_Scripts.php:76
+msgid "First"
+msgstr "첫 번째"
+
+#: src/Frontend_Scripts.php:77
+msgid "Last"
+msgstr "마지막"
+
+#: src/Frontend_Scripts.php:78
+msgid "Next"
+msgstr "다음"
+
+#: src/Frontend_Scripts.php:79
+msgid "Previous"
+msgstr "이전"
+
+#: src/Frontend_Scripts.php:81
+msgid "Showing _START_ to _END_ of _TOTAL_ entries"
+msgstr "_TOTAL_ 항목 중 _START_에서 _END_까지 표시"
+
+#: src/Frontend_Scripts.php:82
+msgid "Showing 0 to 0 of 0 entries"
+msgstr "0 항목 중 0에서 0까지 표시"
+
+#: src/Frontend_Scripts.php:87
+#. translators: ARIA text for sorting column in ascending order
+msgid ": activate to sort column ascending"
+msgstr ": 열을 오름차순으로 정렬하려면 활성화하세요"
+
+#: src/Frontend_Scripts.php:89
+#. translators: ARIA text for sorting column in descending order
+msgid ": activate to sort column descending"
+msgstr ": 열을 내림차순으로 정렬하려면 활성화하세요"
+
+#: src/Frontend_Scripts.php:91
+msgid "No matching records found"
+msgstr "일치하는 레코드를 찾을 수 없음"
+
+#: src/Frontend_Scripts.php:93
+msgid "No results found"
+msgstr "결과를 찾을 수 없음"
+
+#: src/Frontend_Scripts.php:94
+#: src/Util/SVG_Icon.php:81
+msgid "Reset"
+msgstr "초기화"
+
+#: src/Post_Type.php:48
+msgid "Documents Archives"
+msgstr "문서 아카이브"
+
+#: src/Post_Type.php:49
+msgid "Documents Attributes"
+msgstr "문서 속성"
+
+#: src/Post_Type.php:50
+msgid "Parent Documents:"
+msgstr "상위 문서:"
+
+#: src/Post_Type.php:51
+msgid "All Documents"
+msgstr "모든 문서"
+
+#: src/Post_Type.php:52
+msgid "Add New Document"
+msgstr "새 문서 추가"
+
+#: src/Post_Type.php:54
+msgid "New Document"
+msgstr "새 문서"
+
+#: src/Post_Type.php:55
+msgid "Edit Document"
+msgstr "문서 편집"
+
+#: src/Post_Type.php:56
+msgid "Update Document"
+msgstr "문서 업데이트"
+
+#: src/Post_Type.php:57
+msgid "View Document"
+msgstr "문서 보기"
+
+#: src/Post_Type.php:58
+msgid "View Documents"
+msgstr "문서 보기"
+
+#: src/Post_Type.php:59
+msgid "Search Documents"
+msgstr "문서 검색"
+
+#: src/Post_Type.php:60
+msgid "Not found"
+msgstr "찾을 수 없음"
+
+#: src/Post_Type.php:61
+msgid "Not found in Trash"
+msgstr "휴지통에서 찾을 수 없음"
+
+#: src/Post_Type.php:63
+msgid "Set featured image"
+msgstr "대표 이미지 설정"
+
+#: src/Post_Type.php:64
+msgid "Remove featured image"
+msgstr "대표 이미지 제거"
+
+#: src/Post_Type.php:65
+msgid "Use as featured image"
+msgstr "대표 이미지로 사용"
+
+#: src/Post_Type.php:66
+msgid "Insert into Document"
+msgstr "문서에 삽입"
+
+#: src/Post_Type.php:67
+msgid "Uploaded to this document"
+msgstr "이 문서에 업로드됨"
+
+#: src/Post_Type.php:68
+msgid "Document list"
+msgstr "문서 목록"
+
+#: src/Post_Type.php:69
+msgid "Documents list navigation"
+msgstr "문서 목록 탐색"
+
+#: src/Post_Type.php:70
+msgid "Filter Documents list"
+msgstr "문서 목록 필터링"
+
+#: src/Post_Type.php:75
+msgid "Document Library documents."
+msgstr "문서 라이브러리 문서입니다."
+
+#: src/Review_Notice.php:118
+msgid "Are you enjoying Document Library Lite?"
+msgstr "문서 라이브러리 라이트를 즐기고 계신가요?"
+
+#: src/Review_Notice.php:119
+msgid ""
+"Congratulations, you've just published your 5th document! If you have time, "
+"it would be great if you could leave us a review and let us know what you "
+"think of the plugin."
+msgstr "축하합니다, 당신은 방금 5번째 문서를 발행했습니다! 시간이 되신다면, 리뷰를 남겨주시고 플러그인에 대한 의견을 알려주시면 좋겠습니다."
+
+#: src/Review_Notice.php:122
+msgid "Add Review"
+msgstr "리뷰 추가"
+
+#: src/Review_Notice.php:123
+msgid "Dismiss"
+msgstr "닫기"
+
+#: src/Review_Notice.php:126
+msgid "Barn2"
+msgstr "Barn2"
+
+#: src/Taxonomies.php:38
+msgid "All Categories"
+msgstr "모든 카테고리"
+
+#: src/Taxonomies.php:39
+msgid "Parent Category"
+msgstr "상위 카테고리"
+
+#: src/Taxonomies.php:40
+msgid "Parent Category:"
+msgstr "상위 카테고리:"
+
+#: src/Taxonomies.php:41
+msgid "New Category Name"
+msgstr "새 카테고리 이름"
+
+#: src/Taxonomies.php:42
+msgid "Add New Category"
+msgstr "새 카테고리 추가"
+
+#: src/Taxonomies.php:43
+msgid "Edit Category"
+msgstr "카테고리 편집"
+
+#: src/Taxonomies.php:44
+msgid "Update Category"
+msgstr "카테고리 업데이트"
+
+#: src/Taxonomies.php:45
+msgid "View Category"
+msgstr "카테고리 보기"
+
+#: src/Taxonomies.php:46
+msgid "Separate categories with commas"
+msgstr "카테고리를 쉼표로 구분하세요"
+
+#: src/Taxonomies.php:47
+msgid "Add or remove categories"
+msgstr "카테고리 추가 또는 제거"
+
+#: src/Taxonomies.php:48
+#: src/Taxonomies.php:87
+#: src/Taxonomies.php:125
+msgid "Choose from the most used"
+msgstr "가장 많이 사용된 항목에서 선택"
+
+#: src/Taxonomies.php:49
+msgid "Popular Categories"
+msgstr "인기 카테고리"
+
+#: src/Taxonomies.php:50
+msgid "Search Categories"
+msgstr "카테고리 검색"
+
+#: src/Taxonomies.php:51
+#: src/Taxonomies.php:90
+#: src/Taxonomies.php:128
+msgid "Not Found"
+msgstr "찾을 수 없음"
+
+#: src/Taxonomies.php:52
+msgid "No categories"
+msgstr "카테고리가 없습니다"
+
+#: src/Taxonomies.php:53
+msgid "Categories list"
+msgstr "카테고리 목록"
+
+#: src/Taxonomies.php:54
+msgid "Categories list navigation"
+msgstr "카테고리 목록 탐색"
+
+#: src/Taxonomies.php:76
+msgid "Document Downloads"
+msgstr "문서 다운로드"
+
+#: src/Taxonomies.php:77
+msgid "All Items"
+msgstr "모든 항목"
+
+#: src/Taxonomies.php:78
+msgid "Parent Item"
+msgstr "상위 항목"
+
+#: src/Taxonomies.php:79
+msgid "Parent Item:"
+msgstr "상위 항목:"
+
+#: src/Taxonomies.php:80
+msgid "New Item Name"
+msgstr "새 항목 이름"
+
+#: src/Taxonomies.php:81
+msgid "Add New Item"
+msgstr "새 항목 추가"
+
+#: src/Taxonomies.php:82
+msgid "Edit Item"
+msgstr "항목 편집"
+
+#: src/Taxonomies.php:83
+msgid "Update Item"
+msgstr "항목 업데이트"
+
+#: src/Taxonomies.php:84
+msgid "View Item"
+msgstr "항목 보기"
+
+#: src/Taxonomies.php:85
+msgid "Separate items with commas"
+msgstr "항목을 쉼표로 구분하세요"
+
+#: src/Taxonomies.php:86
+msgid "Add or remove items"
+msgstr "항목 추가 또는 제거"
+
+#: src/Taxonomies.php:88
+msgid "Popular Items"
+msgstr "인기 항목"
+
+#: src/Taxonomies.php:89
+msgid "Search Items"
+msgstr "항목 검색"
+
+#: src/Taxonomies.php:91
+msgid "No items"
+msgstr "항목이 없습니다"
+
+#: src/Taxonomies.php:92
+msgid "Items list"
+msgstr "항목 목록"
+
+#: src/Taxonomies.php:93
+msgid "Items list navigation"
+msgstr "항목 목록 탐색"
+
+#: src/Taxonomies.php:114
+msgid "File Types"
+msgstr "파일 형식"
+
+#: src/Taxonomies.php:115
+msgid "All File Types"
+msgstr "모든 파일 형식"
+
+#: src/Taxonomies.php:116
+msgid "Parent File Type"
+msgstr "부모 파일 형식"
+
+#: src/Taxonomies.php:117
+msgid "Parent File Type:"
+msgstr "부모 파일 형식:"
+
+#: src/Taxonomies.php:118
+msgid "New File Type Name"
+msgstr "새 파일 형식 이름"
+
+#: src/Taxonomies.php:119
+msgid "Add New File Type"
+msgstr "새 파일 형식 추가"
+
+#: src/Taxonomies.php:120
+msgid "Edit File Type"
+msgstr "파일 형식 편집"
+
+#: src/Taxonomies.php:121
+msgid "Update File Type"
+msgstr "파일 형식 업데이트"
+
+#: src/Taxonomies.php:122
+msgid "View File Type"
+msgstr "파일 형식 보기"
+
+#: src/Taxonomies.php:123
+msgid "Separate file types with commas"
+msgstr "파일 형식을 쉼표로 구분하세요"
+
+#: src/Taxonomies.php:124
+msgid "Add or remove file types"
+msgstr "파일 형식을 추가하거나 제거하세요"
+
+#: src/Taxonomies.php:126
+msgid "Popular File Types"
+msgstr "인기 파일 형식"
+
+#: src/Taxonomies.php:127
+msgid "Search File Types"
+msgstr "파일 형식 검색"
+
+#: src/Taxonomies.php:129
+msgid "No file types"
+msgstr "파일 형식 없음"
+
+#: src/Taxonomies.php:130
+msgid "File types list"
+msgstr "파일 형식 목록"
+
+#: src/Taxonomies.php:131
+msgid "File types list navigation"
+msgstr "파일 형식 목록 탐색"
+
+#: src/Util/Options.php:112
+#: src/Util/SVG_Icon.php:78
+msgid "Download"
+msgstr "다운로드"
+
+#: src/Util/Options.php:234
+msgid "Image"
+msgstr "이미지"
+
+#: src/Util/Options.php:252
+msgid "Date"
+msgstr "날짜"
+
+#: src/Util/Options.php:264
+#: src/Util/SVG_Icon.php:77
+msgid "Link"
+msgstr "링크"
+
+#: src/Util/SVG_Icon.php:80
+msgid "Close"
+msgstr "닫기"
+
+#: templates/photoswipe.php:45
+msgid "Close (Esc)"
+msgstr "닫기 (Esc)"
+
+#: templates/photoswipe.php:47
+msgid "Share"
+msgstr "공유"
+
+#: templates/photoswipe.php:49
+msgid "Toggle fullscreen"
+msgstr "전체 화면 전환"
+
+#: templates/photoswipe.php:51
+msgid "Zoom in/out"
+msgstr "확대/축소"
+
+#: templates/photoswipe.php:68
+msgid "Previous (arrow left)"
+msgstr "이전 (왼쪽 화살표)"
+
+#: templates/photoswipe.php:70
+msgid "Next (arrow right)"
+msgstr "다음 (오른쪽 화살표)"
+
+#: src/Frontend_Scripts.php:83
+msgctxt "thousands separator"
+msgid ","
+msgstr ","
+
+#: src/Frontend_Scripts.php:84
+msgctxt "decimal mark"
+msgid "."
+msgstr "."
+
+#: src/Plugin_Setup.php:107
+msgctxt "Page slug"
+msgid "document-library"
+msgstr "문서-라이브러리"
+
+#: src/Plugin_Setup.php:108
+msgctxt "Page title"
+msgid "Document Library"
+msgstr "문서 라이브러리"
+
+#: src/Post_Type.php:44
+msgctxt "Post Type General Name"
+msgid "Documents"
+msgstr "문서들"
+
+#: src/Post_Type.php:45
+msgctxt "Post Type Singular Name"
+msgid "Document"
+msgstr "문서"
+
+#: src/Post_Type.php:46
+msgctxt "Admin Menu text"
+msgid "Documents"
+msgstr "문서들"
+
+#: src/Post_Type.php:47
+msgctxt "Add New on Toolbar"
+msgid "Documents"
+msgstr "문서들"
+
+#: src/Taxonomies.php:35
+msgctxt "Taxonomy General Name"
+msgid "Document Categories"
+msgstr "문서 카테고리"
+
+#: src/Taxonomies.php:74
+msgctxt "Taxonomy General Name"
+msgid "Document Download"
+msgstr "문서 다운로드"
+
+#: src/Taxonomies.php:112
+msgctxt "Taxonomy General Name"
+msgid "File Types"
+msgstr "파일 형식"
+
+#: src/Taxonomies.php:36
+msgctxt "Taxonomy Singular Name"
+msgid "Document Category"
+msgstr "문서 카테고리"
+
+#: src/Taxonomies.php:75
+msgctxt "Taxonomy Singular Name"
+msgid "Document Download"
+msgstr "문서 다운로드"
+
+#: src/Taxonomies.php:113
+msgctxt "Taxonomy Singular Name"
+msgid "File Type"
+msgstr "파일 형식"

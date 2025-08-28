@@ -1,0 +1,1458 @@
+# Copyright (C) 2025 Barn2 Plugins
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Document Library Lite - Manage & Display Downloads "
+"1.1.3\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/document-library-lite\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-04-20T12:36:23+00:00\n"
+"PO-Revision-Date: 2025-08-28 15:56+0000\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: document-library-lite\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru-RU\n"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Plugin Name of the plugin
+msgid "Document Library Lite - Manage & Display Downloads"
+msgstr "Документная библиотека Лайт - Управление и отображение загрузок"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/document-library-lite/"
+msgstr "https://wordpress.org/plugins/document-library-lite/"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Description of the plugin
+msgid "Add documents and display them in a searchable document library."
+msgstr ""
+"Добавьте документы и отображайте их в библиотеке документов с возможностью "
+"поиска."
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Author of the plugin
+msgid "Barn2 Plugins"
+msgstr "Barn2 Плагины"
+
+#: D:\local\amir\app\public\wp-content\plugins\document-library-lite\document-library-lite.php
+#. Author URI of the plugin
+msgid "https://barn2.com"
+msgstr "https://barn2.com"
+
+#: src/Admin/Admin_Controller.php:70
+#: src/Admin/Page/Settings.php:89
+msgid "Settings"
+msgstr "Настройки"
+
+#: src/Admin/Admin_Controller.php:88
+msgid "Pro Version"
+msgstr "Профессиональная версия"
+
+#: src/Admin/Admin_Controller.php:123
+msgid "Select File"
+msgstr "Выбрать файл"
+
+#: src/Admin/Admin_Controller.php:124
+#: src/Admin/Metabox/Document_Link.php:59
+msgid "Add File"
+msgstr "Добавить файл"
+
+#: src/Admin/Admin_Controller.php:125
+#: src/Admin/Metabox/Document_Link.php:59
+msgid "Replace File"
+msgstr "Заменить файл"
+
+#: src/Admin/Media_Library.php:41
+msgid "All types"
+msgstr "Все типы"
+
+#: src/Admin/Media_Library.php:42
+#: src/Admin/Menu.php:36
+#: src/Admin/Menu.php:37
+#: src/Post_Type.php:74
+msgid "Documents"
+msgstr "Документы"
+
+#: src/Admin/Menu.php:48
+#: src/Admin/Menu.php:49
+#: src/Post_Type.php:53
+msgid "Add New"
+msgstr "Добавить новый"
+
+#: src/Admin/Menu.php:59
+#: src/Admin/Menu.php:60
+#: src/Taxonomies.php:37
+#: src/Util/Options.php:246
+msgid "Categories"
+msgstr "Категории"
+
+#: src/Admin/Metabox/Document_Link.php:43
+msgid "Document Link"
+msgstr "Ссылка на документ"
+
+#: src/Admin/Metabox/Document_Link.php:64
+msgid "Upload a file or select one from the media library:"
+msgstr "Загрузите файл или выберите один из медиабиблиотеки:"
+
+#: src/Admin/Metabox/Document_Link.php:68
+msgid "None"
+msgstr "Нет"
+
+#: src/Admin/Metabox/Document_Link.php:69
+msgid "File Upload"
+msgstr "Загрузка файла"
+
+#: src/Admin/Metabox/Document_Link.php:81
+#. translators: %s: File name
+msgid "Remove file: %s"
+msgstr "Удалить файл: %s"
+
+#: src/Admin/Page/Import.php:51
+msgid "Document Library Importing"
+msgstr "Импорт документов в библиотеку"
+
+#: src/Admin/Page/Import.php:52
+msgid "Import"
+msgstr "Импорт"
+
+#: src/Admin/Page/Import.php:66
+msgid "Import documents"
+msgstr "Импорт документов"
+
+#: src/Admin/Page/Import.php:72
+#. translators: %1: Document Library Pro link start, %2: Document Library Pro link end
+msgid ""
+"Lots of documents? Upgrade to %1$sDocument Library Pro%2$s to add documents "
+"in bulk - either by using drag-and-drop to upload documents directly to "
+"WordPress, or by importing documents from a CSV file. It’s a fantastic "
+"time-saver for adding multiple documents at once."
+msgstr ""
+"Много документов? Обновите до %1$sDocument Library Pro%2$s, чтобы добавлять "
+"документы оптом - либо перетаскивая их непосредственно в WordPress, либо "
+"импортируя документы из CSV-файла. Это отличный способ сэкономить время при "
+"добавлении нескольких документов сразу."
+
+#: src/Admin/Page/Protect.php:48
+#: src/Admin/Page/Protect.php:49
+msgid "Protect"
+msgstr "Защитить"
+
+#: src/Admin/Page/Settings.php:88
+#: src/Admin/Page/Settings.php:110
+msgid "Document Library Lite Settings"
+msgstr "Настройки Document Library Lite"
+
+#: src/Admin/Page/Settings.php:134
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: src/Admin/Page_List.php:42
+msgid "Document Library Page"
+msgstr "Страница библиотеки документов"
+
+#: src/Admin/Settings_Tab/Document_Grid.php:35
+msgid "Document Grid"
+msgstr "Сетка документов"
+
+#: src/Admin/Settings_Tab/Document_Grid.php:68
+#. translators: %1: Document Library Pro link start, %2: Document Library Pro link end
+msgid ""
+"Upgrade to %1$sDocument Library Pro%2$s to display documents in a beautiful "
+"grid layout:"
+msgstr ""
+"Обновите до %1$sDocument Library Pro%2$s, чтобы отображать документы в "
+"красивой сетке:"
+
+#: src/Admin/Settings_Tab/Document_Table.php:36
+msgid "Document Tables"
+msgstr "Таблицы документов"
+
+#: src/Admin/Settings_Tab/Document_Table.php:55
+#: src/Admin/Settings_Tab/General.php:70
+msgid "Library content"
+msgstr "Содержимое библиотеки"
+
+#: src/Admin/Settings_Tab/Document_Table.php:58
+#: src/Admin/Settings_Tab/General.php:64
+#: src/Admin/Wizard/Steps/Links.php:34
+msgid "Document links"
+msgstr "Ссылки на документы"
+
+#: src/Admin/Settings_Tab/Document_Table.php:61
+msgid "Loading & performance"
+msgstr "Загрузка и производительность"
+
+#: src/Admin/Settings_Tab/Document_Table.php:64
+#: src/Admin/Settings_Tab/General.php:73
+msgid "Document library controls"
+msgstr "Элементы управления библиотекой документов"
+
+#: src/Admin/Settings_Tab/Document_Table.php:67
+#: src/Admin/Settings_Tab/Document_Table.php:253
+msgid "Design"
+msgstr "Дизайн"
+
+#: src/Admin/Settings_Tab/Document_Table.php:80
+#: src/Admin/Wizard/Steps/Layout.php:46
+msgid "Columns"
+msgstr "Столбцы"
+
+#: src/Admin/Settings_Tab/Document_Table.php:82
+#: src/Admin/Wizard/Steps/Layout.php:47
+msgid "Enter the fields to include in your document tables."
+msgstr "Введите поля, которые нужно включить в ваши таблицы документов."
+
+#: src/Admin/Settings_Tab/Document_Table.php:87
+msgid "Image size"
+msgstr "Размер изображения"
+
+#: src/Admin/Settings_Tab/Document_Table.php:89
+msgid "Enter WxH in pixels (e.g. 80x80)."
+msgstr "Введите WxH в пикселях (например, 80x80)."
+
+#: src/Admin/Settings_Tab/Document_Table.php:105
+msgid "Accessing documents"
+msgstr "Доступ к документам"
+
+#: src/Admin/Settings_Tab/Document_Table.php:108
+msgid "How a user accesses documents from the ‘link’ column."
+msgstr "Как пользователь получает доступ к документам из столбца «ссылка»."
+
+#: src/Admin/Settings_Tab/Document_Table.php:110
+#: src/Admin/Settings_Tab/General.php:198
+msgid "Link to document"
+msgstr "Ссылка на документ"
+
+#: src/Admin/Settings_Tab/Document_Table.php:111
+msgid "Multi-select checkboxes"
+msgstr "Чекбоксы для множественного выбора"
+
+#: src/Admin/Settings_Tab/Document_Table.php:112
+#: src/Admin/Settings_Tab/Document_Table.php:124
+msgid "Both"
+msgstr "Оба"
+
+#: src/Admin/Settings_Tab/Document_Table.php:117
+msgid "Multi-download button"
+msgstr "Кнопка множественной загрузки"
+
+#: src/Admin/Settings_Tab/Document_Table.php:120
+msgid "The position of the button to download all selected documents."
+msgstr "Положение кнопки для загрузки всех выбранных документов."
+
+#: src/Admin/Settings_Tab/Document_Table.php:122
+msgid "Below document library"
+msgstr "Под библиотекой документов"
+
+#: src/Admin/Settings_Tab/Document_Table.php:123
+msgid "Above document library"
+msgstr "Над библиотекой документов"
+
+#: src/Admin/Settings_Tab/Document_Table.php:129
+msgid "Multi-download button text"
+msgstr "Текст кнопки множественной загрузки"
+
+#: src/Admin/Settings_Tab/Document_Table.php:132
+msgid "The text for the button to download all selected documents."
+msgstr "Текст для кнопки загрузки всех выбранных документов."
+
+#: src/Admin/Settings_Tab/Document_Table.php:133
+msgid "Download Selected Documents"
+msgstr "Загрузить выбранные документы"
+
+#: src/Admin/Settings_Tab/Document_Table.php:148
+#: src/Admin/Wizard/Steps/Behavior.php:126
+msgid "Lazy load"
+msgstr "Ленивая загрузка"
+
+#: src/Admin/Settings_Tab/Document_Table.php:151
+#: src/Admin/Wizard/Steps/Behavior.php:128
+msgid "Load the document table one page at a time"
+msgstr "Загружать таблицу документов по одной странице за раз"
+
+#: src/Admin/Settings_Tab/Document_Table.php:152
+msgid "Enable this if you have many documents or experience slow page load times."
+msgstr ""
+"Включите это, если у вас много документов или вы испытываете медленную "
+"загрузку страниц."
+
+#: src/Admin/Settings_Tab/Document_Table.php:153
+msgid ""
+"Warning: Lazy load limits the searching and sorting features in the "
+"document library. Only use it if you definitely need it."
+msgstr ""
+"Предупреждение: Ленивая загрузка ограничивает функции поиска и сортировки в "
+"библиотеке документов. Используйте это только в том случае, если вам это "
+"действительно нужно."
+
+#: src/Admin/Settings_Tab/Document_Table.php:174
+msgid "Caching"
+msgstr "Кэширование"
+
+#: src/Admin/Settings_Tab/Document_Table.php:177
+msgid "Cache document libraries to improve load time"
+msgstr "Кэшировать библиотеки документов для улучшения времени загрузки"
+
+#: src/Admin/Settings_Tab/Document_Table.php:185
+msgid "Cache expires after"
+msgstr "Кэш истекает через"
+
+#: src/Admin/Settings_Tab/Document_Table.php:188
+msgid "hours"
+msgstr "часы"
+
+#: src/Admin/Settings_Tab/Document_Table.php:189
+msgid "Your table data will be refreshed after this length of time."
+msgstr "Ваши данные таблицы будут обновлены после этого времени."
+
+#: src/Admin/Settings_Tab/Document_Table.php:210
+#: src/Admin/Wizard/Steps/Behavior.php:113
+msgid "Search filters"
+msgstr "Фильтры поиска"
+
+#: src/Admin/Settings_Tab/Document_Table.php:214
+#: src/Admin/Wizard/Steps/Behavior.php:119
+msgid "Disabled"
+msgstr "Отключено"
+
+#: src/Admin/Settings_Tab/Document_Table.php:215
+msgid "Show based on columns in table"
+msgstr "Показать на основе столбцов в таблице"
+
+#: src/Admin/Settings_Tab/Document_Table.php:216
+#: src/Admin/Settings_Tab/Document_Table.php:257
+msgid "Custom"
+msgstr "Пользовательский"
+
+#: src/Admin/Settings_Tab/Document_Table.php:218
+msgid ""
+"Show dropdown menus to filter by doc_categories, doc_tags, or custom "
+"taxonomy."
+msgstr ""
+"Показать выпадающие меню для фильтрации по doc_categories, doc_tags или "
+"пользовательской таксономии."
+
+#: src/Admin/Settings_Tab/Document_Table.php:227
+msgid "Page length"
+msgstr "Длина страницы"
+
+#: src/Admin/Settings_Tab/Document_Table.php:231
+#: src/Admin/Settings_Tab/General.php:361
+#: src/Admin/Settings_Tab/General.php:415
+#: src/Admin/Settings_Tab/General.php:428
+msgid "Above library"
+msgstr "Над библиотекой"
+
+#: src/Admin/Settings_Tab/Document_Table.php:232
+#: src/Admin/Settings_Tab/General.php:362
+#: src/Admin/Settings_Tab/General.php:416
+#: src/Admin/Settings_Tab/General.php:429
+msgid "Below library"
+msgstr "Под библиотекой"
+
+#: src/Admin/Settings_Tab/Document_Table.php:233
+#: src/Admin/Settings_Tab/General.php:363
+#: src/Admin/Settings_Tab/General.php:417
+#: src/Admin/Settings_Tab/General.php:430
+msgid "Above and below library"
+msgstr "Над и под библиотекой"
+
+#: src/Admin/Settings_Tab/Document_Table.php:234
+#: src/Admin/Settings_Tab/General.php:364
+#: src/Admin/Settings_Tab/General.php:418
+#: src/Admin/Settings_Tab/General.php:431
+msgid "Hidden"
+msgstr "Скрыто"
+
+#: src/Admin/Settings_Tab/Document_Table.php:236
+msgid "The position of the 'Show [x] entries' dropdown list."
+msgstr "Положение выпадающего списка 'Показать [x] записей'."
+
+#: src/Admin/Settings_Tab/Document_Table.php:256
+msgid "Default"
+msgstr "По умолчанию"
+
+#: src/Admin/Settings_Tab/Document_Table.php:275
+msgid "Customize the design of the document tables."
+msgstr "Настройте дизайн таблиц документов."
+
+#: src/Admin/Settings_Tab/Document_Table.php:286
+#. translators: %1: knowledge base link start, %2: knowledge base link end
+msgid ""
+"The following options are used when documents are listed in a table layout. "
+"You can override them in the [doc_library] shortcode. See the %1$sknowledge "
+"base%2$s for details of how to configure your document tables even further."
+msgstr ""
+"Следующие параметры используются, когда документы перечислены в табличном "
+"формате. Вы можете переопределить их в шорткоде [doc_library]. См. "
+"%1$sknowledge base%2$s для получения подробной информации о том, как еще "
+"более детально настроить ваши таблицы документов."
+
+#: src/Admin/Settings_Tab/General.php:37
+msgid "General"
+msgstr "Общее"
+
+#: src/Admin/Settings_Tab/General.php:58
+msgid "Document data"
+msgstr "Данные документа"
+
+#: src/Admin/Settings_Tab/General.php:61
+msgid "Document lists"
+msgstr "Списки документов"
+
+#: src/Admin/Settings_Tab/General.php:67
+#: src/Admin/Settings_Tab/General.php:265
+#: src/Admin/Wizard/Steps/Links.php:83
+msgid "Document preview"
+msgstr "Предварительный просмотр документа"
+
+#: src/Admin/Settings_Tab/General.php:76
+msgid "Number of documents"
+msgstr "Количество документов"
+
+#: src/Admin/Settings_Tab/General.php:79
+msgid "Sorting"
+msgstr "Сортировка"
+
+#: src/Admin/Settings_Tab/General.php:88
+msgid ""
+"Use the following options to manage the fields that are used to store "
+"information about your documents."
+msgstr ""
+"Используйте следующие параметры для управления полями, которые используются "
+"для хранения информации о ваших документах."
+
+#: src/Admin/Settings_Tab/General.php:100
+#. translators: %1: knowledge base link start, %2: knowledge base link end
+msgid ""
+"These options set defaults for all your document libraries and are used for "
+"the table layout. You can override them in the shortcode for individual "
+"libraries. %1$sRead more%2$s."
+msgstr ""
+"Эти параметры устанавливают значения по умолчанию для всех ваших библиотек "
+"документов и используются для таблицы. Вы можете переопределить их в "
+"шорткоде для отдельных библиотек. %1$sЧитать далее%2$s."
+
+#: src/Admin/Settings_Tab/General.php:128
+msgid "Document fields"
+msgstr "Поля документа"
+
+#: src/Admin/Settings_Tab/General.php:129
+#: src/Util/Options.php:150
+msgid "Pro version only"
+msgstr "Только Pro версия"
+
+#: src/Admin/Settings_Tab/General.php:132
+#: src/Util/Options.php:258
+msgid "Content"
+msgstr "Содержание"
+
+#: src/Admin/Settings_Tab/General.php:133
+msgid "Excerpt"
+msgstr "Отрывок"
+
+#: src/Admin/Settings_Tab/General.php:134
+#: src/Post_Type.php:62
+msgid "Featured Image"
+msgstr "Изображение для заметки"
+
+#: src/Admin/Settings_Tab/General.php:135
+msgid "Comments"
+msgstr "Комментарии"
+
+#: src/Admin/Settings_Tab/General.php:161
+msgid "Document library page"
+msgstr "Страница библиотеки документов"
+
+#: src/Admin/Settings_Tab/General.php:163
+msgid "The page to display your documents."
+msgstr "Страница для отображения ваших документов."
+
+#: src/Admin/Settings_Tab/General.php:164
+msgid ""
+"You can also use the [doc_library] shortcode to list documents on other "
+"pages."
+msgstr ""
+"Вы также можете использовать шорткод [doc_library] для перечисления "
+"документов на других страницах."
+
+#: src/Admin/Settings_Tab/General.php:170
+#: src/Admin/Wizard/Steps/Layout.php:52
+msgid "Default layout"
+msgstr "Макет по умолчанию"
+
+#: src/Admin/Settings_Tab/General.php:173
+#: src/Admin/Wizard/Steps/Layout.php:57
+msgid "Table"
+msgstr "Таблица"
+
+#: src/Admin/Settings_Tab/General.php:174
+#: src/Admin/Wizard/Steps/Layout.php:61
+msgid "Grid"
+msgstr "Сетка"
+
+#: src/Admin/Settings_Tab/General.php:179
+#: src/Admin/Wizard/Steps/Layout.php:68
+msgid "Folders"
+msgstr "Папки"
+
+#: src/Admin/Settings_Tab/General.php:182
+#: src/Admin/Wizard/Steps/Layout.php:69
+msgid "Display the document library in folders"
+msgstr "Отображать библиотеку документов в папках"
+
+#: src/Admin/Settings_Tab/General.php:201
+msgid "Include a link to the document."
+msgstr "Включить ссылку на документ."
+
+#: src/Admin/Settings_Tab/General.php:202
+msgid "Use the 'Link destination' option below to control the link behavior."
+msgstr ""
+"Используйте параметр 'Назначение ссылки' ниже, чтобы контролировать "
+"поведение ссылки."
+
+#: src/Admin/Settings_Tab/General.php:206
+#: src/Admin/Wizard/Steps/Links.php:52
+msgid "Link style"
+msgstr "Стиль ссылки"
+
+#: src/Admin/Settings_Tab/General.php:209
+msgid "Control the appearance of the link to the document."
+msgstr "Контролируйте внешний вид ссылки на документ."
+
+#: src/Admin/Settings_Tab/General.php:211
+#: src/Admin/Settings_Tab/General.php:278
+#: src/Admin/Wizard/Steps/Links.php:57
+msgid "Button with text"
+msgstr "Кнопка с текстом"
+
+#: src/Admin/Settings_Tab/General.php:212
+#: src/Admin/Settings_Tab/General.php:279
+#: src/Admin/Wizard/Steps/Links.php:61
+msgid "Button with icon and text"
+msgstr "Кнопка с иконкой и текстом"
+
+#: src/Admin/Settings_Tab/General.php:213
+#: src/Admin/Settings_Tab/General.php:280
+#: src/Admin/Wizard/Steps/Links.php:65
+msgid "Button with icon"
+msgstr "Кнопка с иконкой"
+
+#: src/Admin/Settings_Tab/General.php:214
+#: src/Admin/Wizard/Steps/Links.php:69
+msgid "Download icon only"
+msgstr "Скачать только иконку"
+
+#: src/Admin/Settings_Tab/General.php:215
+#: src/Admin/Wizard/Steps/Links.php:73
+msgid "File type icon"
+msgstr "Иконка типа файла"
+
+#: src/Admin/Settings_Tab/General.php:216
+#: src/Admin/Settings_Tab/General.php:282
+#: src/Admin/Wizard/Steps/Links.php:77
+msgid "Text link"
+msgstr "Текстовая ссылка"
+
+#: src/Admin/Settings_Tab/General.php:222
+#: src/Admin/Wizard/Steps/Links.php:46
+msgid "Link text"
+msgstr "Текст ссылки"
+
+#: src/Admin/Settings_Tab/General.php:224
+#: src/Admin/Wizard/Steps/Behavior.php:54
+#: src/Admin/Wizard/Steps/Links.php:48
+msgid "The text displayed on the button or link."
+msgstr "Текст, отображаемый на кнопке или ссылке."
+
+#: src/Admin/Settings_Tab/General.php:228
+msgid "Link destination"
+msgstr "Назначение ссылки"
+
+#: src/Admin/Settings_Tab/General.php:231
+msgid "What happens when someone clicks on a link to a document."
+msgstr "Что происходит, когда кто-то нажимает на ссылку на документ."
+
+#: src/Admin/Settings_Tab/General.php:233
+msgid "Direct access"
+msgstr "Прямой доступ"
+
+#: src/Admin/Settings_Tab/General.php:234
+msgid "Open single document page"
+msgstr "Открыть страницу одного документа"
+
+#: src/Admin/Settings_Tab/General.php:239
+msgid "Link target"
+msgstr "Цель ссылки"
+
+#: src/Admin/Settings_Tab/General.php:242
+msgid "Open links in a new tab"
+msgstr "Открывать ссылки в новой вкладке"
+
+#: src/Admin/Settings_Tab/General.php:247
+msgid "Clickable fields"
+msgstr "Кликабельные поля"
+
+#: src/Admin/Settings_Tab/General.php:249
+msgid "Control which fields are clickable, in addition to the 'link' field."
+msgstr "Управлять тем, какие поля являются кликабельными, помимо поля 'ссылка'."
+
+#: src/Admin/Settings_Tab/General.php:268
+#: src/Admin/Wizard/Steps/Links.php:84
+msgid "Allow users to preview documents in a lightbox"
+msgstr "Разрешить пользователям предварительный просмотр документов в лайтбоксе"
+
+#: src/Admin/Settings_Tab/General.php:269
+msgid "The preview option will appear for supported file types only."
+msgstr ""
+"Опция предварительного просмотра появится только для поддерживаемых типов "
+"файлов."
+
+#: src/Admin/Settings_Tab/General.php:273
+msgid "Preview style"
+msgstr "Стиль предварительного просмотра"
+
+#: src/Admin/Settings_Tab/General.php:276
+msgid "Control the appearance of the preview option."
+msgstr "Управлять внешним видом опции предварительного просмотра."
+
+#: src/Admin/Settings_Tab/General.php:281
+msgid "Icon only"
+msgstr "Только иконка"
+
+#: src/Admin/Settings_Tab/General.php:287
+msgid "Preview text"
+msgstr "Текст превью"
+
+#: src/Admin/Settings_Tab/General.php:290
+msgid "The text displayed on the preview button or link."
+msgstr "Текст, отображаемый на кнопке или ссылке предварительного просмотра."
+
+#: src/Admin/Settings_Tab/General.php:291
+#: src/Util/SVG_Icon.php:79
+msgid "Preview"
+msgstr "Предварительный просмотр"
+
+#: src/Admin/Settings_Tab/General.php:307
+#: src/Admin/Wizard/Steps/Behavior.php:46
+msgid "Image lightbox"
+msgstr "Изображение в светbox"
+
+#: src/Admin/Settings_Tab/General.php:309
+#: src/Admin/Wizard/Steps/Behavior.php:47
+msgid "Display images in a lightbox when opened"
+msgstr "Отображать изображения в светbox при открытии"
+
+#: src/Admin/Settings_Tab/General.php:313
+msgid "Shortcodes"
+msgstr "Короткие коды"
+
+#: src/Admin/Settings_Tab/General.php:316
+msgid ""
+"Display shortcodes, HTML and other formatting in the document content, "
+"excerpt and custom field columns"
+msgstr ""
+"Отображать короткие коды, HTML и другое форматирование в содержимом "
+"документа, отрывке и колонках настраиваемых полей"
+
+#: src/Admin/Settings_Tab/General.php:321
+msgid "Excerpt length"
+msgstr "Длина отрывка"
+
+#: src/Admin/Settings_Tab/General.php:324
+#: src/Admin/Settings_Tab/General.php:336
+msgid "words"
+msgstr "слов"
+
+#: src/Admin/Settings_Tab/General.php:325
+msgid "Enter -1 to show the full excerpt."
+msgstr "Введите -1, чтобы показать полный отрывок."
+
+#: src/Admin/Settings_Tab/General.php:333
+msgid "Content length"
+msgstr "Длина содержимого"
+
+#: src/Admin/Settings_Tab/General.php:337
+msgid "Enter -1 to show the full content."
+msgstr "Введите -1, чтобы показать полный контент."
+
+#: src/Admin/Settings_Tab/General.php:356
+msgid "Search box"
+msgstr "Поисковое поле"
+
+#: src/Admin/Settings_Tab/General.php:359
+msgid ""
+"The position of the search box above the list of documents. You can also "
+"add a search box using a shortcode or widget."
+msgstr ""
+"Положение поискового поля над списком документов. Вы также можете добавить "
+"поисковое поле с помощью короткого кода или виджета."
+
+#: src/Admin/Settings_Tab/General.php:369
+msgid "Reset button"
+msgstr "Кнопка сброса"
+
+#: src/Admin/Settings_Tab/General.php:372
+msgid "Show the reset button above the library"
+msgstr "Показать кнопку сброса над библиотекой"
+
+#: src/Admin/Settings_Tab/General.php:388
+#: src/Admin/Wizard/Steps/Behavior.php:52
+msgid "Documents per page"
+msgstr "Документов на страницу"
+
+#: src/Admin/Settings_Tab/General.php:391
+msgid ""
+"The number of documents per page of the document library. Enter -1 to "
+"display all documents on one page."
+msgstr ""
+"Количество документов на странице библиотеки документов. Введите -1, чтобы "
+"отобразить все документы на одной странице."
+
+#: src/Admin/Settings_Tab/General.php:398
+msgid "Pagination type"
+msgstr "Тип постраничной навигации"
+
+#: src/Admin/Settings_Tab/General.php:402
+msgid "Numbers only"
+msgstr "Только числа"
+
+#: src/Admin/Settings_Tab/General.php:403
+msgid "Prev|Next"
+msgstr "Предыдущий|Следующий"
+
+#: src/Admin/Settings_Tab/General.php:404
+msgid "Prev|Next + Numbers"
+msgstr "Предыдущий|Следующий + Числа"
+
+#: src/Admin/Settings_Tab/General.php:405
+msgid "Prev|Next|First|Last"
+msgstr "Предыдущий|Следующий|Первый|Последний"
+
+#: src/Admin/Settings_Tab/General.php:406
+msgid "Prev|Next|First|Last + Numbers"
+msgstr "Предыдущий|Следующий|Первый|Последний + Числа"
+
+#: src/Admin/Settings_Tab/General.php:411
+msgid "Pagination position"
+msgstr "Позиция пагинации"
+
+#: src/Admin/Settings_Tab/General.php:420
+msgid "The position of the paging buttons which scroll between results."
+msgstr "Позиция кнопок пагинации, которые прокручивают результаты."
+
+#: src/Admin/Settings_Tab/General.php:424
+msgid "Totals"
+msgstr "Итого"
+
+#: src/Admin/Settings_Tab/General.php:433
+msgid "The position of the document total, e.g. '25 documents'."
+msgstr "Позиция общего количества документов, например, '25 документов'."
+
+#: src/Admin/Settings_Tab/General.php:449
+#: src/Admin/Wizard/Steps/Behavior.php:58
+msgid "Sort by"
+msgstr "Сортировать по"
+
+#: src/Admin/Settings_Tab/General.php:453
+#: src/Admin/Wizard/Steps/Behavior.php:64
+#: src/Util/Options.php:240
+msgid "Title"
+msgstr "Название"
+
+#: src/Admin/Settings_Tab/General.php:454
+#: src/Admin/Wizard/Steps/Behavior.php:68
+#: src/Util/Options.php:228
+msgid "ID"
+msgstr "ID"
+
+#: src/Admin/Settings_Tab/General.php:455
+#: src/Admin/Wizard/Steps/Behavior.php:72
+msgid "Date published"
+msgstr "Дата публикации"
+
+#: src/Admin/Settings_Tab/General.php:456
+#: src/Admin/Wizard/Steps/Behavior.php:76
+msgid "Date modified"
+msgstr "Дата изменения"
+
+#: src/Admin/Settings_Tab/General.php:457
+#: src/Admin/Wizard/Steps/Behavior.php:80
+msgid "Page order (menu order)"
+msgstr "Порядок страниц (порядок меню)"
+
+#: src/Admin/Settings_Tab/General.php:458
+#: src/Admin/Wizard/Steps/Behavior.php:84
+msgid "Author"
+msgstr "Автор"
+
+#: src/Admin/Settings_Tab/General.php:459
+#: src/Admin/Wizard/Steps/Behavior.php:88
+msgid "Random"
+msgstr "Случайный"
+
+#: src/Admin/Settings_Tab/General.php:461
+#: src/Admin/Wizard/Steps/Behavior.php:60
+msgid "The initial sort order of the document library."
+msgstr "Начальный порядок сортировки библиотеки документов."
+
+#: src/Admin/Settings_Tab/General.php:465
+#: src/Admin/Wizard/Steps/Behavior.php:94
+msgid "Sort direction"
+msgstr "Направление сортировки"
+
+#: src/Admin/Settings_Tab/General.php:469
+#: src/Admin/Wizard/Steps/Behavior.php:99
+msgid "Automatic"
+msgstr "Автоматически"
+
+#: src/Admin/Settings_Tab/General.php:470
+#: src/Admin/Wizard/Steps/Behavior.php:103
+msgid "Ascending (A to Z, oldest to newest)"
+msgstr "По возрастанию (A до Z, от старого к новому)"
+
+#: src/Admin/Settings_Tab/General.php:471
+#: src/Admin/Wizard/Steps/Behavior.php:107
+msgid "Descending (Z to A, newest to oldest)"
+msgstr "По убыванию (Z до A, от нового к старому)"
+
+#: src/Admin/Settings_Tab/Single_Document.php:35
+msgid "Single Document"
+msgstr "Единичный документ"
+
+#: src/Admin/Settings_Tab/Single_Document.php:65
+#. translators: %1: Document Library Pro link start, %2: Document Library Pro link end
+msgid ""
+"Upgrade to %1$sDocument Library Pro%2$s to have a separate page for each "
+"document. You can use this instead - or in addition to - the download links "
+"on the main document library page. It’s ideal for providing more "
+"information about each document, or even embedding documents directly onto "
+"the page:"
+msgstr ""
+"Обновите до %1$sDocument Library Pro%2$s, чтобы иметь отдельную страницу "
+"для каждого документа. Вы можете использовать это вместо - или в дополнение "
+"к - ссылкам на скачивание на основной странице библиотеки документов. Это "
+"идеально подходит для предоставления дополнительной информации о каждом "
+"документе или даже для встраивания документов прямо на страницу:"
+
+#: src/Admin/Wizard/Steps/Behavior.php:33
+msgid "Behavior"
+msgstr "Поведение"
+
+#: src/Admin/Wizard/Steps/Behavior.php:34
+msgid ""
+"Finally, choose from a range of options to customize your document "
+"libraries."
+msgstr "Наконец, выберите из ряда опций для настройки ваших библиотек документов."
+
+#: src/Admin/Wizard/Steps/Behavior.php:35
+msgid "Document library behavior"
+msgstr "Поведение библиотеки документов"
+
+#: src/Admin/Wizard/Steps/Behavior.php:60
+#: src/Admin/Wizard/Steps/Layout.php:47
+msgid "Read more"
+msgstr "Читать далее"
+
+#: src/Admin/Wizard/Steps/Behavior.php:115
+msgid ""
+"Show filters dropdown to allow users to filter by categories, tags, or "
+"custom taxonomy."
+msgstr ""
+"Показать выпадающий список фильтров, чтобы пользователи могли фильтровать "
+"по категориям, тегам или пользовательской таксономии."
+
+#: src/Admin/Wizard/Steps/Behavior.php:129
+msgid "Enable this if you will have lots of documents, otherwise leave it blank."
+msgstr ""
+"Включите это, если у вас будет много документов, в противном случае "
+"оставьте пустым."
+
+#: src/Admin/Wizard/Steps/Completed.php:25
+msgid "Ready"
+msgstr "Готово"
+
+#: src/Admin/Wizard/Steps/Completed.php:27
+msgid "Complete Setup"
+msgstr "Завершить настройку"
+
+#: src/Admin/Wizard/Steps/Completed.php:42
+#. translators: %1: Add Document link open %2: Add Document link close %3: Document Library page link open %4: Document library page link close
+msgid ""
+"Congratulations, you have finished setting up the plugin! The next step is "
+"to start %1$sadding%2$s documents. Your documents will be listed on the "
+"%3$sdocument library page%4$s."
+msgstr ""
+"Поздравляем, вы завершили настройку плагина! Следующим шагом будет начать "
+"%1$sдобавление%2$s документов. Ваши документы будут перечислены на "
+"%3$sстранице библиотеки документов%4$s."
+
+#: src/Admin/Wizard/Steps/Layout.php:32
+msgid "Layout and Content"
+msgstr "Макет и содержание"
+
+#: src/Admin/Wizard/Steps/Layout.php:33
+msgid "First, choose the layout for your document libraries."
+msgstr "Сначала выберите макет для ваших библиотек документов."
+
+#: src/Admin/Wizard/Steps/Layout.php:34
+msgid "Layout and content"
+msgstr "Макет и содержание"
+
+#: src/Admin/Wizard/Steps/Links.php:32
+msgid "Links"
+msgstr "Ссылки"
+
+#: src/Admin/Wizard/Steps/Links.php:33
+msgid "Next, decide how the links to download a document will look and behave."
+msgstr ""
+"Затем решите, как будут выглядеть и вести себя ссылки для скачивания "
+"документа."
+
+#: src/Admin/Wizard/Steps/Upsell.php:26
+msgid "More"
+msgstr "Еще"
+
+#: src/Admin/Wizard/Steps/Upsell.php:30
+#. translators: %1$s: URL to All Access Pass page %2$s: URL to the KB about the upgrading process
+msgid ""
+"Enhance your website with these fantastic plugins from Barn2, or get them "
+"all by upgrading to an <a href=\"%1$s\" target=\"_blank\">All Access "
+"Pass<a/>! <a href=\"%2$s\" target=\"_blank\">(learn how here)</a>"
+msgstr ""
+"Украсить ваш сайт этими фантастическими плагинами от Barn2 или получите их "
+"все, обновив до <a href=\"%1$s\" target=\"_blank\">All Access Pass<a/>! <a "
+"href=\"%2$s\" target=\"_blank\">(узнайте как здесь)</a>"
+
+#: src/Admin/Wizard/Steps/Upsell.php:35
+msgid "Extra features"
+msgstr "Дополнительные функции"
+
+#: src/Admin/Wizard/Steps/Welcome.php:23
+msgid "Welcome"
+msgstr "Добро пожаловать"
+
+#: src/Admin/Wizard/Steps/Welcome.php:25
+msgid "Start displaying documents in no time."
+msgstr "Начните отображение документов за считанные минуты."
+
+#: src/Admin/Wizard/Steps/Welcome.php:36
+msgid ""
+"Use this setup wizard to quickly configure the most popular options for "
+"your document libraries. You can change these options later on the plugin "
+"settings page or by relaunching the setup wizard. You can also override "
+"these options in the shortcode for individual libraries."
+msgstr ""
+"Используйте этот мастер настройки, чтобы быстро настроить самые популярные "
+"параметры для ваших библиотек документов. Эти параметры можно изменить "
+"позже на странице настроек плагина или перезапустив мастер настройки. Вы "
+"также можете переопределить эти параметры в шорткоде для отдельных "
+"библиотек."
+
+#: src/Document.php:48
+msgid "Document does not exist"
+msgstr "Документ не существует"
+
+#: src/Frontend_Scripts.php:69
+msgid "(_MAX_ in total)"
+msgstr "(_MAX_ всего)"
+
+#: src/Frontend_Scripts.php:70
+msgid "Show _MENU_ entries"
+msgstr "Показать _MENU_ записей"
+
+#: src/Frontend_Scripts.php:71
+msgid "Search:"
+msgstr "Поиск:"
+
+#: src/Frontend_Scripts.php:72
+msgid "Loading..."
+msgstr "Загрузка..."
+
+#: src/Frontend_Scripts.php:74
+msgid "No data available in table"
+msgstr "Нет данных в таблице"
+
+#: src/Frontend_Scripts.php:76
+msgid "First"
+msgstr "Первая"
+
+#: src/Frontend_Scripts.php:77
+msgid "Last"
+msgstr "Последняя"
+
+#: src/Frontend_Scripts.php:78
+msgid "Next"
+msgstr "Следующая"
+
+#: src/Frontend_Scripts.php:79
+msgid "Previous"
+msgstr "Предыдущая"
+
+#: src/Frontend_Scripts.php:81
+msgid "Showing _START_ to _END_ of _TOTAL_ entries"
+msgstr "Показано с _START_ по _END_ из _TOTAL_ записей"
+
+#: src/Frontend_Scripts.php:82
+msgid "Showing 0 to 0 of 0 entries"
+msgstr "Показано с 0 по 0 из 0 записей"
+
+#: src/Frontend_Scripts.php:87
+#. translators: ARIA text for sorting column in ascending order
+msgid ": activate to sort column ascending"
+msgstr ": активировать для сортировки колонки по возрастанию"
+
+#: src/Frontend_Scripts.php:89
+#. translators: ARIA text for sorting column in descending order
+msgid ": activate to sort column descending"
+msgstr ": активировать для сортировки колонки по убыванию"
+
+#: src/Frontend_Scripts.php:91
+msgid "No matching records found"
+msgstr "Не найдено соответствующих записей"
+
+#: src/Frontend_Scripts.php:93
+msgid "No results found"
+msgstr "Результатов не найдено"
+
+#: src/Frontend_Scripts.php:94
+#: src/Util/SVG_Icon.php:81
+msgid "Reset"
+msgstr "Сброс"
+
+#: src/Post_Type.php:48
+msgid "Documents Archives"
+msgstr "Архивы документов"
+
+#: src/Post_Type.php:49
+msgid "Documents Attributes"
+msgstr "Атрибуты документов"
+
+#: src/Post_Type.php:50
+msgid "Parent Documents:"
+msgstr "Родительские документы:"
+
+#: src/Post_Type.php:51
+msgid "All Documents"
+msgstr "Все документы"
+
+#: src/Post_Type.php:52
+msgid "Add New Document"
+msgstr "Добавить новый документ"
+
+#: src/Post_Type.php:54
+msgid "New Document"
+msgstr "Новый документ"
+
+#: src/Post_Type.php:55
+msgid "Edit Document"
+msgstr "Редактировать документ"
+
+#: src/Post_Type.php:56
+msgid "Update Document"
+msgstr "Обновить документ"
+
+#: src/Post_Type.php:57
+msgid "View Document"
+msgstr "Просмотреть документ"
+
+#: src/Post_Type.php:58
+msgid "View Documents"
+msgstr "Просмотреть документы"
+
+#: src/Post_Type.php:59
+msgid "Search Documents"
+msgstr "Поиск документов"
+
+#: src/Post_Type.php:60
+msgid "Not found"
+msgstr "Не найдено"
+
+#: src/Post_Type.php:61
+msgid "Not found in Trash"
+msgstr "Не найдено в корзине"
+
+#: src/Post_Type.php:63
+msgid "Set featured image"
+msgstr "Установить изображение для выделения"
+
+#: src/Post_Type.php:64
+msgid "Remove featured image"
+msgstr "Удалить изображение для выделения"
+
+#: src/Post_Type.php:65
+msgid "Use as featured image"
+msgstr "Использовать как изображение для выделения"
+
+#: src/Post_Type.php:66
+msgid "Insert into Document"
+msgstr "Вставить в документ"
+
+#: src/Post_Type.php:67
+msgid "Uploaded to this document"
+msgstr "Загружено в этот документ"
+
+#: src/Post_Type.php:68
+msgid "Document list"
+msgstr "Список документов"
+
+#: src/Post_Type.php:69
+msgid "Documents list navigation"
+msgstr "Навигация по списку документов"
+
+#: src/Post_Type.php:70
+msgid "Filter Documents list"
+msgstr "Фильтр списка документов"
+
+#: src/Post_Type.php:75
+msgid "Document Library documents."
+msgstr "Документы библиотеки документов."
+
+#: src/Review_Notice.php:118
+msgid "Are you enjoying Document Library Lite?"
+msgstr "Вам нравится библиотека документов Lite?"
+
+#: src/Review_Notice.php:119
+msgid ""
+"Congratulations, you've just published your 5th document! If you have time, "
+"it would be great if you could leave us a review and let us know what you "
+"think of the plugin."
+msgstr ""
+"Поздравляем, вы только что опубликовали свой 5-й документ! Если у вас есть "
+"время, было бы здорово, если бы вы оставили нам отзыв и сказали, что вы "
+"думаете о плагине."
+
+#: src/Review_Notice.php:122
+msgid "Add Review"
+msgstr "Добавить отзыв"
+
+#: src/Review_Notice.php:123
+msgid "Dismiss"
+msgstr "Закрыть"
+
+#: src/Review_Notice.php:126
+msgid "Barn2"
+msgstr "Barn2"
+
+#: src/Taxonomies.php:38
+msgid "All Categories"
+msgstr "Все категории"
+
+#: src/Taxonomies.php:39
+msgid "Parent Category"
+msgstr "Родительская категория"
+
+#: src/Taxonomies.php:40
+msgid "Parent Category:"
+msgstr "Родительская категория:"
+
+#: src/Taxonomies.php:41
+msgid "New Category Name"
+msgstr "Новое имя категории"
+
+#: src/Taxonomies.php:42
+msgid "Add New Category"
+msgstr "Добавить новую категорию"
+
+#: src/Taxonomies.php:43
+msgid "Edit Category"
+msgstr "Редактировать категорию"
+
+#: src/Taxonomies.php:44
+msgid "Update Category"
+msgstr "Обновить категорию"
+
+#: src/Taxonomies.php:45
+msgid "View Category"
+msgstr "Просмотреть категорию"
+
+#: src/Taxonomies.php:46
+msgid "Separate categories with commas"
+msgstr "Разделяйте категории запятыми"
+
+#: src/Taxonomies.php:47
+msgid "Add or remove categories"
+msgstr "Добавить или удалить категории"
+
+#: src/Taxonomies.php:48
+#: src/Taxonomies.php:87
+#: src/Taxonomies.php:125
+msgid "Choose from the most used"
+msgstr "Выберите из наиболее часто используемых"
+
+#: src/Taxonomies.php:49
+msgid "Popular Categories"
+msgstr "Популярные категории"
+
+#: src/Taxonomies.php:50
+msgid "Search Categories"
+msgstr "Категории поиска"
+
+#: src/Taxonomies.php:51
+#: src/Taxonomies.php:90
+#: src/Taxonomies.php:128
+msgid "Not Found"
+msgstr "Не найдено"
+
+#: src/Taxonomies.php:52
+msgid "No categories"
+msgstr "Нет категорий"
+
+#: src/Taxonomies.php:53
+msgid "Categories list"
+msgstr "Список категорий"
+
+#: src/Taxonomies.php:54
+msgid "Categories list navigation"
+msgstr "Навигация по списку категорий"
+
+#: src/Taxonomies.php:76
+msgid "Document Downloads"
+msgstr "Загрузки документов"
+
+#: src/Taxonomies.php:77
+msgid "All Items"
+msgstr "Все элементы"
+
+#: src/Taxonomies.php:78
+msgid "Parent Item"
+msgstr "Родительский элемент"
+
+#: src/Taxonomies.php:79
+msgid "Parent Item:"
+msgstr "Родительский элемент:"
+
+#: src/Taxonomies.php:80
+msgid "New Item Name"
+msgstr "Новое имя элемента"
+
+#: src/Taxonomies.php:81
+msgid "Add New Item"
+msgstr "Добавить новый элемент"
+
+#: src/Taxonomies.php:82
+msgid "Edit Item"
+msgstr "Редактировать элемент"
+
+#: src/Taxonomies.php:83
+msgid "Update Item"
+msgstr "Обновить элемент"
+
+#: src/Taxonomies.php:84
+msgid "View Item"
+msgstr "Просмотреть элемент"
+
+#: src/Taxonomies.php:85
+msgid "Separate items with commas"
+msgstr "Разделите элементы запятыми"
+
+#: src/Taxonomies.php:86
+msgid "Add or remove items"
+msgstr "Добавить или удалить элементы"
+
+#: src/Taxonomies.php:88
+msgid "Popular Items"
+msgstr "Популярные элементы"
+
+#: src/Taxonomies.php:89
+msgid "Search Items"
+msgstr "Поиск элементов"
+
+#: src/Taxonomies.php:91
+msgid "No items"
+msgstr "Нет элементов"
+
+#: src/Taxonomies.php:92
+msgid "Items list"
+msgstr "Список элементов"
+
+#: src/Taxonomies.php:93
+msgid "Items list navigation"
+msgstr "Навигация по списку элементов"
+
+#: src/Taxonomies.php:114
+msgid "File Types"
+msgstr "Типы файлов"
+
+#: src/Taxonomies.php:115
+msgid "All File Types"
+msgstr "Все типы файлов"
+
+#: src/Taxonomies.php:116
+msgid "Parent File Type"
+msgstr "Родительский тип файла"
+
+#: src/Taxonomies.php:117
+msgid "Parent File Type:"
+msgstr "Родительский тип файла:"
+
+#: src/Taxonomies.php:118
+msgid "New File Type Name"
+msgstr "Новое имя типа файла"
+
+#: src/Taxonomies.php:119
+msgid "Add New File Type"
+msgstr "Добавить новый тип файла"
+
+#: src/Taxonomies.php:120
+msgid "Edit File Type"
+msgstr "Редактировать тип файла"
+
+#: src/Taxonomies.php:121
+msgid "Update File Type"
+msgstr "Обновить тип файла"
+
+#: src/Taxonomies.php:122
+msgid "View File Type"
+msgstr "Просмотреть тип файла"
+
+#: src/Taxonomies.php:123
+msgid "Separate file types with commas"
+msgstr "Разделяйте типы файлов запятыми"
+
+#: src/Taxonomies.php:124
+msgid "Add or remove file types"
+msgstr "Добавить или удалить типы файлов"
+
+#: src/Taxonomies.php:126
+msgid "Popular File Types"
+msgstr "Популярные типы файлов"
+
+#: src/Taxonomies.php:127
+msgid "Search File Types"
+msgstr "Поиск типов файлов"
+
+#: src/Taxonomies.php:129
+msgid "No file types"
+msgstr "Нет типов файлов"
+
+#: src/Taxonomies.php:130
+msgid "File types list"
+msgstr "Список типов файлов"
+
+#: src/Taxonomies.php:131
+msgid "File types list navigation"
+msgstr "Навигация по списку типов файлов"
+
+#: src/Util/Options.php:112
+#: src/Util/SVG_Icon.php:78
+msgid "Download"
+msgstr "Скачать"
+
+#: src/Util/Options.php:234
+msgid "Image"
+msgstr "Изображение"
+
+#: src/Util/Options.php:252
+msgid "Date"
+msgstr "Дата"
+
+#: src/Util/Options.php:264
+#: src/Util/SVG_Icon.php:77
+msgid "Link"
+msgstr "Ссылка"
+
+#: src/Util/SVG_Icon.php:80
+msgid "Close"
+msgstr "Закрыть"
+
+#: templates/photoswipe.php:45
+msgid "Close (Esc)"
+msgstr "Закрыть (Esc)"
+
+#: templates/photoswipe.php:47
+msgid "Share"
+msgstr "Поделиться"
+
+#: templates/photoswipe.php:49
+msgid "Toggle fullscreen"
+msgstr "Переключить полноэкранный режим"
+
+#: templates/photoswipe.php:51
+msgid "Zoom in/out"
+msgstr "Увеличить/уменьшить"
+
+#: templates/photoswipe.php:68
+msgid "Previous (arrow left)"
+msgstr "Предыдущий (стрелка влево)"
+
+#: templates/photoswipe.php:70
+msgid "Next (arrow right)"
+msgstr "Следующий (стрелка вправо)"
+
+#: src/Frontend_Scripts.php:83
+msgctxt "thousands separator"
+msgid ","
+msgstr ","
+
+#: src/Frontend_Scripts.php:84
+msgctxt "decimal mark"
+msgid "."
+msgstr "."
+
+#: src/Plugin_Setup.php:107
+msgctxt "Page slug"
+msgid "document-library"
+msgstr "документ-библиотека"
+
+#: src/Plugin_Setup.php:108
+msgctxt "Page title"
+msgid "Document Library"
+msgstr "Библиотека документов"
+
+#: src/Post_Type.php:44
+msgctxt "Post Type General Name"
+msgid "Documents"
+msgstr "Документы"
+
+#: src/Post_Type.php:45
+msgctxt "Post Type Singular Name"
+msgid "Document"
+msgstr "Документ"
+
+#: src/Post_Type.php:46
+msgctxt "Admin Menu text"
+msgid "Documents"
+msgstr "Документы"
+
+#: src/Post_Type.php:47
+msgctxt "Add New on Toolbar"
+msgid "Documents"
+msgstr "Документы"
+
+#: src/Taxonomies.php:35
+msgctxt "Taxonomy General Name"
+msgid "Document Categories"
+msgstr "Категории документов"
+
+#: src/Taxonomies.php:74
+msgctxt "Taxonomy General Name"
+msgid "Document Download"
+msgstr "Загрузка документа"
+
+#: src/Taxonomies.php:112
+msgctxt "Taxonomy General Name"
+msgid "File Types"
+msgstr "Типы файлов"
+
+#: src/Taxonomies.php:36
+msgctxt "Taxonomy Singular Name"
+msgid "Document Category"
+msgstr "Категория документа"
+
+#: src/Taxonomies.php:75
+msgctxt "Taxonomy Singular Name"
+msgid "Document Download"
+msgstr "Скачивание документа"
+
+#: src/Taxonomies.php:113
+msgctxt "Taxonomy Singular Name"
+msgid "File Type"
+msgstr "Тип файла"
