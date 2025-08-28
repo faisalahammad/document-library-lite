@@ -300,11 +300,16 @@ abstract class Step implements Pluggable
         $values = [];
         foreach ($this->get_fields() as $key => $field) {
             $disallowed = ['title', 'heading', 'list', 'image'];
-            if (\in_array($field['type'], $disallowed)) {
+            if (\in_array($field['type'], $disallowed, \true)) {
                 continue;
             }
-            if (isset($_POST[$key]) && !empty($_POST[$key])) {
-                $values[$key] = Util::clean($_POST[$key]);
+            // Using wp_unslash since WP adds slashes to all $_POST data. Nonce verification
+            // is expected earlier via the REST API permission callback.
+            if (isset($_POST[$key]) && '' !== $_POST[$key]) {
+                // phpcs:ignore WordPress.Security.NonceVerification.Missing
+                $raw = \wp_unslash($_POST[$key]);
+                // phpcs:ignore WordPress.Security.NonceVerification.Missing
+                $values[$key] = Util::clean($raw);
             }
         }
         return $values;

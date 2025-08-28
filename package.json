@@ -23,7 +23,9 @@
         "wp-env:start": "wp-env start",
         "wp-env:stop": "wp-env stop",
         "wp-env:update": "wp-env start --update",
-        "wp-env:clean": "wp-env clean all"
+        "wp-env:clean": "wp-env clean all",
+        "translate": "potomatic",
+        "translate:dry-run": "potomatic --dry-run"
     },
     "repository": {
         "type": "git",
@@ -40,7 +42,8 @@
         "@barn2plugins/webpack-config": "^2.0.0",
         "@wordpress/dependency-extraction-webpack-plugin": "^4.8.0",
         "@wordpress/env": "^10.5.0",
-        "@wordpress/scripts": "^26.4.0"
+        "@wordpress/scripts": "^26.4.0",
+        "potomatic": "^1.0.0"
     },
     "barn2": {
         "textDomain": "document-library-lite",

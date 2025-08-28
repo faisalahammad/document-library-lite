@@ -76,6 +76,12 @@ class Setup_Wizard implements Bootable, JsonSerializable
      */
     public $custom_asset_url;
     /**
+     * Holds details about the custom assets.
+     *
+     * @var array
+     */
+    public $license_endpoint_url;
+    /**
      * Configure a new plugin setup wizard.
      *
      * @param object $plugin instance of plugin
@@ -130,7 +136,7 @@ class Setup_Wizard implements Bootable, JsonSerializable
      */
     public function configure($args = [])
     {
-        $defaults = ['plugin_name' => $this->plugin->get_name(), 'plugin_slug' => $this->plugin->get_slug(), 'plugin_product_id' => $this->plugin->get_id(), 'skip_url' => \admin_url(), 'license_tooltip' => '', 'utm_id' => '', 'premium_url' => '', 'completed' => $this->is_completed(), 'barn2_api' => 'https://api.barn2.com/wp-json/upsell/v1/settings', 'ready_links' => [], 'is_free' => empty($this->get_licensing())];
+        $defaults = ['plugin_name' => $this->plugin->get_name(), 'plugin_slug' => $this->plugin->get_slug(), 'plugin_product_id' => $this->plugin->get_id(), 'skip_url' => \admin_url(), 'license_tooltip' => '', 'utm_id' => '', 'premium_url' => '', 'completed' => $this->is_completed(), 'barn2_api' => Util::get_barn2_upsell_settings_endpoint_url(), 'barn2_upsells_api' => Util::get_barn2_upsell_endpoint_url(), 'barn2_validate_api' => Util::get_barn2_license_validation_endpoint_url(), 'barn2_website_url' => Util::get_barn2_website_url(), 'ready_links' => [], 'is_free' => empty($this->get_licensing())];
         $args = \wp_parse_args($args, $defaults);
         $this->js_args = $args;
         return $this;
@@ -519,7 +525,12 @@ class Setup_Wizard implements Bootable, JsonSerializable
     public function is_wc_settings_screen(string $wc_section_id)
     {
         $screen = \get_current_screen();
-        if ($screen->id === 'woocommerce_page_wc-settings' && isset($_GET['tab']) && ($_GET['tab'] === $wc_section_id || 'products' === $_GET['tab'] && isset($_GET['section']) && $_GET['section'] === $wc_section_id)) {
+        // Sanitize inbound query vars before comparison (defensive hardening).
+        $tab = isset($_GET['tab']) ? \sanitize_key(\wp_unslash($_GET['tab'])) : '';
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only context.
+        $section = isset($_GET['section']) ? \sanitize_key(\wp_unslash($_GET['section'])) : '';
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only context.
+        if ($screen->id === 'woocommerce_page_wc-settings' && $tab && ($tab === $wc_section_id || 'products' === $tab && $section && $section === $wc_section_id)) {
             return \true;
         }
         return \false;

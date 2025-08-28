@@ -61,6 +61,26 @@ class Util
             return \is_scalar($var) ? \sanitize_text_field($var) : $var;
         }
     }
+    public static function get_barn2_api_url()
+    {
+        return \apply_filters('barn2_api_url', 'https://api.barn2.com');
+    }
+    public static function get_barn2_website_url()
+    {
+        return \apply_filters('barn2_website_url', 'https://barn2.com');
+    }
+    public static function get_barn2_upsell_endpoint_url()
+    {
+        return \apply_filters('barn2_upsell_endpoint_url', \untrailingslashit(static::get_barn2_api_url() . '/wp-json/upsell/v1/get/'));
+    }
+    public static function get_barn2_license_validation_endpoint_url()
+    {
+        return \apply_filters('barn2_upsell_endpoint_url', \untrailingslashit(static::get_barn2_api_url() . '/wp-json/upsell/v1/validate/'));
+    }
+    public static function get_barn2_upsell_settings_endpoint_url()
+    {
+        return \apply_filters('barn2_upsell_endpoint_url', \untrailingslashit(static::get_barn2_api_url() . '/wp-json/upsell/v1/settings/'));
+    }
     /**
      * Retrieve an option from the database
      * handling boolean-like values from checkboxes
@@ -142,7 +162,7 @@ class Util
     public static function license_is_access_pass($plugin, $license_key)
     {
         $is_access_pass = \false;
-        $rest_url = 'https://api.barn2.com/wp-json/upsell/v1/validate/';
+        $rest_url = static::get_barn2_license_validation_endpoint_url();
         $args = ['license' => $license_key];
         $request = \wp_remote_get(\add_query_arg($args, $rest_url));
         $response = \wp_remote_retrieve_body($request);
@@ -169,7 +189,7 @@ class Util
     public static function get_remote_utm_id($plugin)
     {
         $utm_id = \get_transient($plugin->get_slug() . '_remote_utm_id');
-        $rest_url = 'https://api.barn2.com/wp-json/upsell/v1/get/';
+        $rest_url = static::get_barn2_upsell_endpoint_url();
         $args = ['plugin' => $plugin->get_slug()];
         if (\false === $utm_id) {
             $request = \wp_remote_get(\add_query_arg($args, $rest_url));

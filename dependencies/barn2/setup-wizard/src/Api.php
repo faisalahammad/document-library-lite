@@ -83,6 +83,42 @@ class Api implements JsonSerializable
         return \wp_verify_nonce($request->get_header('x-wp-nonce'), 'wp_rest') && \current_user_can('manage_options');
     }
     /**
+     * Permission callback for viewing steps (GET). Allow any logged-in user.
+     * Falls back to manually authenticating from the wordpress_logged_in_ cookie
+     * in environments where core auth for REST isn't firing early enough.
+     *
+     * @param \WP_REST_Request $request
+     * @return bool|\WP_Error
+     */
+    public function can_view_steps($request)
+    {
+        if (!\is_user_logged_in()) {
+            $this->maybe_authenticate_from_cookie();
+        }
+        if (\is_user_logged_in()) {
+            if (!\current_user_can('manage_options')) {
+                return new \WP_Error('rest_forbidden', __('You do not have permission to view the setup wizard.', 'barn2-setup-wizard'), ['status' => 403]);
+            }
+            return \true;
+        }
+        return new \WP_Error('rest_forbidden', __('Authentication required.', 'barn2-setup-wizard'), ['status' => \rest_authorization_required_code()]);
+    }
+    /**
+     * Try to hydrate current user from auth cookie if WP core hasn't.
+     */
+    private function maybe_authenticate_from_cookie()
+    {
+        foreach ($_COOKIE as $name => $value) {
+            if (\strpos($name, 'wordpress_logged_in_') === 0) {
+                $user_id = \wp_validate_auth_cookie($value, 'logged_in');
+                if ($user_id) {
+                    \wp_set_current_user($user_id);
+                }
+                break;
+            }
+        }
+    }
+    /**
      * Get the api namespace for the steps.
      *
      * @return string
@@ -98,7 +134,7 @@ class Api implements JsonSerializable
      */
     public function register_routes()
     {
-        \register_rest_route($this->get_api_namespace(), 'steps', [['methods' => 'GET', 'callback' => [$this, 'get_steps'], 'permission_callback' => '__return_true'], ['methods' => 'POST', 'callback' => [$this, 'save_fields'], 'permission_callback' => [$this, 'check_permissions']]]);
+        \register_rest_route($this->get_api_namespace(), 'steps', [['methods' => 'GET', 'callback' => [$this, 'get_steps'], 'permission_callback' => [$this, 'can_view_steps']], ['methods' => 'POST', 'callback' => [$this, 'save_fields'], 'permission_callback' => [$this, 'check_permissions']]]);
         \register_rest_route($this->get_api_namespace(), 'license', [['methods' => 'GET', 'callback' => [$this, 'get_license'], 'permission_callback' => [$this, 'check_permissions']], ['methods' => 'POST', 'callback' => [$this, 'handle_license'], 'permission_callback' => [$this, 'check_permissions']]]);
     }
     /**
