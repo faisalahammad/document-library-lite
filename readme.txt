@@ -5,7 +5,7 @@ Tags: document library, file manager, download manager, document management, med
 Requires at least: 6.1
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 License: GPL-3.0
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -205,11 +205,10 @@ Please report any security bugs through the [Patchstack Vulnerability Disclosure
 
 == Changelog ==
 
-= 1.1.4 = 
-Release date 24 April 2025
+= 1.1.5 = 
+Release date 28 August 2025
 
-* Dev: Updated internal libraries and tested up to WordPress 6.8
-* Dev: Added JavaScript strings to the translation
-* Fix: `doc_category` attribute in the shortcode doesn't work with Lazy Loading
+* Dev: Updated internal libraries and dependencies
+* Dev: Added translations for popular languages
 
 See changelog.txt for more details.

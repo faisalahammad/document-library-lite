@@ -1,3 +1,9 @@
+= 1.1.5 = 
+Release date 28 August 2025
+
+* Dev: Updated internal libraries and dependencies
+* Dev: Added translations for popular languages
+
 = 1.1.4 = 
 Release date 22 April 2025
 
