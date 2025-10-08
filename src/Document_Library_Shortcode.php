@@ -25,10 +25,18 @@ class Document_Library_Shortcode implements Registerable, Standard_Service {
 	private static $table_count = 1;
 
 	/**
+	 * Stores script params for all tables on the page.
+	 *
+	 * @var array
+	 */
+	private static $script_params = null;
+
+	/**
 	 * {@inheritdoc}
 	 */
 	public function register() {
 		add_shortcode( self::SHORTCODE, [ $this, 'do_shortcode' ] );
+		add_action( 'wp_footer', [ $this, 'print_script_params' ], 5 );
 	}
 
 	/**
@@ -47,8 +55,11 @@ class Document_Library_Shortcode implements Registerable, Standard_Service {
 		
 		// Load the scripts and styles.
 		if ( apply_filters( 'document_library_table_load_scripts', true ) ) {
-
-			$script_params = [
+			wp_enqueue_style( 'document-library' );
+			wp_enqueue_script( 'document-library' );
+			
+			// Store table-specific params to be output in footer
+			self::$script_params = [
 				'ajax_url'    => admin_url( 'admin-ajax.php' ),
 				'ajax_nonce'  => 'document-library',
 				'ajax_action' => 'dll_load_posts',
@@ -56,15 +67,6 @@ class Document_Library_Shortcode implements Registerable, Standard_Service {
 				'columns'	  => $table->get_columns(),
 				'args'        => $table->args
 			];
-
-			wp_add_inline_script(
-				'document-library',
-				sprintf( 'var document_library_params = %s;', wp_json_encode( apply_filters( 'document_library_script_params', $script_params ) ) ),
-				'before'
-			);
-
-			wp_enqueue_style( 'document-library' );
-			wp_enqueue_script( 'document-library' );
 		}
 
 		Frontend_Scripts::load_photoswipe_resources( $table->args['lightbox'] );
@@ -86,6 +88,19 @@ class Document_Library_Shortcode implements Registerable, Standard_Service {
 		</table>
 		<?php 
 		return ob_get_clean();
+	}
+
+	/**
+	 * Print script params in the footer before scripts are printed.
+	 */
+	public function print_script_params() {
+		if ( self::$script_params !== null && wp_script_is( 'document-library', 'enqueued' ) ) {
+			wp_localize_script(
+				'document-library',
+				'document_library_params',
+				apply_filters( 'document_library_script_params', self::$script_params )
+			);
+		}
 	}
 
 }

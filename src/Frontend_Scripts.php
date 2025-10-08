@@ -38,6 +38,7 @@ class Frontend_Scripts implements Registerable, Standard_Service {
 	public function register() {
 		add_action( 'wp_enqueue_scripts', [ $this, 'register_styles' ] );
 		add_action( 'wp_enqueue_scripts', [ $this, 'register_scripts' ] );
+		add_action( 'wp_footer', [ $this, 'localize_scripts' ], 5 );
 	}
 
 	/**
@@ -61,6 +62,16 @@ class Frontend_Scripts implements Registerable, Standard_Service {
 		wp_register_script( 'document-library', plugins_url( 'assets/js/document-library-main.js', $this->plugin->get_file() ), [ 'jquery', 'jquery-datatables-dlw' ], $this->plugin->get_version(), true );
 		wp_register_script( 'photoswipe', plugins_url( 'assets/js/photoswipe/photoswipe.min.js', $this->plugin->get_file() ), [], self::PHOTOSWIPE_VERSION, true );
 		wp_register_script( 'photoswipe-ui-default', plugins_url( 'assets/js/photoswipe/photoswipe-ui-default.min.js', $this->plugin->get_file() ), [ 'photoswipe' ], self::PHOTOSWIPE_VERSION, true );
+	}
+
+	/**
+	 * Localize scripts with data after they are enqueued.
+	 */
+	public function localize_scripts() {
+		// Only localize if the script is enqueued
+		if ( ! wp_script_is( 'document-library', 'enqueued' ) ) {
+			return;
+		}
 
 		$script_params = [
 			'language' => apply_filters(
@@ -96,10 +107,10 @@ class Frontend_Scripts implements Registerable, Standard_Service {
 			),
 		];
 
-		wp_add_inline_script(
+		wp_localize_script(
 			'document-library',
-			sprintf( 'var data_table_params = %s;', wp_json_encode( apply_filters( 'document_library_script_params', $script_params ) ) ),
-			'before'
+			'data_table_params',
+			apply_filters( 'document_library_script_params', $script_params )
 		);
 	}
 
