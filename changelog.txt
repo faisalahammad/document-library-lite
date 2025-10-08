@@ -1,3 +1,9 @@
+= 1.1.6 = 
+Release date 08 October 2025
+
+* Dev: Updated internal libraries
+* Fix: Lazy loading did not working in block themes
+
 = 1.1.5 = 
 Release date 28 August 2025
 
