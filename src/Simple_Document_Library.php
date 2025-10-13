@@ -492,7 +492,7 @@ class Simple_Document_Library {
 		// The post status can only have these values
 		$valid_post_statuses = [ 'publish', 'pending', 'draft', 'future', 'any' ];
 		$args[ 'status' ] = in_array( $args['status'], $valid_post_statuses ) ? $args[ 'status' ] : 'publish';
-		
+			
 		return $args;
 	}
 

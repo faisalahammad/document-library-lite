@@ -61,7 +61,7 @@ class Document_Library_Shortcode implements Registerable, Standard_Service {
 			// Store table-specific params to be output in footer
 			self::$script_params = [
 				'ajax_url'    => admin_url( 'admin-ajax.php' ),
-				'ajax_nonce'  => 'document-library',
+				'ajax_nonce'  => wp_create_nonce( 'dll_load_posts' ),
 				'ajax_action' => 'dll_load_posts',
 				'lazy_load'   => $table->args['lazy_load'],
 				'columns'	  => $table->get_columns(),

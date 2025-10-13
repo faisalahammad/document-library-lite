@@ -74,6 +74,7 @@ class Frontend_Scripts implements Registerable, Standard_Service {
 		}
 
 		$script_params = [
+			'ajax_nonce' => wp_create_nonce( 'dll_load_posts' ),
 			'language' => apply_filters(
 				'document_library_lite_language_defaults',
 				[
