@@ -1,1 +1,110 @@
-#dlw_document_link_type{margin-top:5px}#dlw_file_attachment_details,#dlw_link_url_details,.dlw_file_attached{display:none}#dlw_file_attachment_details.active,#dlw_link_url_details.active,.dlw_file_attached.active{display:flex}#dlw_file_attachment_details.active{flex-direction:column;justify-content:center}#dlw_link_url_details.active{align-items:center}.dlw_file_name_text{word-wrap:break-word;line-height:22px;max-width:90%}#dlw_add_file_button{align-self:flex-end}#dlw_remove_file_button{background:0 0;border:none;cursor:pointer;height:24px;padding:0;text-indent:0;width:24px}#dlw_remove_file_button .remove-file-icon:before{speak:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:0 0;border-radius:50%;color:#0073aa;content:"";display:block;line-height:1.28;font:normal 16px/20px dashicons;height:20px;margin-left:2px;text-align:center;width:20px}#dlw_remove_file_button:hover .remove-file-icon:before{color:#c00}.dlw-icon.link{color:#007cba;height:24px;margin-right:2px;width:24px}#dlw_direct_link_input{width:100%}
+// Document Link Type
+#dlw_document_link_type {
+    margin-top: 5px;
+}
+
+// File Details Containers
+#dlw_file_attachment_details,
+#dlw_link_url_details,
+.dlw_file_attached {
+    display: none;
+
+    &.active {
+        display: flex;
+        grid-column: 1 / span 3;
+    }
+}
+
+#dlw_file_attachment_details.active {
+    display: grid;
+    grid-template-columns: repeat( 2, 0fr );
+    row-gap: 10px;
+}
+
+#dlw_link_url_details.active {
+    align-items: center;
+}
+
+// File Name Text
+.dlw_file_name_text {
+    word-wrap: break-word;
+    line-height: 22px;
+    max-width: 90%;
+}
+
+// Buttons
+#dlw_add_file_button {
+    grid-column: 2;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+#dlw_remove_file_button {
+    background: 0 0;
+    border: none;
+    cursor: pointer;
+    height: 24px;
+    padding: 0;
+    text-indent: 0;
+    width: 24px;
+
+    .remove-file-icon:before {
+        speak: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: 0 0;
+        border-radius: 50%;
+        color: #0073aa;
+        content: "";
+        display: block;
+        line-height: 1.28;
+        font: normal 16px/20px dashicons;
+        height: 20px;
+        margin-left: 2px;
+        text-align: center;
+        width: 20px;
+    }
+
+    &:hover .remove-file-icon:before {
+        color: #c00;
+    }
+}
+
+// Icons
+.dlw-icon.link {
+    color: #007cba;
+    height: 24px;
+    margin-right: 2px;
+    width: 24px;
+}
+
+// Inputs
+#dlw_direct_link_input {
+    width: 100%;
+}
+
+.dlw_upload_metabox_description {
+    margin-top: 3em;
+    display: none;
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+// Locked metabox styles
+.postbox-locked {
+    .hndle {
+        cursor: default !important;
+    }
+}
+
+#edit-slug-box:has(span) {
+    margin-bottom: 12px;
+}
+#document_link {
+    margin-top: 1.5em;
+}
