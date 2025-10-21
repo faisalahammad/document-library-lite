@@ -160,10 +160,10 @@ class Document_Table implements Registerable {
 					]
 				],
 				[
-					'title'             => __( 'Document limit', 'document-library-pro' ),
+					'title'             => __( 'Document limit', 'document-library-lite' ),
 					'type'              => 'number',
 					'id'                => Options::SHORTCODE_OPTION_KEY . '[post_limit]',
-					'desc'              => __( 'The maximum number of documents to display in each table. Enter -1 to show all documents.', 'document-library-pro' ),
+					'desc'              => __( 'The maximum number of documents to display in each table. Enter -1 to show all documents.', 'document-library-lite' ),
 					'default'           => $this->default_settings['post_limit'],
 					'class'             => 'small-text post-limit',
 					'custom_attributes' => [

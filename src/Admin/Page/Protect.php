@@ -61,17 +61,17 @@ class Protect implements Standard_Service, Registerable {
 	public function render() {
 		?>
 		<div class="wrap dlw-settings">
-			<h1><?php esc_html_e( 'Create private document libraries with Password Protected Categories', 'document-library-pro' ); ?></h1>
+			<h1><?php esc_html_e( 'Create private document libraries with Password Protected Categories', 'document-library-lite' ); ?></h1>
 
 			<?php
 			printf(
 				'<div class="promo-wrapper">
 					<p class="promo">' .
 						/* translators: %1: Document Library Pro link start, %2: Document Library Pro link end */
-						esc_html__( 'Do you need to control who can access your documents? You can easily do this with the %1$sPassword Protected Categories%2$s plugin', 'document-library-pro' ) .
+						esc_html__( 'Do you need to control who can access your documents? You can easily do this with the %1$sPassword Protected Categories%2$s plugin', 'document-library-lite' ) .
 					'</p>
 					<p class="promo">' .
-						esc_html__( 'Password Protected Categories lets you restrict access to any or all of your document categories - either to specific users, roles, or to anyone with the password.', 'document-library-pro' ) .
+						esc_html__( 'Password Protected Categories lets you restrict access to any or all of your document categories - either to specific users, roles, or to anyone with the password.', 'document-library-lite' ) .
 					'</p>
 					<a class="promo" href="%3$s" target="_blank"><img class="promo" src="%4$s" /></a>
 				</div>',
