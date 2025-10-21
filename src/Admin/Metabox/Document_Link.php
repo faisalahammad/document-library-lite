@@ -62,6 +62,7 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 		$button_text         = $document->get_file_id() ? __( 'Replace File', 'document-library-lite' ) : __( 'Add File', 'document-library-lite' );
 		$file_attached_class = $document->get_file_id() ? ' active' : '';
 		$file_details_class  = $document->get_link_type() === 'file' ? 'active' : '';
+		$url_details_class   = $document->get_link_type() === 'url' ? 'active' : '';
 		?>
 
 		<label for="<?php esc_attr( self::ID ); ?>" class="howto"><?php esc_html_e( 'Upload a file or select one from the media library:', 'document-library-lite' ); ?></label>
@@ -70,6 +71,7 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 		<select name="_dlp_document_link_type" id="dlw_document_link_type" class="postbox">
 			<option value="none" <?php selected( $document->get_link_type(), 'none' ); ?>><?php esc_html_e( 'None', 'document-library-lite' ); ?></option>
 			<option value="file" <?php selected( $document->get_link_type(), 'file' ); ?>><?php esc_html_e( 'File Upload', 'document-library-lite' ); ?></option>
+			<option value="url" <?php selected( $document->get_link_type(), 'url' ); ?>><?php esc_html_e( 'File URL', 'document-library-lite' ); ?></option>
 		</select>
 
 		<!-- file upload -->
@@ -94,6 +96,11 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 			<input id="dlw_file_id" type="hidden" name="_dlp_attached_file_id" value="<?php echo esc_attr( $document->get_file_id() ); ?>" />
 
 		</div>
+			<div id="dlw_link_url_details" class="<?php echo esc_attr( $url_details_class ); ?>">
+				<a class="dlw-pro-only" href="https://barn2.com/wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings" target="_blank" rel="noopener noreferrer">
+					<?php esc_html_e( 'Pro version only', 'document-library-lite' ); ?>
+				</a>
+			</div>
 		<?php
 	}
 
