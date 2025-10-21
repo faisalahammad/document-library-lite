@@ -32,6 +32,9 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 	public function register() {
 		add_action( 'add_meta_boxes', [ $this, 'register_metabox' ], 1 );
 		add_action( 'save_post_' . Post_Type::POST_TYPE_SLUG, [ $this, 'save' ] );
+		add_action( 'edit_form_after_title', [ $this, 'reposition_upload_metabox' ] );
+		add_action( 'edit_form_after_title', [ $this, 'render_upload_metabox_description' ] );
+		add_filter( 'get_user_metadata', [ $this, 'override_metabox_order' ], 10, 4 );
 	}
 
 	/**
@@ -43,7 +46,7 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 			__( 'Document Link', 'document-library-lite' ),
 			[ $this, 'render' ],
 			'dlp_document',
-			'side',
+			'dlw_below_title',
 			'high'
 		);
 	}
@@ -71,24 +74,23 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 
 		<!-- file upload -->
 		<div id="dlw_file_attachment_details" class="<?php echo esc_attr( $file_details_class ); ?>">
-				<div class="dlw_file_attached <?php echo esc_attr( $file_attached_class ); ?>">
-					<button type="button" id="dlw_remove_file_button">
-						<span class="remove-file-icon" aria-hidden="true"></span>
-
-						<span class="screen-reader-text">
-						<?php
-						/* translators: %s: File name */
-						echo esc_html( sprintf( __( 'Remove file: %s', 'document-library-lite' ), $document->get_file_name() ) );
-						?>
-						</span>
-					</button>
-
-					<span class="dlw_file_name_text"><?php echo esc_html( $document->get_file_name() ); ?></span>
-					<input id="dlw_file_name_input" type="hidden" name="_dlp_attached_file_name" value="<?php echo esc_attr( $document->get_file_name() ); ?>" />
-				</div>
-
-
 			<button id="dlw_add_file_button" class="button button-large"><?php echo esc_html( $button_text ); ?></button>
+			<div class="dlw_file_attached <?php echo esc_attr( $file_attached_class ); ?>">
+				<button type="button" id="dlw_remove_file_button">
+					<span class="remove-file-icon" aria-hidden="true"></span>
+
+					<span class="screen-reader-text">
+					<?php
+					/* translators: %s: File name */
+					echo esc_html( sprintf( __( 'Remove file: %s', 'document-library-lite' ), $document->get_file_name() ) );
+					?>
+					</span>
+				</button>
+
+				<span class="dlw_file_name_text"><?php echo esc_html( $document->get_file_name() ); ?></span>
+				<input id="dlw_file_name_input" type="hidden" name="_dlp_attached_file_name" value="<?php echo esc_attr( $document->get_file_name() ); ?>" />
+			</div>
+
 			<input id="dlw_file_id" type="hidden" name="_dlp_attached_file_id" value="<?php echo esc_attr( $document->get_file_id() ); ?>" />
 
 		</div>
@@ -124,5 +126,68 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 		} catch ( \Exception $exception ) {
 			// silent
 		}
+	}
+
+	/**
+	 * Reposition the upload metabox after the title
+	 */
+	public function reposition_upload_metabox() {
+		global $post, $wp_meta_boxes;
+
+		// Only run on dlp_document post type edit page
+		if ( ! $post || $post->post_type !== Post_Type::POST_TYPE_SLUG ) {
+			return;
+		}
+
+		do_meta_boxes( get_current_screen(), 'dlw_below_title', $post );
+
+		unset( $wp_meta_boxes['post']['dlw_below_title'] );
+	}
+
+	/**
+	 * Prints out the header and the description for the upload metabox after the title and before the box
+	 *
+	 * @param WP_Post $post
+	 */
+	public function render_upload_metabox_description( $post ) {
+		if ( $post->post_type !== Post_Type::POST_TYPE_SLUG ) {
+			return;
+		}
+		?>
+		<div id="dlw_upload_metabox_description">
+			<h3><?php esc_html_e( 'Document Content', 'document-library-lite' ); ?></h3>
+			<p><?php esc_html_e( 'The document content appears on the single document page and in the "Content" field of the document library.', 'document-library-lite' ); ?></p>
+		</div>
+		<?php
+	}
+
+	/**
+	 * Override user meta for metabox order to force our metabox position
+	 *
+	 * @param mixed  $value     The value get_metadata() should return - a single metadata value, or an array of values.
+	 * @param int    $object_id Object ID.
+	 * @param string $meta_key  Meta key.
+	 * @param bool   $single    Whether to return only the first value of the specified $meta_key.
+	 * @return mixed
+	 */
+	public function override_metabox_order( $value, $object_id, $meta_key, $single ) {
+		if ( ! is_admin() ||
+			( 'meta-box-order_' . Post_Type::POST_TYPE_SLUG !== $meta_key &&
+			'metaboxhidden_' . Post_Type::POST_TYPE_SLUG !== $meta_key ) ) {
+			return $value;
+		}
+
+		// Override metabox order - always force our position.
+		if ( 'meta-box-order_' . Post_Type::POST_TYPE_SLUG === $meta_key ) {
+			$meta_value = [ 'dlw_below_title' => self::ID ];
+			return [ $meta_value ];
+		}
+
+		// Override metabox hidden status - always ensure visible.
+		if ( 'metaboxhidden_' . Post_Type::POST_TYPE_SLUG === $meta_key ) {
+			return [ [] ];
+		}
+
+		return $value;
 	}
 }
