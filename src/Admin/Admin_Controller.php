@@ -114,6 +114,7 @@ class Admin_Controller implements Registerable, Standard_Service {
 		// Add - Edit Document Page
 		if ( in_array( $hook, [ 'post.php', 'post-new.php' ], true ) && is_object( $screen ) && Post_Type::POST_TYPE_SLUG === $screen->post_type ) {
 			wp_enqueue_media();
+			wp_enqueue_script( 'dlw-popover', $this->plugin->get_dir_url() . 'assets/js/admin/document-library-popover.js', [], $this->plugin->get_version(), true );
 			wp_enqueue_script( 'dlw-admin-post', $this->plugin->get_dir_url() . 'assets/js/admin/document-library-post.js', [ 'jquery' ], $this->plugin->get_version(), true );
 			wp_localize_script(
 				'dlw-admin-post',
