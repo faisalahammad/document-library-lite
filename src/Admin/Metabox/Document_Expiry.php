@@ -1,0 +1,72 @@
+<?php
+
+namespace Barn2\Plugin\Document_Library\Admin\Metabox;
+
+use Barn2\Plugin\Document_Library\Dependencies\Lib\Conditional;
+use Barn2\Plugin\Document_Library\Dependencies\Lib\Registerable;
+use	Barn2\Plugin\Document_Library\Dependencies\Lib\Service\Standard_Service;
+use	Barn2\Plugin\Document_Library\Dependencies\Lib\Util;
+use	Barn2\Plugin\Document_Library\Post_Type;
+use	Barn2\Plugin\Document_Library\Document;
+
+/**
+ * Document Expiry - Edit Document Metabox
+ *
+ * @package   Barn2\document-library-lite
+ * @author    Barn2 Plugins <info@barn2.com>
+ * @license   GPL-3.0z
+ */
+class Document_Expiry implements Registerable, Standard_Service, Conditional {
+	const ID = 'document_expiry';
+
+	/**
+	 * {@inheritdoc}
+	 */
+	public function is_required() {
+		return Util::is_admin();
+	}
+
+	/**
+	 * {@inheritdoc}
+	 */
+	public function register() {
+        add_action( 'post_submitbox_misc_actions', [ $this, 'render' ] );
+    }
+
+    /**
+	 * Render the metabox.
+	 *
+	 * @param WP_Post $post
+	 */
+	public function render( $post ) {
+		// check if dlp document
+		if ( Post_Type::POST_TYPE_SLUG !== $post->post_type ) {
+			return;
+		}
+
+		?>
+		<div class="misc-pub-section curtime misc-pub-expiry document-expiry-container">
+			<div id="document-expiry">
+				<span id="expiry-status">
+					<?php esc_html_e( 'Document expiry', 'document-library-lite' ); ?>
+					<span class="dlw-help-tip" popovertarget="dlw-document-expiry-popover" tabindex="0"></span>
+				</span>
+			</div>
+		</div>
+
+		<div id="dlw-document-expiry-popover" popover role="tooltip">
+			<div class="popover-inner">
+				<img src="<?php echo esc_url( plugins_url( 'assets/images/version-history-promo.svg', dirname( __DIR__, 3 ) . '/document-library-lite.php' ) ); ?>" />
+				<div class="popover-content">
+					<h3><?php esc_html_e( 'Unlock Advanced Features', 'document-library-lite' ); ?></h3>
+					<p><?php esc_html_e( 'Upgrade to the Document Library Pro Advanced Plan to set expiry dates, in which documents will automatically be removed from the library on the date you choose.', 'document-library-lite' ); ?></p>
+					<div>
+						<a href="https://barn2.com/wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings" class="button button-primary"><?php esc_html_e( 'Upgrade now', 'document-library-lite' ); ?></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php
+	}
+
+}

@@ -114,7 +114,7 @@
     #version-history-after-html {
         margin-top: 1em;
         span {
-            opacity: .6;
+            opacity: .75;
         }
     }
 }
@@ -258,5 +258,11 @@
       @media (max-width: 782px) {
         margin-right: 0;
       }
+    }
+}
+
+#document-expiry {
+    span {
+        opacity: .75;
     }
 }

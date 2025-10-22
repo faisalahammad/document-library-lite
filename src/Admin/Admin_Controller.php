@@ -52,6 +52,7 @@ class Admin_Controller implements Registerable, Standard_Service {
 		$this->add_service( 'page/protect', new Page\Protect( $this->plugin ) );
 		$this->add_service( 'page_list', new Page_List() );
 		$this->add_service( 'metabox/document_link', new Metabox\Document_Link() );
+		$this->add_service( 'metabox/document_expiry', new Metabox\Document_Expiry() );
 		$this->add_service( 'media_library', new Media_Library() );
 	}
 
