@@ -96,11 +96,15 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 			<input id="dlw_file_id" type="hidden" name="_dlp_attached_file_id" value="<?php echo esc_attr( $document->get_file_id() ); ?>" />
 
 		</div>
-			<div id="dlw_link_url_details" class="<?php echo esc_attr( $url_details_class ); ?>">
-				<a class="dlw-pro-only" href="https://barn2.com/wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings" target="_blank" rel="noopener noreferrer">
-					<?php esc_html_e( 'Pro version only', 'document-library-lite' ); ?>
-				</a>
-			</div>
+		<div id="dlw_link_url_details" class="<?php echo esc_attr( $url_details_class ); ?>">
+			<a class="dlw-pro-only" href="https://barn2.com/wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings" target="_blank" rel="noopener noreferrer">
+				<?php esc_html_e( 'Pro version only', 'document-library-lite' ); ?>
+			</a>
+		</div>
+
+		<div class="document-library-pro-advanced-promo">
+			<?php $this->render_version_history( 'after-html' ); ?>
+		</div>
 		<?php
 	}
 
@@ -196,5 +200,35 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 		}
 
 		return $value;
+	}
+
+	/**
+	 * Render the version history.
+	 *
+	 * @param string $context Context identifier to make IDs unique.
+	 */
+	private function render_version_history( $context = '' ) {
+		$id_suffix = $context ? sprintf( '-%s', $context ) : '';
+		?>
+		<div id="version-history<?php echo esc_attr( $id_suffix ); ?>" class="document-library-pro-advanced-promo-version-history">
+			<span class="version-history-status">
+				<?php esc_html_e( 'Version history', 'document-library-lite' ); ?>
+			</span>
+			<span class="dlw-help-tip" popovertarget="dlw-version-history-popover<?php echo esc_attr( $id_suffix ); ?>" tabindex="0"></span>
+		</div>
+
+		<div id="dlw-version-history-popover<?php echo esc_attr( $id_suffix ); ?>" popover role="tooltip">
+			<div class="popover-inner">
+				<img src="<?php echo esc_url( plugins_url( 'assets/images/version-history-promo.svg', dirname( __DIR__, 3 ) . '/document-library-lite.php' ) ); ?>" alt="" />
+				<div class="popover-content">
+					<h3>Unlock Advanced Features</h3>
+					<p>Upgrade to the Document Library Pro Advanced Plan to manage and store multiple versions of your downloadable documents.</p>
+					<div>
+						<a href="https://barn2.com/wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings" class="button button-primary"><?php esc_html_e( 'Upgrade now', 'document-library-lite' ); ?></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php
 	}
 }
