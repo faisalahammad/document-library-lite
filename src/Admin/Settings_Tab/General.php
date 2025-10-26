@@ -50,10 +50,6 @@ class General implements Registerable {
 	 * Register the Settings with WP Settings API.
 	 */
 	public function register_settings() {
-
-		// Support Links
-		Settings_API_Helper::add_settings_section( 'dlp_support_links', self::MENU_SLUG, '', [ $this, 'support_links' ], [] );
-
 		// Document Data
 		Settings_API_Helper::add_settings_section( 'dlp_general_fields', self::MENU_SLUG, __( 'Document data', 'document-library-lite' ), [ $this, 'display_document_data_description' ], $this->get_document_data_settings() );
 
@@ -102,17 +98,6 @@ class General implements Registerable {
 			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			Lib_Util::format_link_open( Lib_Util::barn2_url( 'kb/document-library-wordpress-documentation/#general-tab' ), true ),
 			'</a>'
-		);
-	}
-
-	/**
-	 * Output the Barn2 Support Links.
-	 */
-	public function support_links() {
-		printf(
-			'<p>%s</p><p>%s</p>',
-			Settings_Util::get_help_links( $this->plugin ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			''
 		);
 	}
 

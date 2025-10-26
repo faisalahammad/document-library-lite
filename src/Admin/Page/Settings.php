@@ -7,6 +7,7 @@ use	Barn2\Plugin\Document_Library\Dependencies\Lib\Registerable;
 use	Barn2\Plugin\Document_Library\Dependencies\Lib\Service\Standard_Service;
 use	Barn2\Plugin\Document_Library\Dependencies\Lib\Conditional;
 use	Barn2\Plugin\Document_Library\Dependencies\Lib\Util;
+use Barn2\Plugin\Document_Library\Dependencies\Lib\Admin\Settings_Util;
 
 /**
  * This class handles our plugin settings page in the admin.
@@ -100,12 +101,21 @@ class Settings implements Standard_Service, Registerable, Conditional {
 	public function render_settings_page() {
 		$active_tab = filter_input( INPUT_GET, 'tab', FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ?? 'general';
 		?>
+		<div class='barn2-layout__header'>
+			<div class="barn2-layout__header-wrapper">
+				<h3 class='barn2-layout__header-heading'>
+					<?php esc_html_e( 'Document Library Lite', 'document-library-lite' ); ?>
+				</h3>
+				<div class="links-area">
+					<?php $this->support_links(); ?>
+				</div>
+			</div>
+		</div>
 		<div class="wrap dlw-settings">
 
 			<?php if ( in_array( $active_tab, [ 'general', 'document_libraries' ], true ) ) { ?>
 				<?php do_action( 'barn2_before_plugin_settings', $this->plugin->get_id() ); ?>
 			<?php } ?>
-
 
 			<h1><?php esc_html_e( 'Document Library Lite Settings', 'document-library-lite' ); ?></h1>
 
@@ -143,5 +153,18 @@ class Settings implements Standard_Service, Registerable, Conditional {
 
 		</div>
 		<?php
+	}
+
+	/**
+	 * Support links for the settings page.
+	 *
+	 * @return void
+	 */
+	public function support_links() {
+		printf(
+			'<p>%s</p><p>%s</p>',
+			Settings_Util::get_help_links( $this->plugin ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			''
+		);
 	}
 }

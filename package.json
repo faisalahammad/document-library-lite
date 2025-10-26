@@ -41,6 +41,8 @@
     "devDependencies": {
         "@barn2plugins/playwright-utils": "^0.2.1",
         "@barn2plugins/webpack-config": "^2.0.0",
+        "@automattic/color-studio": "^2.5.0",
+        "@wordpress/base-styles": "^4.19.0",
         "@wordpress/dependency-extraction-webpack-plugin": "^4.8.0",
         "@wordpress/env": "^10.5.0",
         "@wordpress/scripts": "^26.4.0",
