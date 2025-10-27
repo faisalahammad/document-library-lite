@@ -93,7 +93,7 @@ class General implements Registerable {
 	 */
 	public function display_pro_only_section() {
 		printf(
-			'<p><span class="pro-version">%s</span></p>',
+			'<p><span class="dlw-pro-only">%s</span></p>',
 			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			Lib_Util::barn2_link( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings', __( 'Pro version only', 'document-library-lite' ), true )
 		);
@@ -128,30 +128,26 @@ class General implements Registerable {
 	private function get_document_data_settings() {
 		return [
 			[
-				'id'                => Options::DOCUMENT_FIELDS_OPTION_KEY,
-				'title'             => __( 'Document fields', 'document-library-lite' ),
-				'type'              => 'multicheckbox',
-				'options'           => [
-					'editor'        => __( 'Content', 'document-library-lite' ),
-					'excerpt'       => __( 'Excerpt', 'document-library-lite' ),
-					'thumbnail'     => __( 'Featured image', 'document-library-lite' ),
-					'comments'      => __( 'Comments', 'document-library-lite' ),
-					'custom-fields' => __( 'Custom fields', 'document-library-lite' ) .
-						sprintf( ' <span class="pro-version">%s</span>', Lib_Util::barn2_link( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings', __( 'Pro version only', 'document-library-lite' ), true ) ),
-					'author'        => __( 'Authors', 'document-library-lite' ) .
-						sprintf( ' <span class="pro-version">%s</span>', Lib_Util::barn2_link( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings', __( 'Pro version only', 'document-library-lite' ), true ) ),
+				'id'       => Options::DOCUMENT_FIELDS_OPTION_KEY,
+				'title'    => __( 'Document fields', 'document-library-lite' ),
+				'type'     => 'multicheckbox',
+				'options'  => [
+					'editor'          => __( 'Content', 'document-library-lite' ),
+					'excerpt'         => __( 'Excerpt', 'document-library-lite' ),
+					'thumbnail'       => __( 'Featured image', 'document-library-lite' ),
+					'comments'        => __( 'Comments', 'document-library-lite' ),
+					'custom_fields'   => __( 'Custom fields', 'document-library-lite' ),
+					'author'          => __( 'Author', 'document-library-lite' ),
 				],
-				'default'           => [
-					'editor'        => '1',
-					'excerpt'       => '0',
-					'thumbnail'     => '1',
-					'comments'      => '0',
-					'custom-fields' => '0',
-					'author'        => '0',
+				'default'  => [
+					'editor'     => '1',
+					'excerpt'    => '0',
+					'thumbnail'  => '1',
+					'comments'   => '0',
 				],
-				'field_class'       => 'partial-readonly',
+				'field_class'       => 'readonly',
 				'custom_attributes' => [
-					'data-readonly-options' => 'custom-fields,author'
+					'disabled' => 'disabled'
 				]
 			],
 			[

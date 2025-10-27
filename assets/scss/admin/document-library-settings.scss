@@ -20,6 +20,7 @@
 }
 .dlw-settings .pro-version {
     font-size: 12px;
+    font-weight: 600;
 }
 .promo-wrapper {
     display: flex;
@@ -93,4 +94,8 @@
 .has-woocommerce-navigation .barn2-layout__header {
     left: 0;
     width: 100%;
+}
+.dlw-pro-only {
+    font-weight: 600;
+    font-size: 12px;
 }
