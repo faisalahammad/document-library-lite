@@ -6,6 +6,7 @@ use	Barn2\Plugin\Document_Library\Dependencies\Lib\Service\Standard_Service;
 use	Barn2\Plugin\Document_Library\Dependencies\Lib\Conditional;
 use	Barn2\Plugin\Document_Library\Dependencies\Lib\Plugin\Plugin;
 use	Barn2\Plugin\Document_Library\Dependencies\Lib\Util as Lib_Util;
+use Barn2\Plugin\Document_Library\Dependencies\Lib\Admin\Settings_Util;
 
 /**
  * This class handles our plugin import page in the admin.
@@ -62,6 +63,22 @@ class Import implements Standard_Service, Registerable, Conditional {
 	 */
 	public function render() {
 		?>
+		<div class='barn2-layout__header'>
+			<div class="barn2-layout__header-wrapper">
+				<h3 class='barn2-layout__header-heading'>
+					<?php esc_html_e( 'Document Library Lite', 'document-library-lite' ); ?>
+				</h3>
+				<div class="links-area">
+					<?php 
+						printf(
+							'<p>%s</p><p>%s</p>',
+							Settings_Util::get_help_links( $this->plugin ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+							''
+						);
+					?>
+				</div>
+			</div>
+		</div>
 		<div class="wrap dlw-settings">
 			<h1><?php esc_html_e( 'Import documents', 'document-library-lite' ); ?></h1>
 
