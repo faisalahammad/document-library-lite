@@ -31,10 +31,10 @@ class Config_Builder {
 	public static function store( $config ) {
 		// Generate a unique ID for this configuration
 		$table_id = self::generate_unique_id( $config );
-		
+
 		// Store the configuration as a transient
 		set_transient( self::TRANSIENT_PREFIX . $table_id, $config, self::EXPIRATION );
-		
+
 		return $table_id;
 	}
 
@@ -47,15 +47,15 @@ class Config_Builder {
 	public static function retrieve( $table_id ) {
 		// Sanitize the table ID to prevent injection attacks
 		$table_id = sanitize_key( $table_id );
-		
+
 		// Retrieve the configuration
 		$config = get_transient( self::TRANSIENT_PREFIX . $table_id );
-		
+
 		// Return false if not found or expired
 		if ( false === $config ) {
 			return false;
 		}
-		
+
 		return $config;
 	}
 
@@ -80,13 +80,13 @@ class Config_Builder {
 	private static function generate_unique_id( $config ) {
 		// Create a hash of the configuration
 		$config_hash = md5( wp_json_encode( $config ) );
-		
+
 		// Generate random bytes for additional entropy
 		$random = bin2hex( random_bytes( 8 ) );
-		
+
 		// Combine with timestamp (remove decimal point to avoid sanitization issues)
 		$timestamp = str_replace( '.', '', microtime( true ) );
-		
+
 		// Create unique ID: timestamp (last 10 chars) + random + first 8 chars of config hash
 		return substr( $timestamp, -10 ) . $random . substr( $config_hash, 0, 8 );
 	}
