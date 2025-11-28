@@ -2,6 +2,7 @@
 namespace Barn2\Plugin\Document_Library;
 
 use Barn2\Plugin\Document_Library\Util\Options;
+use Barn2\Plugin\Document_Library\Table\Config_Builder;
 use	Barn2\Plugin\Document_Library\Dependencies\Lib\Registerable;
 use	Barn2\Plugin\Document_Library\Dependencies\Lib\Service\Standard_Service;
 
@@ -29,7 +30,7 @@ class Document_Library_Shortcode implements Registerable, Standard_Service {
 	 *
 	 * @var array
 	 */
-	private static $script_params = null;
+	private static $script_params = [];
 
 	/**
 	 * {@inheritdoc}
@@ -51,7 +52,10 @@ class Document_Library_Shortcode implements Registerable, Standard_Service {
 		$atts = Options::handle_shortcode_attribute_aliases( $atts );
 		$atts = shortcode_atts( Options::get_defaults(), $atts, self::SHORTCODE );
 
-		$table = new Simple_Document_Library( $atts );
+		// Store the configuration securely and get a unique ID
+		$table_id = Config_Builder::store( $atts );
+
+		$table = new Simple_Document_Library( $atts, $table_id );
 		
 		// Load the scripts and styles.
 		if ( apply_filters( 'document_library_table_load_scripts', true ) ) {
@@ -59,13 +63,13 @@ class Document_Library_Shortcode implements Registerable, Standard_Service {
 			wp_enqueue_script( 'document-library' );
 			
 			// Store table-specific params to be output in footer
-			self::$script_params = [
+			self::$script_params[ $table_id ] = [
 				'ajax_url'    => admin_url( 'admin-ajax.php' ),
 				'ajax_nonce'  => wp_create_nonce( 'dll_load_posts' ),
 				'ajax_action' => 'dll_load_posts',
 				'lazy_load'   => $table->args['lazy_load'],
 				'columns'	  => $table->get_columns(),
-				'args'        => $table->args
+				'table_id'    => $table_id,
 			];
 		}
 
@@ -73,7 +77,7 @@ class Document_Library_Shortcode implements Registerable, Standard_Service {
 
 		// Create table and return output
 		ob_start(); ?>
-		<input type="hidden" name="category-search-<?php echo $table->get_id() ?>" value="<?php echo esc_attr( $table->args['doc_category'] ); ?>" class="category-search-<?php echo $table->get_id() ?>">
+		<input type="hidden" name="category-search-<?php echo esc_attr( $table_id ) ?>" value="<?php echo esc_attr( $table->args['doc_category'] ); ?>" class="category-search-<?php echo esc_attr( $table_id ) ?>">
 		<table <?php echo $table->get_attributes() ?>>
 			<?php
 			echo $table->get_headers();
@@ -94,12 +98,15 @@ class Document_Library_Shortcode implements Registerable, Standard_Service {
 	 * Print script params in the footer before scripts are printed.
 	 */
 	public function print_script_params() {
-		if ( self::$script_params !== null && wp_script_is( 'document-library', 'enqueued' ) ) {
-			wp_localize_script(
-				'document-library',
-				'document_library_params',
-				apply_filters( 'document_library_script_params', self::$script_params )
-			);
+		if ( ! empty( self::$script_params ) && wp_script_is( 'document-library', 'enqueued' ) ) {
+			// Output params for each table separately
+			foreach ( self::$script_params as $table_id => $params ) {
+				wp_localize_script(
+					'document-library',
+					'document_library_params_' . sanitize_key( $table_id ),
+					apply_filters( 'document_library_script_params', $params, $table_id )
+				);
+			}
 		}
 	}
 
