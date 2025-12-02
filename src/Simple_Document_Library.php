@@ -17,6 +17,7 @@ class Simple_Document_Library {
 	public $args         = [];
 	public $post_args    = [];
 	private $total_posts = null;
+	private $table_id    = null;
 	/**
 	 * Stores the number of tables on this page. Used to generate the table ID.
 	 *
@@ -38,8 +39,9 @@ class Simple_Document_Library {
 	 */
 	private static $allowed_columns = [];
 
-	public function __construct( $args ) {
+	public function __construct( $args, $table_id = null ) {
 		$this->args = $this->validate_options( $args );
+		$this->table_id = $table_id ? $table_id : 'document-library-' . self::$table_count;
 		$this->set_post_args();
 	}
 
@@ -347,8 +349,8 @@ class Simple_Document_Library {
 			$table_class .= ' nowrap';
 		}
 		$table_attributes = sprintf(
-			'id="document-library-%1$u" class="%2$s" data-page-length="%3$u" data-paging="%4$s" data-click-filter="%5$s" data-scroll-offset="%6$s" data-order="[]" cellspacing="0" width="100%%"',
-			self::$table_count,
+			'id="%1$s" class="%2$s" data-page-length="%3$u" data-paging="%4$s" data-click-filter="%5$s" data-scroll-offset="%6$s" data-order="[]" cellspacing="0" width="100%%"',
+			esc_attr( $this->table_id ),
 			esc_attr( $table_class ),
 			esc_attr( $this->args['rows_per_page'] ),
 			esc_attr( $paging_attr ),
@@ -497,6 +499,6 @@ class Simple_Document_Library {
 	}
 
 	public function get_id() {
-		return self::$table_count;
+		return $this->table_id;
 	}
 }

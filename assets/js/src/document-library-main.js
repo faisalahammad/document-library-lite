@@ -15,6 +15,15 @@
     tables.each(function () {
       let $table = $(this);
       this.id = $table.attr("id");
+      
+      // Get the table-specific params using the table ID
+      const paramsVarName = 'document_library_params_' + this.id.replace(/[^a-zA-Z0-9]/g, '');
+      const document_library_params = window[paramsVarName];
+      
+      if (!document_library_params) {
+        console.error('Document library params not found for table: ' + this.id);
+        return;
+      }
 
       // Set the column classes
       let columns = document_library_params.columns || [];
@@ -31,10 +40,10 @@
       });
 
       // --- Determine default sort index ---
-      const tableArgs =
-        document_library_params.args || document_library_params.args;
-      const defaultSortColumnName = tableArgs.sort_by || "title";
-      const defaultSortDirection = tableArgs.sort_order || "asc";
+      // For the initial sort, we rely on server-side ordering
+      // DataTables will respect the order the data comes in
+      const defaultSortColumnName = "title";
+      const defaultSortDirection = "asc";
 
       let defaultSortColumnIndex = column_classes.findIndex(
         (col) => col.data === defaultSortColumnName
@@ -60,12 +69,9 @@
           url: document_library_params.ajax_url,
           type: "POST",
           data: {
-            table_id: this.id,
+            table_id: document_library_params.table_id,
             action: document_library_params.ajax_action,
-            category: $(
-              ".category-search-" + this.id.replace("document-library-", "")
-            ).val(),
-            args: document_library_params.args,
+            category: $(".category-search-" + document_library_params.table_id).val(),
             _ajax_nonce: document_library_params.ajax_nonce,
           },
         };
@@ -104,9 +110,7 @@
 
       // Add category parameter just before the AJAX request is sent
       table.on("preXhr.dt", function (e, settings, data) {
-        data.category = $(
-          ".category-search-" + this.id.replace("document-library-", "")
-        ).val();
+        data.category = $(".category-search-" + document_library_params.table_id).val();
       });
 
       // If 'search on click' enabled then add click handler for links in category, author and tags columns.
@@ -135,10 +139,7 @@
             if (!document_library_params.lazy_load) {
               table.search($link.text()).draw();
             } else {
-              $(
-                ".category-search-" +
-                  config.ajax.data.table_id.replace("document-library-", "")
-              ).val($link.text());
+              $(".category-search-" + document_library_params.table_id).val($link.text());
               table.draw();
             }
             return false;
