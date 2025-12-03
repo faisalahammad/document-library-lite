@@ -59,12 +59,17 @@ class Design implements Registerable {
 	 */
 	public function display_design_description() {
 		printf(
-			'<p>' .
-			esc_html__( 'Use the following options to customize the design of the document table and grid.', 'document-library-lite' ) .
+			'<div class="promo-wrapper"><p class="promo">' .
+			/* translators: %1: Document Library Pro link start, %2: Document Library Pro link end */
+			esc_html__( 'Upgrade to %1$sDocument Library Pro%2$s to customize the design of the document table and grid:', 'document-library-lite' ) .
 			'</p>' .
-			'<p><span class="pro-version">%s</span></p>',
+			'<a class="promo" href="%3$s" target="_blank"><img class="promo" src="%4$s" />%2$s</div>',
 			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			Lib_Util::barn2_link( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings', __( 'Pro version only', 'document-library-lite' ), true )
+			Lib_Util::format_link_open( Lib_Util::barn2_url( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings' ), true ),
+			'</a>',
+			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			Lib_Util::barn2_url( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings' ),
+			esc_url( $this->plugin->get_dir_url() . '/assets/images/promo-design.png' )
 		);
 	}
 
