@@ -55,7 +55,7 @@ class Display implements Registerable {
 		Settings_API_Helper::add_settings_section( 'dlp_table', self::MENU_SLUG, __( 'Table', 'document-library-lite' ), '__return_false', $this->get_table_settings() );
 
 		// Grid section - Pro Only
-		Settings_API_Helper::add_settings_section( 'dlp_grid', self::MENU_SLUG, __( 'Grid', 'document-library-lite' ), [ $this, 'display_pro_only_section' ], [] );
+		Settings_API_Helper::add_settings_section( 'dlp_grid', self::MENU_SLUG, __( 'Grid', 'document-library-lite' ), [ $this, 'display_grid_section' ], [] );
 
 		// Sorting section
 		Settings_API_Helper::add_settings_section( 'dlp_sort_by', self::MENU_SLUG, __( 'Sorting', 'document-library-lite' ), '__return_false', $this->get_sort_by_settings() );
@@ -89,6 +89,20 @@ class Display implements Registerable {
 	 */
 	public function display_pro_only_section() {
 		printf(
+			'<p><span class="pro-version">%s</span></p>',
+			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			Lib_Util::barn2_link( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings', __( 'Pro version only', 'document-library-lite' ), true )
+		);
+	}
+
+	/**
+	 * Output the Grid section description.
+	 */
+	public function display_grid_section() {
+		printf(
+			'<p>' .
+			esc_html__( 'Display your documents in a responsive grid layout. Control the grid content, clickable fields, columns, and customize the appearance to match your site design.', 'document-library-lite' ) .
+			'</p>' .
 			'<p><span class="pro-version">%s</span></p>',
 			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			Lib_Util::barn2_link( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings', __( 'Pro version only', 'document-library-lite' ), true )
@@ -207,14 +221,6 @@ class Display implements Registerable {
 		return Options::mark_readonly_settings(
 			[
 				[
-					'title'   => __( 'Link to document', 'document-library-lite' ),
-					'type'    => 'checkbox',
-					'id'      => Options::SHORTCODE_OPTION_KEY . '[document_link]',
-					'label'   => __( 'Include a link to the document.', 'document-library-lite' ),
-					'desc'    => __( 'Use the \'Button behavior\' option below to control the link behavior.', 'document-library-lite' ) . ' ' . Lib_Util::barn2_link( 'kb/document-library-settings/#link-to-document', '', true ),
-					'default' => true,
-				],
-				[
 					'title'   => __( 'Button behavior', 'document-library-lite' ),
 					'type'    => 'select',
 					'id'      => Options::SHORTCODE_OPTION_KEY . '[link_destination]',
@@ -229,14 +235,11 @@ class Display implements Registerable {
 					'title'   => __( 'Style', 'document-library-lite' ),
 					'type'    => 'select',
 					'id'      => Options::SHORTCODE_OPTION_KEY . '[link_style]',
-					'desc'    => __( 'Control the appearance of the link to the document.', 'document-library-lite' ) . ' ' . Lib_Util::barn2_link( 'kb/document-library-settings#link-style', '', true ),
+					'desc'    => __( 'Control the appearance of the link to the document.', 'document-library-lite' ) . ' ' . Lib_Util::barn2_link( 'kb/document-library-settings#download-button', '', true ),
 					'options' => [
-						'button'           => __( 'Button with text', 'document-library-lite' ),
-						'button_icon_text' => __( 'Button with icon and text', 'document-library-lite' ),
-						'button_icon'      => __( 'Button with icon', 'document-library-lite' ),
-						'icon_only'        => __( 'Download icon only', 'document-library-lite' ),
-						'icon'             => __( 'File type icon', 'document-library-lite' ),
-						'text'             => __( 'Text link', 'document-library-lite' ),
+						'button' => __( 'Button', 'document-library-lite' ),
+						'icon'   => __( 'File type button', 'document-library-lite' ),
+						'text'   => __( 'Text link', 'document-library-lite' ),
 					],
 					'default' => $this->default_settings['link_style'],
 				],
@@ -246,6 +249,22 @@ class Display implements Registerable {
 					'type'    => 'text',
 					'desc'    => __( 'The text displayed on the button or link.', 'document-library-lite' ),
 					'default' => $this->default_settings['link_text'],
+					'custom_attributes' => [
+						'data-show-if' => 'link_style',
+						'data-show-if-value' => 'button,text',
+					],
+				],
+				[
+					'title'            => __( 'Icon', 'document-library-lite' ),
+					'type'             => 'checkbox',
+					'id'               => Options::SHORTCODE_OPTION_KEY . '[link_icon]',
+					'label'            => __( 'Display download icon', 'document-library-lite' ),
+					'default'          => false,
+					'class'            => 'dll-link-icon-option',
+					'custom_attributes' => [
+						'data-show-if' => 'link_style',
+						'data-show-if-value' => 'button,text',
+					],
 				],
 				[
 					'title'   => __( 'New tab', 'document-library-lite' ),
@@ -308,7 +327,7 @@ class Display implements Registerable {
 		return Options::mark_readonly_settings(
 			[
 				[
-					'title'   => __( 'Folders', 'document-library-lite' ),
+					'title'   => __( 'Enable folders', 'document-library-lite' ),
 					'type'    => 'checkbox',
 					'id'      => Options::SHORTCODE_OPTION_KEY . '[folders]',
 					'label'   => __( 'Group the document library into folders, one per category', 'document-library-lite' ),

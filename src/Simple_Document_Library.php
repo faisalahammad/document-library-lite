@@ -432,7 +432,8 @@ class Simple_Document_Library {
 					$row_content['content'] = $this->get_post_content( $_post->ID, $this->args['content_length'] );
 					break;
 				case 'link':
-					$row_content['link'] = $document->get_download_button( $this->args['link_text'], $this->args['link_style'] );
+					$link_icon = isset( $this->args['link_icon'] ) ? $this->args['link_icon'] : false;
+					$row_content['link'] = $document->get_download_button( $this->args['link_text'], $this->args['link_style'], $link_icon );
 					break;
 				default:
 					break;
@@ -485,10 +486,15 @@ class Simple_Document_Library {
 
 	public function validate_options( $args ) {
 		// Validate all the boolean options in the database
-		$boolean_options = [ 'lazy_load', 'lightbox', 'wrap', 'search_on_click' ];
+		$boolean_options = [ 'lazy_load', 'lightbox', 'wrap', 'search_on_click', 'link_icon' ];
 
 		foreach( $boolean_options as $option ) {
-			$args[ $option ] = is_string( $args[ $option ] ) ? $args[ $option ] === "true" : $args[ $option ];
+			if ( isset( $args[ $option ] ) ) {
+				// Handle various truthy values: '1', 1, 'true', true
+				$args[ $option ] = filter_var( $args[ $option ], FILTER_VALIDATE_BOOLEAN );
+			} else {
+				$args[ $option ] = false;
+			}
 		}
 
 		// The post status can only have these values

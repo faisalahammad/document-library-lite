@@ -112,6 +112,7 @@ final class Options {
 			'link_text'       => __( 'Download', 'document-library-lite' ),
 			'lightbox'        => false,
 			'link_style'	  => 'button',
+			'link_icon'       => false,
 			'rows_per_page'   => 20,
 			'sort_by'         => 'date',
 			'sort_order'      => '',

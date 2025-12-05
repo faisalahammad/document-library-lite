@@ -218,15 +218,18 @@ class Document {
 	 *
 	 * @param string $link_text
 	 * @param string $link_style
+	 * @param bool $link_icon
 	 * @return string
 	 */
-	public function get_download_button( $link_text, $link_style = 'button' ) {
+	public function get_download_button( $link_text, $link_style = 'button', $link_icon = false ) {
 		if ( ! $this->get_download_url() ) {
 			return '';
 		}
 
 		$link_text          = $this->ensure_download_button_link_text( $link_text );
-		$button_class       = in_array( $link_style, [ 'icon_only', 'icon', 'text' ], true ) ? '' : apply_filters( 'document_library_button_column_button_class', 'dll-download-button document-library-button button btn' );
+		// Only apply button classes for 'button' style or 'icon' style (file type button)
+		// Text links should not have button styling
+		$button_class       = in_array( $link_style, [ 'button', 'icon' ], true ) ? apply_filters( 'document_library_button_column_button_class', 'dll-download-button document-library-button button btn' ) : '';
 		$download_attribute = $this->get_download_button_attributes();
 
 		$anchor_open = sprintf(
@@ -236,18 +239,34 @@ class Document {
 			$download_attribute
 		);
 
-		$anchor_text = [
-			'button'           => $link_text,
-			'button_icon_text' => SVG_Icon::get( 'download', [ 'dll-button-icon', 'dll-button-icon-text' ] ) . $link_text,
-			'button_icon'      => SVG_Icon::get( 'download', [ 'dll-button-icon' ] ),
-			'icon_only'        => SVG_Icon::get( 'download', [ 'dll-button-icon' ] ),
-			'icon'             => $this->get_file_icon(), // file type icon
-			'text'             => $link_text,
-		];
+		// Build anchor text based on style and icon option
+		$anchor_text = '';
+		
+		if ( $link_style === 'icon' ) {
+			// File type button (icon)
+			$anchor_text = $this->get_file_icon();
+		} elseif ( $link_style === 'button' ) {
+			// Button with optional icon
+			if ( $link_icon ) {
+				$anchor_text = SVG_Icon::get( 'download', [ 'dll-button-icon', 'dll-button-icon-text' ] ) . $link_text;
+			} else {
+				$anchor_text = $link_text;
+			}
+		} elseif ( $link_style === 'text' ) {
+			// Text link with optional icon
+			if ( $link_icon ) {
+				$anchor_text = SVG_Icon::get( 'download', [ 'dll-button-icon' ] ) . ' ' . $link_text;
+			} else {
+				$anchor_text = $link_text;
+			}
+		} else {
+			// Fallback for any other style
+			$anchor_text = $link_text;
+		}
 
 		$anchor_close = '</a>';
 
-		return $anchor_open . $anchor_text[ $link_style ] . $anchor_close;
+		return $anchor_open . $anchor_text . $anchor_close;
 	}
 
 	/**

@@ -21,6 +21,29 @@
 		$children.toggle( show );
 	};
 
+	var toggleConditionalSettings = function() {
+		$( '[data-show-if]' ).each( function() {
+			var $field = $( this ).closest( 'tr' );
+			var showIfField = $( this ).data( 'show-if' );
+			var showIfValue = $( this ).data( 'show-if-value' );
+			
+			if ( showIfField && showIfValue ) {
+				var $parent = $( 'select[name*="[' + showIfField + ']"]' );
+				
+				if ( $parent.length ) {
+					var currentValue = $parent.val();
+					var allowedValues = showIfValue.toString().split( ',' );
+					
+					if ( allowedValues.indexOf( currentValue ) !== -1 ) {
+						$field.show();
+					} else {
+						$field.hide();
+					}
+				}
+			}
+		} );
+	};
+
 	$( document ).ready( function() {
 		$( '.form-table .toggle-parent' ).each( function() {
 			var $parent = $( this );
@@ -31,6 +54,13 @@
 			$parent.on( 'change', function() {
 				toggleChildSettings( $parent, $children );
 			} );
+		} );
+
+		// Handle conditional show/hide for link_icon based on link_style
+		toggleConditionalSettings();
+		
+		$( 'select[name*="[link_style]"]' ).on( 'change', function() {
+			toggleConditionalSettings();
 		} );
 
 	} );

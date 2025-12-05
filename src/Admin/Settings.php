@@ -92,7 +92,14 @@ class Settings implements Registerable, Standard_Service {
 	 * @return array
 	 */
 	public function allowed_options( $options ) {
-		$new_options[ Options::GENERAL_OPTION_GROUP ] = [ Options::SHORTCODE_OPTION_KEY ];
+		$new_options = [
+			Options::GENERAL_OPTION_GROUP => [ Options::SHORTCODE_OPTION_KEY, Options::DOCUMENT_FIELDS_OPTION_KEY, Options::DOCUMENT_PAGE_OPTION_KEY ],
+			Options::TABLE_OPTION_GROUP   => [ Options::SHORTCODE_OPTION_KEY ],
+			Options::GRID_OPTION_GROUP    => [ Options::SHORTCODE_OPTION_KEY ],
+			'document_library_pro_display' => [ Options::SHORTCODE_OPTION_KEY ],
+			'document_library_pro_search'  => [ Options::SHORTCODE_OPTION_KEY ],
+			'document_library_pro_advanced' => [ Options::SHORTCODE_OPTION_KEY, Options::MISC_OPTION_KEY ],
+		];
 
 		if ( function_exists( 'add_allowed_options' ) ) {
 			$options = add_allowed_options( $new_options, $options );

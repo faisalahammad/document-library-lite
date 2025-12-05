@@ -99,3 +99,29 @@
     font-weight: 600;
     font-size: 12px;
 }
+
+// Consistent input and select widths
+.dlw-settings .form-table {
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    select {
+        width: 400px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    // Ensure full width on mobile devices
+    @include breakpoint('<782px') {
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        select {
+            width: 100%;
+        }
+    }
+}

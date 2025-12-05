@@ -147,6 +147,15 @@ table.document-library-table .document-library-button::after {
     display: none;
 }
 
+// Styles for link column to ensure icons display correctly
+table.document-library-table .col-link {
+    a, button {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+}
+
 
 .document-library-button {
     display: flex !important;
