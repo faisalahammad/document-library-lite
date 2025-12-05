@@ -60,9 +60,9 @@ class Settings implements Standard_Service, Registerable, Conditional {
 			Settings_Tab\General::TAB_ID          => new Settings_Tab\General( $this->plugin ),
 			Settings_Tab\Display::TAB_ID          => new Settings_Tab\Display( $this->plugin ),
 			Settings_Tab\Search::TAB_ID           => new Settings_Tab\Search( $this->plugin ),
+			Settings_Tab\Design::TAB_ID           => new Settings_Tab\Design( $this->plugin ),
 			Settings_Tab\Single_Document::TAB_ID  => new Settings_Tab\Single_Document( $this->plugin ),
 			Settings_Tab\Advanced::TAB_ID         => new Settings_Tab\Advanced( $this->plugin ),
-			Settings_Tab\Design::TAB_ID           => new Settings_Tab\Design( $this->plugin ),
 		];
 
 		return $settings_tabs;
@@ -119,8 +119,6 @@ class Settings implements Standard_Service, Registerable, Conditional {
 				<?php do_action( 'barn2_before_plugin_settings', $this->plugin->get_id() ); ?>
 			<?php } ?>
 
-			<h1><?php esc_html_e( 'Document Library Lite Settings', 'document-library-lite' ); ?></h1>
-
 			<h2 class="nav-tab-wrapper">
 				<?php
 				foreach ( $this->registered_settings as $setting_tab ) {
@@ -143,7 +141,7 @@ class Settings implements Standard_Service, Registerable, Conditional {
 
 				<?php if ( in_array( $active_tab, [ 'general', 'display', 'search', 'advanced' ], true ) ) { ?>
 					<p class="submit">
-						<input name="Submit" type="submit" name="submit" class="button button-primary" value="<?php esc_attr_e( 'Save Changes', 'document-library-lite' ); ?>" />
+						<input name="Submit" type="submit" name="submit" class="button button-primary" value="<?php esc_attr_e( 'Save changes', 'document-library-lite' ); ?>" />
 					</p>
 				<?php } ?>
 			</form>

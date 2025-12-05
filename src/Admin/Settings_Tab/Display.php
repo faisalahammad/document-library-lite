@@ -67,7 +67,7 @@ class Display implements Registerable {
 		Settings_API_Helper::add_settings_section( 'dlp_preview_button', self::MENU_SLUG, __( 'Preview button', 'document-library-lite' ), '__return_false', $this->get_preview_button_settings() );
 
 		// Multi-downloads section
-		Settings_API_Helper::add_settings_section( 'dlp_multi_downloads', self::MENU_SLUG, __( 'Multi-downloads', 'document-library-lite' ), [ $this, 'display_pro_only_section' ], [] );
+		Settings_API_Helper::add_settings_section( 'dlp_multi_downloads', self::MENU_SLUG, __( 'Multi-downloads', 'document-library-lite' ), [ $this, 'display_multi_downloads_section' ], [] );
 
 		// Folders section
 		Settings_API_Helper::add_settings_section( 'dlp_folders', self::MENU_SLUG, __( 'Folders', 'document-library-lite' ), '__return_false', $this->get_folders_settings() );
@@ -90,6 +90,22 @@ class Display implements Registerable {
 	public function display_pro_only_section() {
 		printf(
 			'<p><span class="pro-version">%s</span></p>',
+			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			Lib_Util::barn2_link( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings', __( 'Pro version only', 'document-library-lite' ), true )
+		);
+	}
+
+	/**
+	 * Output the Multi-downloads section description.
+	 */
+	public function display_multi_downloads_section() {
+		printf(
+			'<p>' .
+			esc_html__( 'Enable the multi-download feature to allow users to select multiple documents and download them together as a single ZIP file.', 'document-library-lite' ) .
+			' %s</p>' .
+			'<p><span class="pro-version">%s</span></p>',
+			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			Lib_Util::barn2_link( 'kb/document-multiple-download/', __( 'Read more', 'document-library-lite' ), true ),
 			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			Lib_Util::barn2_link( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings', __( 'Pro version only', 'document-library-lite' ), true )
 		);

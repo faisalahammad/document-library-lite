@@ -56,10 +56,10 @@ class General implements Registerable {
 		Settings_API_Helper::add_settings_section( 'dlp_document_data', self::MENU_SLUG, __( 'Document data', 'document-library-lite' ), [ $this, 'display_document_data_description' ], $this->get_document_data_settings() );
 
 		// Version Control - Pro Only
-		Settings_API_Helper::add_settings_section( 'dlp_version_control', self::MENU_SLUG, __( 'Version control', 'document-library-lite' ), [ $this, 'display_pro_only_section' ], [] );
+		Settings_API_Helper::add_settings_section( 'dlp_version_control', self::MENU_SLUG, __( 'Version control', 'document-library-lite' ), [ $this, 'display_version_control_section' ], [] );
 
 		// Frontend Submission - Pro Only
-		Settings_API_Helper::add_settings_section( 'dlp_frontend_submission', self::MENU_SLUG, __( 'Front end document submission', 'document-library-lite' ), [ $this, 'display_pro_only_section' ], [] );
+		Settings_API_Helper::add_settings_section( 'dlp_frontend_submission', self::MENU_SLUG, __( 'Front end document submission', 'document-library-lite' ), [ $this, 'display_frontend_submission_section' ], [] );
 	}
 
 	/**
@@ -94,6 +94,38 @@ class General implements Registerable {
 	public function display_pro_only_section() {
 		printf(
 			'<p><span class="dlw-pro-only">%s</span></p>',
+			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			Lib_Util::barn2_link( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings', __( 'Pro version only', 'document-library-lite' ), true )
+		);
+	}
+
+	/**
+	 * Output the Version Control section description.
+	 */
+	public function display_version_control_section() {
+		printf(
+			'<p>' .
+			esc_html__( 'The version control options allow you to decide how to keep track of the uploaded files.', 'document-library-lite' ) .
+			' %s</p>' .
+			'<p><span class="dlw-pro-only">%s</span></p>',
+			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			Lib_Util::barn2_link( 'kb/document-version-control', __( 'Read more', 'document-library-lite' ), true ),
+			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			Lib_Util::barn2_link( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings', __( 'Pro version only', 'document-library-lite' ), true )
+		);
+	}
+
+	/**
+	 * Output the Frontend Submission section description.
+	 */
+	public function display_frontend_submission_section() {
+		printf(
+			'<p>' .
+			esc_html__( 'Use the [dlp_submission_form] shortcode to allow people to add documents from the front end.', 'document-library-lite' ) .
+			' %s</p>' .
+			'<p><span class="dlw-pro-only">%s</span></p>',
+			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			Lib_Util::barn2_link( 'kb/add-import-documents/#upload-documents-from-the-front-end', __( 'Read more', 'document-library-lite' ), true ),
 			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			Lib_Util::barn2_link( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings', __( 'Pro version only', 'document-library-lite' ), true )
 		);
