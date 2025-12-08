@@ -103,6 +103,13 @@ class Advanced implements Registerable {
 					'label'   => __( 'Display images in a lightbox when opened', 'document-library-lite' ),
 					'default' => $this->default_settings['lightbox'],
 				],
+				[
+					'title'   => __( 'Text links', 'document-library-lite' ),
+					'type'    => 'checkbox',
+					'id'      => Options::SHORTCODE_OPTION_KEY . '[text_links_new_tab]',
+					'label'   => __( 'Open text links in a new tab', 'document-library-lite' ),
+					'default' => false,
+				],
 			]
 		);
 	}
@@ -171,6 +178,29 @@ class Advanced implements Registerable {
 					'custom_attributes' => [
 						'min' => -1,
 					],
+				],
+				[
+					'title'   => __( 'Accent-insensitive search', 'document-library-lite' ),
+					'type'    => 'checkbox',
+					'id'      => Options::SHORTCODE_OPTION_KEY . '[accent_insensitive]',
+					'label'   => __( 'Make searches match accented and non-accented characters when lazy load is disabled', 'document-library-lite' ),
+					'default' => false,
+				],
+				[
+					'title'   => __( 'Diacritics sorting', 'document-library-lite' ),
+					'type'    => 'checkbox',
+					'id'      => Options::SHORTCODE_OPTION_KEY . '[diacritics_sort]',
+					'label'   => __( 'Improve sorting of accented characters when lazy load is disabled', 'document-library-lite' ),
+					'default' => false,
+				],
+				[
+					'title'   => __( 'Responsive display', 'document-library-lite' ),
+					'type'    => 'select',
+					'id'      => Options::SHORTCODE_OPTION_KEY . '[responsive_display]',
+					'options' => [
+						'child_row' => __( 'Click a plus icon to display a hidden child row', 'document-library-lite' ),
+					],
+					'default' => 'child_row',
 				],
 			]
 		);

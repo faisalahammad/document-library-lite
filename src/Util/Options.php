@@ -55,7 +55,13 @@ final class Options {
 		'accessing_documents',
 		'multi_download_button',
 		'multi_download_text',
-		'design'
+		'design',
+		'text_links_new_tab',
+		'accent_insensitive',
+		'diacritics_sort',
+		'responsive_display',
+		'custom_filters',
+		'search_results_page'
 	];
 
 	/**

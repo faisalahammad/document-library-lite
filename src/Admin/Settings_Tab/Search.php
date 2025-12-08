@@ -103,11 +103,23 @@ class Search implements Registerable {
 					'default' => 'top',
 				],
 				[
-					'title'   => __( 'Reset button', 'document-library-lite' ),
-					'type'    => 'checkbox',
-					'id'      => Options::SHORTCODE_OPTION_KEY . '[reset_button]',
-					'label'   => __( 'Show the reset button above the library', 'document-library-lite' ),
-					'default' => false,
+					'title' => __( 'Custom filters', 'document-library-lite' ),
+					'type'  => 'text',
+					'id'    => Options::SHORTCODE_OPTION_KEY . '[custom_filters]',
+					'desc'  => __( 'Enter the filters as a comma-separated list.', 'document-library-lite' ) . ' ' . Lib_Util::barn2_link( 'kb/document-library-filters/', '', true ),
+				],
+				[
+					'title'   => __( 'Search results', 'document-library-lite' ),
+					'type'    => 'select',
+					'id'      => Options::SHORTCODE_OPTION_KEY . '[search_results_page]',
+					'options' => [
+						'document_search' => __( 'Document search', 'document-library-lite' ),
+					],
+					'desc'    => sprintf(
+						__( 'When using the %s, this page will display your search results.', 'document-library-lite' ),
+						Lib_Util::barn2_link( 'kb/document-library-search/#standalone-search-box', __( 'global search', 'document-library-lite' ), true )
+					),
+					'default' => 'document_search',
 				],
 			]
 		);
