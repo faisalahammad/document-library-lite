@@ -46,8 +46,8 @@ class Protect implements Standard_Service, Registerable {
 		// Protect
 		add_submenu_page(
 			'document_library',
-			__( 'Access control', 'document-library-lite' ),
-			__( 'Access control', 'document-library-lite' ),
+			__( 'Access Control', 'document-library-lite' ),
+			__( 'Access Control', 'document-library-lite' ),
 			'edit_posts',
 			'dll_protect',
 			[ $this, 'render' ],
@@ -77,8 +77,8 @@ class Protect implements Standard_Service, Registerable {
 				</div>
 			</div>
 		</div>
-		<div class="wrap dlw-settings">
-			<h1><?php esc_html_e( 'Access control', 'document-library-lite' ); ?></h1>
+		<div class="wrap dlw-settings protect-promo">
+			<h1><?php esc_html_e( 'Access Control', 'document-library-lite' ); ?></h1>
 
 			<?php
 			printf(
@@ -92,7 +92,7 @@ class Protect implements Standard_Service, Registerable {
 				</ul>' .
 				'<a class="promo-button" href="%4$s" target="_blank"><img class="promo" src="%5$s" /></a></div>',
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				'<a href="' . Lib_Util::barn2_url( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings' ) . '">',
+				'<a href="' . Lib_Util::barn2_url( 'wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings' ) . '" target="_blank">',
 				'</a>',
 				__( 'Upgrade', 'document-library-lite' ),
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped

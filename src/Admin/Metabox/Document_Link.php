@@ -43,7 +43,7 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 	public function register_metabox() {
 		add_meta_box(
 			self::ID,
-			__( 'Document Link', 'document-library-lite' ),
+			__( 'File', 'document-library-lite' ),
 			[ $this, 'render' ],
 			'dlp_document',
 			'dlw_below_title',
@@ -65,7 +65,7 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 		$url_details_class   = $document->get_link_type() === 'url' ? 'active' : '';
 		?>
 
-		<label for="<?php esc_attr( self::ID ); ?>" class="howto"><?php esc_html_e( 'Upload a file or select one from the media library:', 'document-library-lite' ); ?></label>
+		<label for="<?php esc_attr( self::ID ); ?>" class="howto"><?php esc_html_e( 'Upload a file or add a URL where the document is located:', 'document-library-lite' ); ?></label>
 
 		<!-- option selector -->
 		<select name="_dlp_document_link_type" id="dlw_document_link_type" class="postbox">
@@ -212,7 +212,7 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 		?>
 		<div id="version-history<?php echo esc_attr( $id_suffix ); ?>" class="document-library-pro-advanced-promo-version-history">
 			<span class="version-history-status">
-				<?php esc_html_e( 'Version history', 'document-library-lite' ); ?>
+				<?php echo '<u>' . esc_html__( 'Version history', 'document-library-lite' ) . '</u>'; ?>
 			</span>
 			<span class="dlw-help-tip" popovertarget="dlw-version-history-popover<?php echo esc_attr( $id_suffix ); ?>" tabindex="0"></span>
 		</div>
@@ -222,9 +222,9 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 				<img src="<?php echo esc_url( plugins_url( 'assets/images/version-history-promo.svg', dirname( __DIR__, 3 ) . '/document-library-lite.php' ) ); ?>" alt="" />
 				<div class="popover-content">
 					<h3>Unlock Advanced Features</h3>
-					<p>Upgrade to the Document Library Pro Advanced Plan to manage and store multiple versions of your downloadable documents.</p>
+					<p>Upgrade to the Document Library Pro to manage and store multiple versions of your downloadable documents.</p>
 					<div>
-						<a href="https://barn2.com/wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings" class="button button-primary"><?php esc_html_e( 'Upgrade now', 'document-library-lite' ); ?></a>
+						<a href="https://barn2.com/wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings" class="button button-primary"><?php esc_html_e( 'Upgrade Now', 'document-library-lite' ); ?></a>
 					</div>
 				</div>
 			</div>

@@ -48,6 +48,7 @@ class Document_Expiry implements Registerable, Standard_Service, Conditional {
 		<div class="misc-pub-section curtime misc-pub-expiry document-expiry-container">
 			<div id="document-expiry">
 				<span id="expiry-status">
+					<span class="dashicons dashicons-clock"></span>
 					<?php esc_html_e( 'Document expiry', 'document-library-lite' ); ?>
 					<span class="dlw-help-tip" popovertarget="dlw-document-expiry-popover" tabindex="0"></span>
 				</span>
@@ -56,12 +57,12 @@ class Document_Expiry implements Registerable, Standard_Service, Conditional {
 
 		<div id="dlw-document-expiry-popover" popover role="tooltip">
 			<div class="popover-inner">
-				<img src="<?php echo esc_url( plugins_url( 'assets/images/version-history-promo.svg', dirname( __DIR__, 3 ) . '/document-library-lite.php' ) ); ?>" />
+				<img src="<?php echo esc_url( plugins_url( 'assets/images/expiry-promo.svg', dirname( __DIR__, 3 ) . '/document-library-lite.php' ) ); ?>" />
 				<div class="popover-content">
 					<h3><?php esc_html_e( 'Unlock Advanced Features', 'document-library-lite' ); ?></h3>
-					<p><?php esc_html_e( 'Upgrade to the Document Library Pro Advanced Plan to set expiry dates, in which documents will automatically be removed from the library on the date you choose.', 'document-library-lite' ); ?></p>
+					<p><?php esc_html_e( 'Upgrade to the Document Library Pro to set expiry dates, in which documents will automatically be removed from the library on the date you choose.', 'document-library-lite' ); ?></p>
 					<div>
-						<a href="https://barn2.com/wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings" class="button button-primary"><?php esc_html_e( 'Upgrade now', 'document-library-lite' ); ?></a>
+						<a href="https://barn2.com/wordpress-plugins/document-library-pro/?utm_source=settings&utm_medium=settings&utm_campaign=settingsinline&utm_content=dlw-settings" class="button button-primary"><?php esc_html_e( 'Upgrade Now', 'document-library-lite' ); ?></a>
 					</div>
 				</div>
 			</div>
