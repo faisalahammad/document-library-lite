@@ -59,7 +59,7 @@ class Simple_Document_Library {
 		$this->args['rows_per_page'] = isset( $_POST['length'] ) && intval( $_POST['length'] ) !== -1 ? intval( $_POST['length'] ) : $this->args['rows_per_page'];
 		$this->args['sort_by'] = isset( $_POST['order'] ) ? $columns[$_POST['order'][0]['column']] : $this->get_orderby();
     	$this->args['sort_order'] = isset( $_POST['order'] ) ? $_POST['order'][0]['dir'] : $this->args['sort_order'];
-    	$this->args['search_value'] = isset( $_POST['search'] ) ? $_POST['search']['value'] : '';
+    	$this->args['search_value'] = isset( $_POST['search']['value'] ) ? sanitize_text_field( wp_unslash( $_POST['search']['value'] ) ) : '';
 		$this->args['rows_per_page'] = filter_var( $this->args['rows_per_page'], FILTER_VALIDATE_INT );
 
 		if ( $this->args['rows_per_page'] < 1 || ! $this->args['rows_per_page'] ) {

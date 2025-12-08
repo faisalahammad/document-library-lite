@@ -29,6 +29,9 @@ class Config_Builder {
 	 * @return string The unique table ID
 	 */
 	public static function store( $config ) {
+		// Sanitize configuration to prevent XSS
+		$config = self::sanitize_config( $config );
+
 		// Generate a unique ID for this configuration
 		$table_id = self::generate_unique_id( $config );
 
@@ -68,6 +71,30 @@ class Config_Builder {
 	public static function delete( $table_id ) {
 		$table_id = sanitize_key( $table_id );
 		return delete_transient( self::TRANSIENT_PREFIX . $table_id );
+	}
+
+	/**
+	 * Sanitize configuration values to prevent XSS attacks.
+	 *
+	 * @param array $config The configuration array
+	 * @return array The sanitized configuration
+	 */
+	private static function sanitize_config( $config ) {
+		// List of text fields that need sanitization
+		$text_fields = [
+			'link_text',
+			'content',
+			'search',
+			'category',
+		];
+
+		foreach ( $text_fields as $field ) {
+			if ( isset( $config[ $field ] ) ) {
+				$config[ $field ] = sanitize_text_field( $config[ $field ] );
+			}
+		}
+
+		return $config;
 	}
 
 	/**

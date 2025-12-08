@@ -240,6 +240,7 @@ class Document {
 		);
 
 		// Build anchor text based on style and icon option
+		$escaped_link_text = esc_html( $link_text );
 		$anchor_text = '';
 		
 		if ( $link_style === 'icon' ) {
@@ -248,20 +249,20 @@ class Document {
 		} elseif ( $link_style === 'button' ) {
 			// Button with optional icon
 			if ( $link_icon ) {
-				$anchor_text = SVG_Icon::get( 'download', [ 'dll-button-icon', 'dll-button-icon-text' ] ) . $link_text;
+				$anchor_text = SVG_Icon::get( 'download', [ 'dll-button-icon', 'dll-button-icon-text' ] ) . $escaped_link_text;
 			} else {
-				$anchor_text = $link_text;
+				$anchor_text = $escaped_link_text;
 			}
 		} elseif ( $link_style === 'text' ) {
 			// Text link with optional icon
 			if ( $link_icon ) {
-				$anchor_text = SVG_Icon::get( 'download', [ 'dll-button-icon' ] ) . ' ' . $link_text;
+				$anchor_text = SVG_Icon::get( 'download', [ 'dll-button-icon' ] ) . ' ' . $escaped_link_text;
 			} else {
-				$anchor_text = $link_text;
+				$anchor_text = $escaped_link_text;
 			}
 		} else {
 			// Fallback for any other style
-			$anchor_text = $link_text;
+			$anchor_text = $escaped_link_text;
 		}
 
 		$anchor_close = '</a>';
