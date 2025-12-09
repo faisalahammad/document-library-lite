@@ -114,10 +114,10 @@ class Display implements Registerable {
 	 */
 	public function display_multi_downloads_section() {
 		printf(
-			'<p>' .
+			'<div class="multi-downloads-settings"> <p>' .
 			esc_html__( 'Enable the multi-download feature to allow users to select multiple documents and download them together as a single ZIP file.', 'document-library-lite' ) .
 			' %s</p>' .
-			'<p><span class="pro-version">%s</span></p>',
+			'<p><span class="pro-version">%s</span></p></div>',
 			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			Lib_Util::barn2_link( 'kb/document-multiple-download/', __( 'Read more', 'document-library-lite' ), true ),
 			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped

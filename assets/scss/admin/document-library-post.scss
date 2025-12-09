@@ -1,6 +1,18 @@
 // Document Link Type
 #dlw_document_link_type {
     margin-top: 5px;
+    margin-bottom: 5px;
+    
+    &:has(#dlw_file_attachment_details.active), &:has(#dlw_link_url_details.active) {
+      margin-bottom: 1em;
+    }
+}
+#document_link {
+    &:has(#dlw_file_attachment_details.active), &:has(#dlw_link_url_details.active) {
+        #dlw_document_link_type {
+            margin-bottom: 1em;
+        }
+    }
 }
 
 // File Details Containers
@@ -83,9 +95,8 @@
     width: 100%;
 }
 
-.dlw_upload_metabox_description {
+#dlw_upload_metabox_description {
     margin-top: 3em;
-    display: none;
     h3 {
         margin-top: 0;
         margin-bottom: 0.5em;

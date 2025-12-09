@@ -128,3 +128,23 @@
         }
     }
 }
+
+.multi-downloads-settings {
+    margin-bottom: 2.5rem;
+}
+
+.dlw-settings {
+    h2 {
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+        
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+    
+    .form-table + h2 {
+        margin-top: 2rem;
+    }
+}
+
