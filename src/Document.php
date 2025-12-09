@@ -283,7 +283,11 @@ class Document {
 
 		$mime_type = get_post_mime_type( $this->get_file_id() );
 
-		return sprintf( ' download="%1$s" type="%2$s"', basename( get_attached_file( $this->get_file_id() ) ), $mime_type );
+		return sprintf( 
+			' download="%1$s" type="%2$s"', 
+			esc_attr( basename( get_attached_file( $this->get_file_id() ) ) ), 
+			esc_attr( $mime_type ) 
+		);
 	}
 
 	/**

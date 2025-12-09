@@ -63,6 +63,8 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 		$file_attached_class = $document->get_file_id() ? ' active' : '';
 		$file_details_class  = $document->get_link_type() === 'file' ? 'active' : '';
 		$url_details_class   = $document->get_link_type() === 'url' ? 'active' : '';
+		
+		wp_nonce_field( 'dll_save_document_link', 'dll_document_link_nonce' );
 		?>
 
 		<label for="<?php esc_attr( self::ID ); ?>" class="howto"><?php esc_html_e( 'Upload a file or add a URL where the document is located:', 'document-library-lite' ); ?></label>
@@ -114,7 +116,19 @@ class Document_Link implements Registerable, Standard_Service, Conditional {
 	 * @param mixed $post_id
 	 */
 	public function save( $post_id ) {
-		// phpcs:ignore WordPress.Security.NonceVerification.Missing
+		// Verify nonce
+		if ( ! isset( $_POST['dll_document_link_nonce'] ) || ! wp_verify_nonce( $_POST['dll_document_link_nonce'], 'dll_save_document_link' ) ) {
+			return;
+		}
+
+		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+			return;
+		}
+
+		if ( ! current_user_can( 'edit_post', $post_id ) ) {
+			return;
+		}
+
 		if ( ! isset( $_POST['_dlp_document_link_type'] ) ) {
 			return;
 		}
