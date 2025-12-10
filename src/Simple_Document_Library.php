@@ -69,7 +69,9 @@ class Simple_Document_Library {
 			$this->args['doc_category'] = sanitize_text_field( wp_unslash( $_POST['category'] ) );
 		}
 
-		if ( ! in_array( $this->args['sort_by'], Options::get_allowed_columns(), true ) ) {
+		// Validate sort_by against allowed WordPress orderby values
+		$allowed_orderby = [ 'title', 'id', 'date', 'modified', 'menu_order', 'author', 'rand' ];
+		if ( ! in_array( $this->args['sort_by'], $allowed_orderby, true ) ) {
 			$this->args['sort_by'] = Options::get_default_settings()['sort_by'];
 		}
 
@@ -349,7 +351,7 @@ class Simple_Document_Library {
 			$table_class .= ' nowrap';
 		}
 		$table_attributes = sprintf(
-			'id="%1$s" class="%2$s" data-page-length="%3$u" data-paging="%4$s" data-click-filter="%5$s" data-scroll-offset="%6$s" data-order="[]" cellspacing="0" width="100%%"',
+			'id="%1$s" class="%2$s" data-page-length="%3$u" data-paging="%4$s" data-click-filter="%5$s" data-scroll-offset="%6$s" cellspacing="0" width="100%%"',
 			esc_attr( $this->table_id ),
 			esc_attr( $table_class ),
 			esc_attr( $this->args['rows_per_page'] ),

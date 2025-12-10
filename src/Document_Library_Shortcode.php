@@ -57,6 +57,12 @@ class Document_Library_Shortcode implements Registerable, Standard_Service {
 
 		$table = new Simple_Document_Library( $atts, $table_id );
 		
+		// Determine sort order - if not set or empty, use automatic based on sort_by
+		$sort_order = $table->args['sort_order'];
+		if ( empty( $sort_order ) || ! in_array( $sort_order, [ 'asc', 'desc' ], true ) ) {
+			$sort_order = ( $table->get_orderby() === 'date' ) ? 'desc' : 'asc';
+		}
+
 		// Load the scripts and styles.
 		if ( apply_filters( 'document_library_table_load_scripts', true ) ) {
 			wp_enqueue_style( 'document-library' );
@@ -70,6 +76,8 @@ class Document_Library_Shortcode implements Registerable, Standard_Service {
 				'lazy_load'   => $table->args['lazy_load'],
 				'columns'	  => $table->get_columns(),
 				'table_id'    => $table_id,
+				'sort_by'     => $table->get_orderby(),
+				'sort_order'  => $sort_order,
 			];
 		}
 

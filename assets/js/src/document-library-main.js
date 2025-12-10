@@ -17,7 +17,7 @@
       this.id = $table.attr("id");
       
       // Get the table-specific params using the table ID
-      const paramsVarName = 'document_library_params_' + this.id.replace(/[^a-zA-Z0-9]/g, '');
+      const paramsVarName = 'document_library_params_' + this.id.replace(/[^a-zA-Z0-9]/g, '_');
       const document_library_params = window[paramsVarName];
       
       if (!document_library_params) {
@@ -40,10 +40,9 @@
       });
 
       // --- Determine default sort index ---
-      // For the initial sort, we rely on server-side ordering
-      // DataTables will respect the order the data comes in
-      const defaultSortColumnName = "title";
-      const defaultSortDirection = "asc";
+      // Get sort settings from params, defaulting to title/asc if not set
+      const defaultSortColumnName = document_library_params.sort_by || "title";
+      const defaultSortDirection = document_library_params.sort_order || "asc";
 
       let defaultSortColumnIndex = column_classes.findIndex(
         (col) => col.data === defaultSortColumnName
@@ -54,14 +53,27 @@
         processing: true,
         serverSide: document_library_params.lazy_load,
         language: dataTablesLanguage,
-        initComplete: function (settings, json) {
-          if (defaultSortColumnIndex !== -1) {
-            this.api()
-              .order([defaultSortColumnIndex, defaultSortDirection])
-              .draw();
-          }
-        },
       };
+
+      // Set initial sort order
+      if (document_library_params.lazy_load) {
+        // Server-side mode: always set order to show correct indicators
+        // Sorting is handled by server via AJAX
+        if (defaultSortColumnIndex !== -1) {
+          config.order = [[defaultSortColumnIndex, defaultSortDirection]];
+        } else {
+          config.order = [[0, "asc"]]; // fallback to first column
+        }
+      } else {
+        // Client-side mode: data is already sorted by server
+        // Only set order if column is visible, otherwise disable initial sorting
+        if (defaultSortColumnIndex !== -1) {
+          config.order = [[defaultSortColumnIndex, defaultSortDirection]];
+        } else {
+          // Sort column not visible: disable initial sorting to preserve server order
+          config.order = [];
+        }
+      }
 
       // Set the ajax URL if the lazy load is enabled
       if (document_library_params.lazy_load) {
