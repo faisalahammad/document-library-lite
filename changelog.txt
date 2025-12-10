@@ -1,3 +1,12 @@
+= 1.2.0 = 
+Release date 11 December 2025
+
+* Dev: Enhanced AJAX request security with proper nonce verification
+* Dev: Added input sanitization to prevent XSS attacks
+* Dev: Added premium options and changed the design structure
+* Dev: Updated internal libraries and tested up to WordPress 6.9
+* Fix: Fixed IDOR (Insecure Direct Object Reference) vulnerabilities
+
 = 1.1.7 = 
 Release date 27 October 2025
 
