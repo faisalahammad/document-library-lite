@@ -57,6 +57,7 @@ Our [Pro version](https://barn2.com/wordpress-plugins/document-library-pro/?utm_
 * **Individual document pages** - Create a separate page for each document.
 * **Host documents on third party sites** - As well as displaying files from the Media Library, your WordPress download manager can include documents hosted on third party sites such as Dropbox, Google Drive, and Office 365.
 * **Private document libraries** - Restrict access to any or all of your document libraries either through simple password protection, or to specific roles or use accounts. Either protect the library globally or via category or individual document.
+* **Version control** - Manage multiple versions of the same document, keeping your library organized and up to date.
 * **Control which downloads to list** - Display documents based on additional factors including author, post type, taxonomy term, custom field, year, month, day, or ID. You can also exclude documents from the file manager by ID or category.
 * **Filter dropdowns** - Make it easier for people to find specific documents by adding filter dropdowns for categories, tags and taxonomies.
 * **Standalone document search** - As well as the AJAX search box above the document library, you can use the ‘Document search’ widget or [doc_search] shortcode to add a search box anywhere on your site. For example, you can use this to display a ‘Find Downloads’ search box to the homepage, site header, or sidebar.
