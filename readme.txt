@@ -13,7 +13,7 @@ Create a WordPress document library to manage, search and download files.
 
 == Description ==
 
-*Document Library Lite* creates a WordPress document library/download manager. It displays documents in a table layout and allows users to quickly search for, sort and download documents. 
+*Document Library Lite* creates a WordPress document library/download manager. It is the free plan of Document Library Pro, which is also available in Essentials and Advanced plans with additional features. It displays documents in a table layout and allows users to quickly search for, sort and download documents. 
 
 View the [plugin demo](https://documentlibrary-free.barn2.com/) to see it in action.
 
@@ -47,7 +47,7 @@ To get started with the WordPress download manager plugin, simply install the pl
 
 ### Document Library Pro
 
-Our [Pro version](https://barn2.com/wordpress-plugins/document-library-pro/?utm_source=wporg&utm_medium=freeplugin&utm_campaign=freepluginwporg&utm_content=dlw-wporg) adds lots more functionality to take your WordPress document management to the next level.
+Our [Document Library Pro](https://barn2.com/wordpress-plugins/document-library-pro/?utm_source=wporg&utm_medium=freeplugin&utm_campaign=freepluginwporg&utm_content=dlw-wporg)'s Essentials and Advanced plans add powerful features for organisations managing larger document libraries.
 
 [View free & pro comparison table](https://barn2.com/kb/document-library-plugins-free-pro-comparison/?utm_source=wporg&utm_medium=freeplugin&utm_campaign=freepluginwporg&utm_content=dlw-wporg)
 
@@ -110,7 +110,7 @@ Options for the `[doc_library]` shortcode:
 * **status** - List documents based on their status (e.g. published/draft/private).
 * **lightbox** - Enable or disable the feature which opens document featured images in a lightbox modal window.
 * **docs_per_page** - Change the number of documents on each page of the library.
-* **link_style** - Choose the style of the document download links. This can be any of the following: button, button_icon_text, button_icon, icon_only, icon, or text.
+* **link_style** - Choose the style of the document download links. This can be any of the following: button, button_icon_text, button_icon, icon_only, icon, or text.
 * **lazy_load** - List unlimited documents with no performance limitations.
 * **sort_by** - Override the sort order of the WordPress download manager library.
 * **sort_order** - Choose whether files are ordered alphabetically in ascending or descending order.
@@ -173,12 +173,11 @@ For each category, you can:
 = Can I see a demo of the download manager plugin? =
 Absolutely! You can see the *Document Library Lite* plugin in action on the [demo site](https://documentlibrary-free.barn2.com).
 
-= Is there a premium version with more features? =
-We have designed the free *Document Library Lite* plugin to have all the essential features that you need to create a fully functional document library.
+= What plans does Document Library Pro come in? =
+Document Library Pro is available in three plans: Lite (free), Essentials, and Advanced. [Compare plans and features on the Barn2 website.](https://barn2.com/kb/document-library-plugins-free-pro-comparison/?utm_source=wporg&utm_medium=freeplugin&utm_campaign=freepluginwporg&utm_content=dlw-wporg)
 
-For more advanced document management and display options, you can upgrade to [Document Library Pro](https://barn2.com/wordpress-plugins/document-library-pro/?utm_source=wporg&utm_medium=freeplugin&utm_campaign=freepluginwporg&utm_content=dlw-wporg). This incredibly popular plugin will supercharge your document library by giving you extra column and layout options, more ways to list documents, plus time-saving features including bulk document import.
-
-[Compare the free and pro plugins](https://barn2.com/kb/document-library-plugins-free-pro-comparison/?utm_source=wporg&utm_medium=freeplugin&utm_campaign=freepluginwporg&utm_content=dlw-wporg) and choose which is best for your site.
+= What is the difference between Lite, Essentials, and Advanced? =
+Lite (free) displays documents in searchable, sortable tables with categories, download buttons, and AJAX search. Essentials adds grid layouts, bulk import (drag-and-drop and CSV), filter dropdowns, extra columns (file size, file type, custom fields), and document preview. Advanced adds role-based access control, version control, document expiry, and lead capture before download.
 
 = Can you customize the plugin for me? =
 We developed this free plugin to be flexible and easy to configure so that it will be suitable for many different websites. The [premium version](https://barn2.com/wordpress-plugins/document-library-pro/?utm_source=wporg&utm_medium=freeplugin&utm_campaign=freepluginwporg&utm_content=dlw-wporg) adds most of the features which you are ever likely to need.
